@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>PAT Parents As Teachers</title>
+    <meta name="turbolinks-cache-control" content="no-cache">
+    <title><%= page_title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= csrf_meta_tags %>
@@ -10,19 +11,19 @@
     <meta name="description" content="PAT Parents as Teachers questionnaire">
     <meta name="author" content="Tococorocko - Lucca Kaiser">
     <%#= favicon_link_tag asset_path('favicon.ico') %>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
 
   </head>
 
   <body class="preload">
-    <%#= render 'layouts/header' %>
-    <%= yield %>
-    <%= render 'layouts/footer' %>
+    <div id="wrapper">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

@@ -1,23 +1,21 @@
+<% page_heading("Contacts") %>
+
 <div id="wrapper">
-  <header id="header">
-    <a href="../home.html">
-      <img class="logo" src="./assets/logo.png" alt="logo PAT">
-    </a>
+  <div id="menu">
+    <%= render 'partials/logo' %>
     <div class="content">
       <div class="inner">
         <h1>Contatti</h1>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#consultations">Consultorio</a></li>
-        <li><a href="#meetings">Incontri di Gruppo</a></li>
-        <li><a href="#midfwives">Levatrici</a></li>
-        <li><a href="#paediatricians">Pediatri</a></li>
-        <li><a href="#projects">Progetti</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div id="controls">
+      <% @address_categories.each do |category| %>
+        <div class="control-link">
+          <%= link_to category.name, address_path(category_id: category.id) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
  <div id="main">
     <article id="consultations">

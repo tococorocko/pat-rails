@@ -1,0 +1,29 @@
+<% page_heading("Second Question") %>
+
+  <div id="menu">
+    <%= render 'partials/logo' %>
+    <div class="content">
+      <div class="inner">
+        <h1>Quanto si sente sicuro/a della sua valutazione?</h1>
+      </div>
+    </div>
+    <div id="controls" class="rating">
+      <div class="control-link">
+        <%= link_to "Molto insicura", screening_path(val_1: @val_1, val_2: 1) %>
+      </div>
+      <div class="control-link">
+        <%= link_to "Insicura", screening_path(val_1: @val_1, val_2: 2) %>
+      </div>
+      <div class="control-link">
+        <%= link_to "Poco sicuro", screening_path(val_1: @val_1, val_2: 3) %>
+      </div>
+      <div class="control-link">
+        <%= link_to "Sicuro", screening_path(val_1: @val_1, val_2: 4) %>
+      </div>
+      <div class="control-link">
+        <%= link_to "Molto sicuro", screening_path(val_1: @val_1, val_2: 5) %>
+      </div>
+    </div>
+  </div>
+
+

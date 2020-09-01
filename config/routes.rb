@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
   get '/screening', to: 'questions#index'
-  get '/addresses', to: 'addresses#index'
-  get '/addresses/:category_id', to: 'addresses#show', as: 'address'
-
+  get '/address-categories', to: 'address_categories#index'
+  post '/address-categories', to: 'address_categories#index'
+  get '/address-categories/:category_id', to: 'address_categories#show', as: 'address_category'
+  get '/medium-risk', to: 'address_categories#medium_risk'
+  get '/high-risk', to: 'address_categories#high_risk'
 
 end

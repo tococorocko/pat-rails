@@ -21,6 +21,10 @@ hr {
   border: 0;
   border-bottom: solid 1px #b7c221;
   margin: 2.75rem 0;
+  &.sm {
+    width: 10%;
+    margin: 1rem 0;
+  }
 }
 
 ul {
@@ -154,6 +158,9 @@ h2 {
   }
 }
 
+h3, h4 {
+  font-size: 1rem;
+}
 h4 {
   margin-top: 20px;
   margin-bottom: 0;
@@ -198,21 +205,20 @@ h4 {
 }
 
 @media screen and (max-width: 1680px) {
-  #wrapper {
+  #wrapper, #quicklinks {
     padding: 3rem 2rem;
   }
-
 }
 
 @media screen and (max-width: 736px) {
-  #wrapper {
+  #wrapper, #quicklinks {
     padding: 2rem 1rem;
   }
 
 }
 
 @media screen and (max-width: 480px) {
-  #wrapper {
+  #wrapper, #quicklinks {
     padding: 1rem 1rem;
   }
 }
@@ -540,6 +546,7 @@ a.button {
   cursor: pointer;
   text-indent: 4rem;
   overflow: hidden;
+  opacity: 1;
   white-space: nowrap;
    &:before {
     -moz-transition: background-color 0.2s ease-in-out;
@@ -593,6 +600,16 @@ a.button {
   -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 1.325s ease-in-out, opacity 0.325s ease-in-out;
   -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 1.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 1.325s ease-in-out;
+}
+
+#quicklinks {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding: 4rem 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Footer */

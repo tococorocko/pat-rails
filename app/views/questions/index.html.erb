@@ -7,45 +7,19 @@
    <div id="screening">
     <h2 class="major">Screening</h2>
     <h3>Fattor di stress per il bambino/a e la sua famiglia</h3>
-    <% @question_categories.each do |category| %>
-      <div class="card">
-        <h4><%= category.name %></h4>
-        <% category.questions.sort_by { |q| q.sort_order }.each do |question| %>
-          <div class="select">
-            <input type="checkbox" value="<%= question.valuation_factor %>"><label for=""> <%= question.question_text %></label>
-          </div>
-        <% end %>
-      </div>
+    <%= form_with url: address_categories_path, local: true do %>
+      <% @question_categories.each do |category| %>
+        <div class="">
+          <h4><%= category.name %></h4>
+          <% category.questions.sort_by { |q| q.sort_order }.each do |question| %>
+            <div class="select">
+              <%= check_box_tag "question[#{question.id}]", question.valuation_factor %>
+              <%= label_tag("question[#{question.id}]", question.question_text) %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      <%= submit_tag("Continua", class:"btn") %>
     <% end %>
-    <div>
-      <button class="btn" id="btn-continue">Continua</button>
-    </div>
    </div>
 </div>
-
-<script>
-
-  document.getElementById("btn-continue").addEventListener("click", e => {
-    e.preventDefault;
-    let valuation_factor = 0;
-    let checkedBoxes = document.querySelectorAll('input:checked');
-    checkedBoxes.forEach(item => {
-      valuation_factor += Number(item.value);
-    })
-
-    if (valuation_factor < 3) {
-      console.log("< 3");
-      window.location.href = './addresses.html';
-    } else if (valuation_factor <= 5) {
-      console.log("<= 5");
-      window.location.href = '#contact-medio';
-    } else if (valuation_factor > 5) {
-      console.log("> 5");
-      window.location.href = '#contact-alto';
-    } else {
-      console.log("missing Value");
-      window.location.href = './addresses.html';
-    }
-  })
-
-</script>

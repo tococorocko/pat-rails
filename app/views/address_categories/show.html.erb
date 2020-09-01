@@ -1,0 +1,35 @@
+<% page_heading(@address_category.name) %>
+
+ <div id="main">
+    <div class="close-btn">
+      <%= link_to "", address_categories_path, class:"close" %>
+    </div>
+    <div id="addresses">
+      <h2 class="major"><%= @address_category.name %></h2>
+      <p>
+        <%= @address_category.name %>
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ullam voluptatibus, corrupti neque nihil? Aspernatur ad cumque culpa deserunt velit provident, facere corporis iste odio delectus molestias, porro cupiditate minus!</p>
+      <% @addresses.each do |address| %>
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted"><%= address.name %></h6>
+            <div>
+              <% if address.extra %>
+                <p class="card-text"><%= address.extra %></p>
+              <% end %>
+              <p class="card-text"><%= address.street %></p>
+              <p class="card-text"><%= address.postcode %> <%= address.city %></p>
+            </div>
+            <hr class="sm">
+            <div>
+              <a href="tel:<%= address.phone %>"><i class="fas fa-phone-alt"></i> <%= address.phone %></a>
+              <a href="mailto:<%= address.email %>"><i class="fas fa-envelope"></i> <%= address.email %></a>
+              <a href="<%= address.website %>"  target="_blank" ><i class="fas fa-link"></i> www.address.website</a>
+            </div>
+          </div>
+        </div>
+        <!-- <hr> -->
+      <% end %>
+    </div>
+  </div>

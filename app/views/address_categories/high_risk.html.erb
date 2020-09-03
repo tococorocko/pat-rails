@@ -5,25 +5,28 @@
     <%= link_to "", screening_path, class:"close" %>
   </div>
   <div id="addresses">
-    <h2 class="major">High Risk<%#= @address_category.name %></h2>
-    <p>
-      <%#= @address_category.name %>
-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ullam voluptatibus, corrupti neque nihil? Aspernatur ad cumque culpa deserunt velit provident, facere corporis iste odio delectus molestias, porro cupiditate minus!</p>
+    <h2 class="major"><%= t("addresses.high_risk") %></h2>
+    <p><%= t("addresses.high_risk_description") %></p>
     <% @addresses.each do |address| %>
       <div class="card">
-        <p><%= address.name %></p>
-        <% if address.extra %>
-          <%= address.extra %>
-        <% end %>
-        <p><%= address.street %></p>
-        <p><%= address.postcode %> <%= address.city %></p>
-        <a href="tel:<%= address.phone %>"><%= address.phone %></a>
-        <%= mail_to address.email,  address.email %>
-        <%= link_to address.website,  address.website, target:"_blank" %>
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted"><%= address.name %></h6>
+          <div>
+            <% if address.extra %>
+              <p class="card-text"><%= address.extra %></p>
+            <% end %>
+            <p class="card-text"><%= address.street %></p>
+            <p class="card-text"><%= address.postcode %> <%= address.city %></p>
+          </div>
+          <hr class="sm">
+          <div>
+            <a href="tel:<%= address.phone %>"><i class="fas fa-phone-alt"></i> <%= address.phone %></a>
+            <a href="mailto:<%= address.email %>"><i class="fas fa-envelope"></i> <%= address.email %></a>
+            <a href="<%= address.website %>"  target="_blank" ><i class="fas fa-link"></i> www.address.website</a>
+          </div>
+        </div>
       </div>
-      <hr>
     <% end %>
   </div>
-  <%= link_to "All Addresses", address_categories_path, class:"btn" %>
+  <%= link_to t("addresses.all_contacts"), address_categories_path, class:"btn" %>
 </div>

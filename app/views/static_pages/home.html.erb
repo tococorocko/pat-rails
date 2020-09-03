@@ -1,19 +1,19 @@
-<%= render 'layouts/quicklinks' %>
+<%= render "layouts/quicklinks" %>
 <div id="menu">
   <%= render 'partials/logo' %>
   <div class="content">
     <div class="inner">
-      <h1 class="major">PAT imparo con i genitori</h1>
-      <h2>Screening per identificare le famiglie a rischio</h2>
+      <h1 class="major"><%= t("home.title") %></h1>
+      <h2><%= t("home.subtitle") %></h2>
       <p></p>
     </div>
   </div>
   <div id="controls">
     <div class="control-link">
-      <%= link_to "Questionario", question_1_path %>
+      <%= link_to t("home.questionnaire"), question_1_path %>
     </div>
     <div class="control-link">
-      <%= link_to "Chi siamo", about_path %>
+      <%= link_to t("home.about_us"), about_path %>
     </div>
   </div>
 </div>

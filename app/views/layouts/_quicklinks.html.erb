@@ -4,8 +4,8 @@
       <i class="fas fa-bars"></i>
     </button>
     <div class="dropdown-menu dropdown-menu-right">
-      <%= link_to "All Addresses", address_categories_path, class:"dropdown-item", type:"button" %>
-      <%= link_to "Chi siamo", about_path, class:"dropdown-item", type:"button" %>
+      <%= link_to t("quicklinks.all_contacts"), address_categories_path, class:"dropdown-item", type:"button" %>
+      <%= link_to t("quicklinks.about_us"), about_path, class:"dropdown-item", type:"button" %>
       <div class="dropdown-divider"></div>
       <%= link_to "Home", root_path, class:"dropdown-item", type:"button" %>
     </div>

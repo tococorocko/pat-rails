@@ -16,9 +16,9 @@ Language.create!(name: "de")
 Language.create!(name: "it")
 Language.create!(name: "fr")
 
-Severity.create!(name: "standard", value: 1, description: "There is a low to medium Risk, please decide yourself")
-Severity.create!(name: "medium", value: 2, description: "Medium risk detected")
-Severity.create!(name: "high", value: 3, description: "High risk detected")
+Severity.create!(name: "standard", value: 1)
+Severity.create!(name: "medium", value: 2)
+Severity.create!(name: "high", value: 3)
 
 QuestionCategory.create!(name: "Gravidanza e nascita", info: "Sind Probleme bei der Geburt aufgetreten?", sort_order: 1, language: Language.where(name: "it").first)
 

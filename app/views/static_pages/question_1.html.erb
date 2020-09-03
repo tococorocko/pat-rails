@@ -6,24 +6,24 @@
   <%= render 'partials/logo' %>
   <div class="content">
     <div class="inner">
-      <h1>Quanto valuta la necessità della famiglia di ricevere sostegno?</h1>
+      <h1><%= t("question_1.question") %></h1>
     </div>
   </div>
   <div id="controls" class="rating-danger">
     <div class="control-link">
-      <%= link_to "Molto basso", question_2_path(val_1: 1) %>
+      <%= link_to t("question_1.very_low"), question_2_path(val_1: 1) %>
     </div>
     <div class="control-link">
-      <%= link_to "Basso", question_2_path(val_1: 2) %>
+      <%= link_to t("question_1.low"), question_2_path(val_1: 2) %>
     </div>
     <div class="control-link">
-      <%= link_to "Piuttosto alto", question_2_path(val_1: 3) %>
+      <%= link_to t("question_1.rather_high"), question_2_path(val_1: 3) %>
     </div>
     <div class="control-link">
-      <%= link_to "Alto", question_2_path(val_1: 4) %>
+      <%= link_to t("question_1.high"), question_2_path(val_1: 4) %>
     </div>
     <div class="control-link">
-      <%= link_to "Molto alto", question_2_path(val_1: 5) %>
+      <%= link_to t("question_1.very_high"), question_2_path(val_1: 5) %>
     </div>
   </div>
 </div>

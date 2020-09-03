@@ -13,7 +13,7 @@ class AddressCategoriesController < ApplicationController
     elsif valuation_factor <= 5
       redirect_to :medium_risk
     else
-      redirect_to :hig_risk
+      redirect_to :high_risk
     end
 
   end

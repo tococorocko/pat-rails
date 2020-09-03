@@ -36,10 +36,15 @@ it:
     subtitle: Screening per identificare le famiglie a rischio
     questionnaire: Questionario
     about_us: Chi siamo
+  about_us:
+    head_title: Chi siamo
+    title: Chi siamo - PAT imparo con i genitori
+    more_information: Maggiori informazioni
   quicklinks:
    all_contacts: Tutti contatti
    about_us: Chi siamo
   question_1:
+    head_title: Necessità
     question: Quanto valuta la necessità della famiglia di ricevere sostegno?
     very_low: Molto basso
     low: Basso
@@ -47,6 +52,7 @@ it:
     high: Alto
     very_high: Molto alto
   question_2:
+    head_title: Convincimento
     question: Quanto si sente sicuro/a della sua valutazione?
     very_sure: Molto insicura
     sure: Insicura
@@ -54,8 +60,11 @@ it:
     sure: Sicuro
     very_sure: Molto sicuro
   addresses:
+    head_title: Contatti
     all_contacts: Tutti contatti
     medium_risk: Medio rischio
+    medium_risk_title: Medio rischio
     medium_risk_description: Abbiamo identificato un rischio medio-alto. Ulteriore assistenza è necessaria nel seguente caso. Di seguito sono riportati alcuni indirizzi che potete contattare.
     high_risk: Alto rischio
+    high_risk_title: Alto rischio
     high_risk_description: Abbiamo identificato un rischio elevato. Nel seguente caso è indispensabile un ulteriore supporto. Qui sotto troverete alcuni indirizzi da contattare.

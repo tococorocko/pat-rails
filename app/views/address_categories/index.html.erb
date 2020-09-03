@@ -1,4 +1,4 @@
-<% page_heading("Contacts") %>
+<% page_heading(t("addresses.head_title")) %>
 
 <%= render 'layouts/quicklinks' %>
 
@@ -6,7 +6,7 @@
   <%= render 'partials/logo' %>
   <div class="content">
     <div class="inner">
-      <h1>Contatti</h1>
+      <h1><%= t("addresses.contatti") %></h1>
     </div>
   </div>
   <div id="controls">
@@ -20,10 +20,10 @@
   <div class="content">
     <div class="inner">
       <%= link_to medium_risk_path do %>
-        <h2>Medium Risk</h2>
+        <h2><%= t("addresses.medium_risk") %></h2>
       <% end %>
       <%= link_to medium_risk_path do %>
-        <h2>High Risk</h2>
+        <h2><%= t("addresses.high_risk") %></h2>
       <% end %>
     </div>
   </div>

@@ -1,10 +1,10 @@
-<% page_heading("About") %>
+<% page_heading(t("about_us.head_title")) %>
 <div id="main">
   <div class="close-btn">
     <%= link_to "", root_path, class:"close" %>
   </div>
   <div id="about">
-    <h2 class="major">Chi siamo - PAT imparo con i genitori</h2>
+    <h2 class="major"><%= t("about_us.title") %></h2>
     <h3>Promuovere lo sviluppo dei bambini e sostenerli nelle loro scoperte</h3>
     <p>Grazie al progetto PAT – Imparo con i genitori vi offriamo la possibilità di essere sostenuti nel percorso di educazione di vostro figlio.</p>
     <p>I genitori influenzano in maniera importante lo sviluppo e l’apprendimento del proprio bambino. Con l’aiuto del progetto PAT – Imparo con i genitori vi viene offerta l’opportunità di ricevere informazioni e il sostegno necessari per svolgere al meglio il vostro compito.</p>
@@ -20,7 +20,7 @@
       <li>direttamente presso l’Associazione Progetto Genitori</li>
     </ul>
     <hr>
-    <h3>Maggiori informazioni</h3>
+    <h3><%= t("about_us.more_information") %> </h3>
     <div class="card">
       <div class="card-body">
         <h6 class="card-subtitle mb-2 text-muted">Associazione Progetto Genitori</h6>

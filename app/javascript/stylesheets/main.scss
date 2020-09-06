@@ -1,7 +1,3 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
 /*Default*/
 * {
   margin: 0;
@@ -19,7 +15,7 @@ footer, header, hgroup, menu, nav, section {
 
 hr {
   border: 0;
-  border-bottom: solid 1px #b7c221;
+  border-bottom: solid 1px #E9EEBD;
   margin: 2.75rem 0;
   &.sm {
     width: 10%;
@@ -90,7 +86,7 @@ body.preload *, body.preload *:before, body.preload *:after {
 
 body, input, select, textarea {
   color: #0066a4;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.65;
@@ -104,6 +100,13 @@ a {
   /*border-bottom: dotted 1px rgba(255, 255, 255, 0.5);*/
   text-decoration: none;
   color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+i {
+  margin-right: 10px;
 }
 
 strong, b {
@@ -124,7 +127,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1rem 0;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
@@ -134,6 +136,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: 2rem;
   line-height: 1.3;
   letter-spacing: 0.5rem;
@@ -162,18 +165,17 @@ h3, h4 {
   font-size: 1rem;
 }
 h4 {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 736px) {
-  h1 {
-    font-size: 1.75rem;
+@media screen and (max-width: 980px) {
+  h1.major {
+    font-size: 1.5rem;
     line-height: 1.4;
   }
-
   h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 1.5;
   }
 }
@@ -285,6 +287,10 @@ h4 {
   border-top-width: 1px;
   border-bottom-width: 1px;
   max-width: 100%;
+  min-width: 50%;
+  &.extended {
+    border-bottom-width: 0;
+  }
 }
 
 #menu .content .inner {
@@ -321,48 +327,67 @@ h4 {
   list-style: none;
   padding-left: 0;
   border: solid 1px #b7c221;
-  border-radius: 3px;
 }
-#menu #controls.rating-danger {
-  background: linear-gradient(to right, #FADF60 10%, #E22F27 100%);
-}
-
-@media screen and (max-width: 480px) {
-  #menu #controls.rating-danger {
-    background: linear-gradient(to bottom, #FADF60 10%, #E22F27 100%);
+#menu #controls.rating {
+  border: 0;
+  background: linear-gradient(to right, #E9EEBD 10%, #04968D 100%);
+  .control-link {
+    border: 0;
+    border-left: solid 1px #E9EEBD;
+    a {
+      color: #5a6268;
+    }
   }
 }
 
-#menu  #controls.rating {
-  background: linear-gradient(to right, #b7c221 30%, #04968D 100%);
-}
-
-@media screen and (max-width: 480px) {
-  #menu  #controls.rating {
-    background: linear-gradient(to bottom, #b7c221 30%, #04968D 100%);
+@media screen and (max-width: 980px) {
+  #menu #controls.rating {
+    background: linear-gradient(to bottom, #E9EEBD 10%, #04968D 100%);
+    .control-link {
+      border-top: solid 1px #E9EEBD;
+    }
   }
 }
 
 #menu #controls .control-link {
   padding-left: 0;
-  border-left: solid 1px #b7c221;
+  // border-left: solid 1px #b7c221;
+  min-height: 3.5rem;
+  display: table;
 }
 
 #menu #controls .control-link:first-child {
   border-left: 0;
 }
 
-#menu  #controls .control-link a {
-  display: block;
-  min-width: 10rem;
-  max-width: 15rem;
-  height: 2.75rem;
-  line-height: 2.75rem;
-  padding: 0 1.25rem 0 1.45rem;
-  text-transform: uppercase;
-  font-size: 0.75rem;
+#menu #controls .control-link a {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 13rem;
+  max-width: 14rem;
+  padding: 0 1.2rem 0 1.2rem;
+  font-size: 1rem;
   border-bottom: 0;
-  transition: 0.5s;
+  transition: all 0.5s ease 0s;
+  color: #5a6268;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+
+#menu #controls.nav .control-link a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: -0.5px;
+  width: 1px;
+  height: 40%;
+  background: #b7c221;
+}
+
+#menu  #controls .control-link:first-child a:before {
+  display: none;
 }
 
 @media screen and (max-width: 736px) {
@@ -372,8 +397,10 @@ h4 {
 }
 
 #menu  #controls .control-link a:hover {
-  background-color: #c1c695;
+  background-color: #b7c221;
   cursor: pointer;
+  text-decoration: none;
+  color: #04968D;
 }
 
 #menu  #controls .control-link a:active {
@@ -420,14 +447,11 @@ body.preload #menu .content .inner {
   #menu > * {
     margin-top: 2rem;
   }
-  #menu > *:before {
-    top: calc(-2rem - 1px);
-    height: calc(2rem + 1px);
-  }
-  #menu .logo {
-/*    width: 4.75rem;
-    height: 4.75rem;
-    line-height: 4.75rem;*/
+  #menu  {
+    &> #controls:before, &> .content:before, &> *:before {
+      top: calc(-2rem - 1px);
+      height: calc(2rem + 1px);
+    }
   }
   #menu .content .inner {
     padding: 2.5rem 1rem;
@@ -459,11 +483,13 @@ body.preload #menu .content .inner {
   #menu #controls .control-link:first-child {
     border-top: 0;
   }
+
   #menu #controls .control-link a {
     height: 3rem;
     line-height: 3rem;
-    min-width: 0;
     width: 100%;
+    min-width: 17rem;
+    max-width: 17rem;
   }
 }
 
@@ -496,10 +522,16 @@ body.preload #menu .content .inner {
       text-decoration: underline dotted;
     }
     .select {
+      display: flex;
       padding-bottom: 3px;
+      flex-direction: row;
+      margin-bottom: 10px;
     }
     input {
-      margin-right: 5px;
+      margin-right: 10px;
+    }
+    label {
+      margin-bottom: 0;
     }
   }
   .btn {
@@ -509,13 +541,18 @@ body.preload #menu .content .inner {
     letter-spacing: 0.2rem;
     cursor: pointer;
     padding: 5px 15px;
-    border-radius: 4px;
     margin-top: 40px;
     margin-bottom: 15px;
-    transition: opacity 0.325s ease-in-out;
-    color: #0066a4;
+    transition: all 0.5s ease 0s;
+    color: #5a6268;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     &:hover {
-      opacity: 0.6;
+      // opacity: 0.6;
+      background-color: #E9EEBD;
+      cursor: pointer;
+      text-decoration: none;
+      color: #b7c221;
     }
   }
 }
@@ -622,6 +659,7 @@ a.button {
   padding-bottom: 0.5rem;
   text-align: center;
   height: 4rem;
+  color: #5a6268;
 }
 
 #footer .copyright {

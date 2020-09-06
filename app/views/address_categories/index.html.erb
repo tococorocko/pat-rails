@@ -9,7 +9,7 @@
       <h1><%= t("addresses.contatti") %></h1>
     </div>
   </div>
-  <div id="controls">
+  <div id="controls" class="nav">
     <% @address_categories.each do |category| %>
       <div class="control-link">
         <%= link_to category.name, address_category_path(category_id: category.id) %>
@@ -17,13 +17,13 @@
     <% end %>
   </div>
 
-  <div class="content">
+  <div class="content extended">
     <div class="inner">
       <%= link_to medium_risk_path do %>
-        <h2><%= t("addresses.medium_risk") %></h2>
+        <h2><%= t("addresses.medium_risk") %>?</h2>
       <% end %>
       <%= link_to high_risk_path do %>
-        <h2><%= t("addresses.high_risk") %></h2>
+        <h2><%= t("addresses.high_risk") %>?</h2>
       <% end %>
     </div>
   </div>

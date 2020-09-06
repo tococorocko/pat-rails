@@ -1,24 +1,23 @@
 # README
+Ruby version: ruby '2.7.1'
+Rails version: rails '~> 6.0.3.1'
+Postgresql: psql 12.3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+** Configuration
 
-Things you may want to cover:
+Database creation
+bundle exec rails db:create
+bundle exec rails db:migrate
+bundle exec rails db:seed
 
-* Ruby version
+How to run the test suite
+<!-- bundle exec rspec -->
 
-* System dependencies
+Deployment instructions
+git push master
+git push heroku master
+heroku run rake db:migrate heroku run rake db:seed
+heroku open
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+System dependencies
+...

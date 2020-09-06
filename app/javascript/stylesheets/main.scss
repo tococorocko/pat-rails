@@ -48,7 +48,6 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   background: #E9EEBD;
   line-height: 1;
@@ -167,6 +166,13 @@ h3, h4 {
 h4 {
   margin-top: 0px;
   margin-bottom: 0;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media screen and (max-width: 980px) {
@@ -528,9 +534,21 @@ body.preload #menu .content .inner {
       margin-bottom: 10px;
     }
     input {
+      margin: auto 0;
       margin-right: 10px;
     }
+    input[type=checkbox] {
+      -ms-transform: scale(1.5); /* IE */
+      -moz-transform: scale(1.5); /* FF */
+      -webkit-transform: scale(1.5, 1.5);
+      -webkit-transform: scale(1.5); /* Safari and Chrome */
+      -o-transform: scale(1.5); /* Opera */
+      transform: scale(1.5);
+      padding: 10px;
+      flex: none;
+    }
     label {
+      display: inline-block;
       margin-bottom: 0;
     }
   }
@@ -548,7 +566,6 @@ body.preload #menu .content .inner {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     &:hover {
-      // opacity: 0.6;
       background-color: #E9EEBD;
       cursor: pointer;
       text-decoration: none;
@@ -558,9 +575,10 @@ body.preload #menu .content .inner {
 }
 
 a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
     text-decoration: none;
     color: initial;
 }

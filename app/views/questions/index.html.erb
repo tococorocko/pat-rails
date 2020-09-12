@@ -8,11 +8,28 @@
     <h2 class="major">Screening</h2>
     <h3>Fattor di stress per il bambino/a e la sua famiglia</h3>
     <%= form_with url: address_categories_path, local: true do %>
-      <% @question_categories.each do |category| %>
+      <% @negative_factors.each do |category| %>
         <div class="card">
           <div class="card-header">
             <h4><%= category.name %></h4>
           </div>
+          <div class="card-body">
+            <% category.questions.sort_by { |q| q.sort_order }.each do |question| %>
+              <div class="select">
+                <%= check_box_tag "question[#{question.id}]", question.valuation_factor %>
+                <%= label_tag("question[#{question.id}]", question.question_text) %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+      <hr>
+      <h3>Fattori protettivi</h3>
+      <% @positive_factors.each do |category| %>
+        <div class="card">
+<!--           <div class="card-header">
+            <h4><%= category.name %></h4>
+          </div> -->
           <div class="card-body">
             <% category.questions.sort_by { |q| q.sort_order }.each do |question| %>
               <div class="select">

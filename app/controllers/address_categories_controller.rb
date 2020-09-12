@@ -8,9 +8,9 @@ class AddressCategoriesController < ApplicationController
     @address_categories = AddressCategory.all.sort_by { |category| category.sort_order }
     valuation_factor = 0
     params[:question].each {|id, val| valuation_factor += val.to_i } if params[:question]
-    if valuation_factor < 3
+    if valuation_factor < 2
       render "index"
-    elsif valuation_factor <= 5
+    elsif valuation_factor < 5
       redirect_to :medium_risk
     else
       redirect_to :high_risk

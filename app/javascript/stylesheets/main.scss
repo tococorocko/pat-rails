@@ -166,6 +166,11 @@ h4 {
   margin-bottom: 0;
 }
 
+h3.risk-link {
+  text-decoration: underline dotted;
+  color: #b7c221;
+}
+
 button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: none;
   -webkit-appearance: none;
@@ -315,6 +320,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
   padding: 3rem 2rem;
   max-height: 40rem;
   overflow: hidden;
+  .subtext {
+    color: #04968D;
+    font-size: 1.2rem;
+  }
 }
 
 #menu .content .inner > :last-child {
@@ -531,6 +540,7 @@ body.preload #menu .content .inner {
     letter-spacing: 0.2rem;
   }
   .card {
+    margin-bottom: 10px;
     p {
       margin-bottom: 0;
     }
@@ -577,6 +587,7 @@ body.preload #menu .content .inner {
     color: #5a6268;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    text-decoration: none;
     &:hover {
       background-color: #E9EEBD;
       cursor: pointer;

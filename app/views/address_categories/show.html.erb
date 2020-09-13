@@ -7,25 +7,33 @@
     <div id="addresses">
       <h2 class="major"><%= @address_category.name %></h2>
       <p>
-        <%= @address_category.name %>
-
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ullam voluptatibus, corrupti neque nihil? Aspernatur ad cumque culpa deserunt velit provident, facere corporis iste odio delectus molestias, porro cupiditate minus!</p>
       <% @addresses.each do |address| %>
         <div class="card">
           <div class="card-body">
             <h6 class="card-subtitle mb-2 text-muted"><%= address.name %></h6>
             <div>
-              <% if address.extra %>
+              <% if address.extra.present? %>
                 <p class="card-text"><%= address.extra %></p>
               <% end %>
-              <p class="card-text"><%= address.street %></p>
-              <p class="card-text"><%= address.postcode %> <%= address.city %></p>
+              <% if address.street.present? %>
+                <p class="card-text"><%= address.street %></p>
+              <% end %>
+              <% if address.postcode.present? || address.city.present?  %>
+                <p class="card-text"><%= address.postcode %> <%= address.city %></p>
+              <% end %>
             </div>
             <hr class="sm">
             <div>
-              <a href="tel:<%= address.phone %>"><i class="fas fa-phone-alt"></i><%= address.phone %></a>
-              <a href="mailto:<%= address.email %>"><i class="fas fa-envelope"></i><%= address.email %></a>
-              <a href="<%= address.website %>"  target="_blank" ><i class="fas fa-link"></i><%= address.website %></a>
+              <% if address.phone.present? %>
+                <a href="tel:<%= address.phone %>"><i class="fas fa-phone-alt"></i><%= address.phone %></a>
+              <% end %>
+              <% if address.email.present? %>
+                <a href="mailto:<%= address.email %>"><i class="fas fa-envelope"></i><%= address.email %></a>
+              <% end %>
+              <% if address.website.present? %>
+                <a href="<%= address.website %>"  target="_blank" ><i class="fas fa-link"></i><%= address.website %></a>
+              <% end %>
             </div>
           </div>
         </div>

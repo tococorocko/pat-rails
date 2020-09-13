@@ -19,12 +19,11 @@ class AddressCategoriesController < ApplicationController
   end
 
   def medium_risk
-    @addresses = Address.where(severity: severity("medium")).sort_by { |category| category.name }
+    # @addresses = Address.where(severity: severity("medium")).sort_by { |category| category.name }
   end
 
   def high_risk
-    @addresses = Address.where(severity: severity("high")).sort_by { |category| category.name }
-
+    # @addresses = Address.where(severity: severity("high")).sort_by { |category| category.name }
   end
 
   def show

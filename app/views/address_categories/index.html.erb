@@ -7,7 +7,7 @@
   <div class="content">
     <div class="inner">
       <h1><%= t("addresses.contatti") %></h1>
-      <p>Tutte le famiglie con bambini piccoli e mamme durante la gravidanza hanno la possibilità di accedere a questi servizi per trovare risposte alle loro domande e ricevere informazioni e sostegno.</p>
+      <p class="subtext">Tutte le famiglie con bambini piccoli e mamme durante la gravidanza hanno la possibilità di accedere a questi servizi per trovare risposte alle loro domande e ricevere informazioni e sostegno.</p>
     </div>
   </div>
   <div id="controls" class="nav">
@@ -21,10 +21,10 @@
   <div class="content extended">
     <div class="inner">
       <%= link_to medium_risk_path do %>
-        <h2><%= t("addresses.medium_risk") %>?</h2>
+        <h3 class="risk-link"><%= t("addresses.medium_risk") %>?</h3>
       <% end %>
       <%= link_to high_risk_path do %>
-        <h2><%= t("addresses.high_risk") %>?</h2>
+        <h3 class="risk-link"><%= t("addresses.high_risk") %>?</h3>
       <% end %>
     </div>
   </div>

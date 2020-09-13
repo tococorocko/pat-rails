@@ -6,27 +6,46 @@
   </div>
   <div id="addresses">
     <h2 class="major"><%= t("addresses.high_risk") %></h2>
-    <p><%= t("addresses.high_risk_description") %></p>
-    <% @addresses.each do |address| %>
-      <div class="card">
-        <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted"><%= address.name %></h6>
-          <div>
-            <% if address.extra %>
-              <p class="card-text"><%= address.extra %></p>
-            <% end %>
-            <p class="card-text"><%= address.street %></p>
-            <p class="card-text"><%= address.postcode %> <%= address.city %></p>
-          </div>
-          <hr class="sm">
-          <div>
-            <a href="tel:<%= address.phone %>"><i class="fas fa-phone-alt"></i> <%= address.phone %></a>
-            <a href="mailto:<%= address.email %>"><i class="fas fa-envelope"></i> <%= address.email %></a>
-            <a href="<%= address.website %>"  target="_blank" ><i class="fas fa-link"></i> www.address.website</a>
-          </div>
+    <p>Come per tutte le famiglie sono sempre a disposizione tutti i servizi di base.</p>
+    <p>La famiglia in questione presenta però più indicatori di stress, che potrebbero compromettere uno sviluppo sano del loro bambino . Il progetto PAT può essere di sostegno alla famiglia, collaborando con altri servizi.</p>
+    <p>Se la famiglia è d’accordo, andiamo al loro domicilio a spiegare il progetto PAT. Possiamo fare delle visite di prova, per capire entrambi, se questo progetto possa andare bene per loro e/o se ci vogliono aiuti diversi.</p>
+    <p>Da parte del PAT ci sarà sempre un feedback a chi ha segnalato la famiglia.</p>
+
+    <%= render 'address_categories/medium_risk_addresses' %>
+
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">UAP - Ufficio delle famiglie e dei minorenni</h6>
+        <div>
+          <p class="card-text">6500 Bellinzona</p>
+          <a href="tel:+41 91 814 75 11"><i class="fas fa-phone-alt"></i> +41 91 814 75 11</a>
+          <a href="dss-minorenni.bellinzona@ti.ch"  target="_blank" ><i class="fas fa-link"></i> dss-minorenni.bellinzona@ti.ch</a>
+        </div>
+        <hr class="sm">
+        <div>
+          <p class="card-text">6600 Locarno</p>
+          <a href="tel:+41 91 816 05 61"><i class="fas fa-phone-alt"></i> +41 91 816 05 61</a>
+          <a href="dss-minorenni.locarno@ti.ch"  target="_blank" ><i class="fas fa-link"></i> dss-minorenni.locarno@ti.ch</a>
+        </div>
+        <hr class="sm">
+        <div>
+          <p class="card-text">6900 Lugano</p>
+          <a href="tel:+41 91 815 75 31"><i class="fas fa-phone-alt"></i> +41 91 815 75 31</a>
+          <a href="dss-minorenni.lugano@ti.ch"  target="_blank" ><i class="fas fa-link"></i> dss-minorenni.lugano@ti.ch</a>
+        </div>
+        <hr class="sm">
+        <div>
+          <p class="card-text">6950 Mendrisio</p>
+          <a href="tel:+41 91 815 94 01"><i class="fas fa-phone-alt"></i> +41 91 815 94 01</a>
+          <a href="dss-minorenni.mendrisio@ti.ch"  target="_blank" ><i class="fas fa-link"></i> dss-minorenni.mendrisio@ti.ch</a>
+        </div>
+        <hr class="sm">
+        <div>
+          <a href="https://www4.ti.ch/dss/dasf/uap/chi-siamo/contatti/"  target="_blank" ><i class="fas fa-link"></i> https://www4.ti.ch/dss/dasf/uap/chi-siamo/contatti/</a>
         </div>
       </div>
-    <% end %>
+    </div>
+
   </div>
   <%= link_to t("addresses.all_contacts"), address_categories_path, class:"btn" %>
 </div>

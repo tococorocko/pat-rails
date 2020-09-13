@@ -27,9 +27,6 @@
       <h3>Fattori protettivi</h3>
       <% @positive_factors.each do |category| %>
         <div class="card">
-<!--           <div class="card-header">
-            <h4><%= category.name %></h4>
-          </div> -->
           <div class="card-body">
             <% category.questions.sort_by { |q| q.sort_order }.each do |question| %>
               <div class="select">

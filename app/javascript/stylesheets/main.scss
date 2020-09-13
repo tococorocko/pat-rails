@@ -321,6 +321,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   max-height: 40rem;
   overflow: hidden;
   .subtext {
+    text-transform: none;
     color: #04968D;
     font-size: 1.2rem;
   }
@@ -538,6 +539,7 @@ body.preload #menu .content .inner {
   h2 {
     font-size: 1.4rem;
     letter-spacing: 0.2rem;
+    text-transform: uppercase;
   }
   .card {
     margin-bottom: 10px;

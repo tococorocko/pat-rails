@@ -28,9 +28,10 @@ class AddressCategoriesController < ApplicationController
 
   def show
     @address_category = AddressCategory.find(params[:category_id])
-    @addresses = @address_category.addresses.
-                                    where(severity: severity("standard")).
-                                    sort_by { |category| category.name }
+    @nascita_id = AddressCategory.where(name: "Attorno alla nascita").first.id
+    # @addresses = @address_category.addresses.
+    #                                 where(severity: severity("standard")).
+    #                                 sort_by { |category| category.name }
   end
 
   protected

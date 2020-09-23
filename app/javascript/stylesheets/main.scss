@@ -549,6 +549,9 @@ body.preload #menu .content .inner {
     a {
       display: block;
       text-decoration: underline dotted;
+      &.inline {
+        display: inline-block;
+      }
     }
     .select {
       display: flex;

@@ -1,14 +1,21 @@
 <div class="card">
   <div class="card-body">
     <div>
-      <p>Esistono numerosi incontri per futurigenitori, genitori e bambini e preasili su tutto il territorio del Ticino.</p>
-      <p>Potete trovare informazioni nei comuni, all’associazione Progetto Genitori (vedi EDUCAZIONE), nei consultori Genitori e Bambino (vedi CONSULTORI) oppure sulla pagina internet:</p>
+      <ul>
+        <li>Esistono numerosi incontri per futurigenitori, genitori e bambini e preasili su tutto il territorio del Ticino.</li>
+      </ul>
+      <p>Potete trovare informazioni:</p>
+      <ul>
+        <li>Nei comuni</li>
+        <li>All’associazione Progetto Genitori <%= link_to "(vedi EDUCAZIONE)", address_category_path(@educazione_id), class:"inline" %></li>
+        <li>Nei consultori Genitori e Bambino <%= link_to "(vedi CONSULTORI)", address_category_path(@consultori_id), class:"inline" %></li>
+        <li>Sulla pagina internet:</li>
+      </ul>
     </div>
-    <hr class="sm">
     <div>
-      <a href="https://www.associazioneprogettogenitori.com" target="_blank" ><i class="fas fa-link"></i>https://www.associazioneprogettogenitori.com</a>
+      <a href="http://ticinoperbambini.ch/" target="_blank" ><i class="fas fa-link"></i>http://ticinoperbambini.ch/</a>
     </div>
     <hr class="sm">
-    <p>Sulla pagina internet dell’associazione "nascerebene" <%= link_to "(vedi attorno alla nascita)", address_category_path(@nascita_id), class:"inline" %> trovate info per incontri durante la gravidanza e nei primi mesi dopo la nascita.</p>
+    <p>Sulla pagina internet dell’associazione "nascerebene" <%= link_to "(vedi ATTORNO ALLA NASCITA)", address_category_path(@nascita_id), class:"inline" %> trovate info per incontri durante la gravidanza e nei primi mesi dopo la nascita.</p>
   </div>
 </div>

@@ -30,6 +30,10 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 it:
+  cookies:
+    description: "Continuando a visitare questo sito, l'utente accetta l'uso dei cookie da parte di Google Analytics a fini statistici."
+    reject: "Rifiuta"
+    accept: "Accetta"
   continue: continua
   home:
     title: Pat Imparo Con I Genitori

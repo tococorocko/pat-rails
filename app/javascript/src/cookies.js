@@ -1,8 +1,6 @@
 import CookiesEuBanner from 'cookies-eu-banner'
 import 'cookies-eu-banner/css/cookies-eu-banner.default.css'
 
-console.log(CookiesEuBanner);
-// new CookiesEuBanner();
 document.addEventListener("turbolinks:load", () => {
   new CookiesEuBanner(() => {
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,7 +1,6 @@
 class AddressCategoriesController < ApplicationController
 
   def valuation
-
   end
 
   def index
@@ -24,16 +23,6 @@ class AddressCategoriesController < ApplicationController
 
   def high_risk
     # @addresses = Address.where(severity: severity("high")).sort_by { |category| category.name }
-  end
-
-  def show
-    @address_category = AddressCategory.find(params[:category_id])
-    @nascita_id = AddressCategory.where(name: "Attorno alla nascita").first.id
-    @educazione_id = AddressCategory.where(name: "Educazione").first.id
-    @consultori_id = AddressCategory.where(name: "Consultori").first.id
-    # @addresses = @address_category.addresses.
-    #                                 where(severity: severity("standard")).
-    #                                 sort_by { |category| category.name }
   end
 
   protected

@@ -64,10 +64,10 @@ it:
     sure: Sicuro
     very_sure: Molto sicuro
   addresses:
-    contatti: Servizi di sostegno per tutti
-    head_title: Servizi di sostegno per tutti
+    contatti: Prevenzione Universale o primaria
+    head_title: Prevenzione Universale o primaria
     all_contacts: Tutti contatti
-    medium_risk: Sostegno oltre ai servizi offerti a tutti
-    medium_risk_title: Sostegno oltre ai servizi offerti a tutti
-    high_risk: Sostegno consigliato, oltre ai servizi offerti a tutti
-    high_risk_title: Sostegno consigliato, oltre ai servizi offerti a tutti
+    medium_risk: Prevenzione selettiva o secondaria
+    medium_risk_title: Prevenzione selettiva o secondaria
+    high_risk: Prevenzione indicata o terziara
+    high_risk_title: Prevenzione indicata o terziara

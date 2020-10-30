@@ -124,7 +124,7 @@ a {
 }
 
 i {
-  margin-right: 10px;
+  margin-right: 4px;
 }
 
 strong, b {
@@ -191,12 +191,6 @@ h4 {
   margin-bottom: 0;
 }
 
-h3.risk-link {
-  text-decoration: underline dotted;
-  color: #b7c221;
-  font-size: 18px;
-}
-
 h6 {
   font-size: 15px;
   padding-top: 0;
@@ -237,7 +231,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 @media screen and (max-width: 1680px) {
   #wrapper, #quicklinks {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 5rem;
   }
 }
 
@@ -317,9 +311,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
   border-bottom-width: 1px;
   max-width: 100%;
   min-width: 50%;
-  &.extended {
-    border-bottom-width: 0;
-  }
 }
 
 #menu .content .inner {
@@ -334,22 +325,27 @@ button, [type="button"], [type="reset"], [type="submit"] {
   padding: 3rem 2rem;
   max-height: 40rem;
   overflow: hidden;
-  .subtext {
-    text-transform: none;
-    color: #04968D;
-    font-size: 1rem;
-  }
 }
 
 #menu .content .inner > :last-child {
   margin-bottom: 0;
 }
 
-#menu .content p {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 0.8rem;
-  line-height: 2;
+// #menu .content p {
+//   // text-transform: uppercase;
+//   letter-spacing: 0.2rem;
+//   font-size: 1rem;
+//   line-height: 2;
+// }
+
+#menu .content .address-card {
+    margin: 3rem auto 1rem;
+}
+
+@media screen and (min-width: 980px) {
+  #menu .content .address-card {
+    width: 50%
+  }
 }
 
 #menu #controls {
@@ -385,7 +381,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 #menu #controls .control-link {
   padding-left: 0;
-  // border-left: solid 1px #b7c221;
   min-height: 3.5rem;
   display: table;
 }
@@ -398,7 +393,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   display: table-cell;
   vertical-align: middle;
   min-width: 13rem;
-  max-width: 14rem;
+  max-width: 16rem;
   padding: 0 1.2rem 0 1.2rem;
   font-size: 1rem;
   border-bottom: 0;
@@ -409,15 +404,17 @@ button, [type="button"], [type="reset"], [type="submit"] {
   position: relative;
 }
 
-#menu #controls.nav .control-link a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 30%;
-  left: -0.5px;
-  width: 1px;
-  height: 40%;
-  background: #b7c221;
+@media screen and (min-width: 980px) {
+  #menu #controls.nav .control-link a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -0.5px;
+    width: 1px;
+    height: 40%;
+    background: #b7c221;
+  }
 }
 
 #menu  #controls .control-link:first-child a:before {
@@ -519,8 +516,8 @@ body.preload #menu .content .inner {
   }
 
   #menu #controls .control-link a {
-    height: 3rem;
-    line-height: 3rem;
+    height: 4rem;
+    line-height: 1.5rem;
     width: 100%;
     min-width: 17rem;
     max-width: 17rem;
@@ -530,6 +527,7 @@ body.preload #menu .content .inner {
 #menu .inner h2 {
   font-weight: 400;
   color: #04968D;
+  text-transform: uppercase;
 }
 
 #main {

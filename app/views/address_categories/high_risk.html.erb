@@ -6,10 +6,12 @@
   </div>
   <div id="addresses">
     <h2 class="major"><%= t("addresses.high_risk") %></h2>
-    <p>Come per tutte le famiglie sono sempre a disposizione tutti i servizi della prevenzione primaria.</p>
-    <p>La famiglia in questione presenta però più indicatori di stress, che potrebbero compromettere uno sviluppo sano del loro bambino . Il progetto PAT può essere di sostegno alla famiglia, collaborando con altri servizi.</p>
-    <p>Se la famiglia è d’accordo, andiamo al loro domicilio a spiegare il progetto PAT. Possiamo fare delle visite di prova, per capire entrambi, se questo progetto possa andare bene per loro e/o se ci vogliono aiuti diversi.</p>
-    <p>Da parte del PAT ci sarà sempre un feedback a chi ha segnalato la famiglia.</p>
+    <p>Secondo il punteggio dello screening fatto per questa famiglia si consiglia la prevenzione terziaria oltre a quella primaria   <%= link_to "(vedi tutti contatti)", address_categories_path %>.</p>
+    <p>I fattori di stress sono numerosi, uno sviluppo sano del loro bambino potrebbe essere compromesso.</p>
+    <p>Il progetto PAT può intervenire in questi casi, assieme a una rete presente o creata intorno alla famiglia.</p>
+    <p>Voi come professionisti, che conoscete la famiglia, potete consigliarla e chiedere ai genitori il permesso di essere contattati del progetto per una presentazione a domicilio.</p>
+    <p>Se la famiglia è interessata, si svolgeranno almeno un paio di visite di ammissione cosicché la famiglia possa capire di cosa si tratta. Insieme si deciderà se proseguire con il progetto PAT e quali altri servizi possono essere di sostegno.</p>
+    <p>Sarà nostra premura dare un feedback a chi ha segnalato la famiglia.</p>
 
     <%= render 'address_categories/medium_risk_addresses' %>
 

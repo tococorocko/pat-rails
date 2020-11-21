@@ -37,7 +37,7 @@ it:
   continue: continua
   home:
     title: Pat Imparo Con I Genitori
-    subtitle: Screening per identificare le famiglie con diversi fattori di stress
+    subtitle: Fare lo screening in “Questionario” permette di identificare le famiglie con diversi fattori di stress ed indicare i sostegni adatti alle loro esigenze.
     questionnaire: Questionario
     about_us: Chi siamo
   about_us:
@@ -64,10 +64,12 @@ it:
     sure: Sicuro
     very_sure: Molto sicuro
   addresses:
-    contatti: Prevenzione Universale o primaria
-    head_title: Prevenzione Universale o primaria
+    contatti: Prevenzione primaria
+    subtitle_1: Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito del forum genitorialità.
+    subtitle_2: Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 6 mesi di vita del bambino (vedi prevenzione secondaria).
+    head_title: Prevenzione primaria
     all_contacts: Tutti contatti
-    medium_risk: Prevenzione selettiva o secondaria
-    medium_risk_title: Prevenzione selettiva o secondaria
-    high_risk: Prevenzione indicata o terziara
-    high_risk_title: Prevenzione indicata o terziara
+    medium_risk: Prevenzione secondaria
+    medium_risk_title: Prevenzione secondaria
+    high_risk: Prevenzione terziara
+    high_risk_title: Prevenzione terziara

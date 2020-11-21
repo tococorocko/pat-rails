@@ -68,31 +68,6 @@ body.preload *, body.preload *:before, body.preload *:after {
   transition: none !important;
 }
 
-/* Type */
-@media screen and (max-width: 1680px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  html {
-    font-size: 15px;
-  }
-  h1 {
-    font-size: 28px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  html, body {
-    min-width: 320px;
-  }
-}
-
 body, input, select, textarea {
   color: #0066a4;
   font-family: 'Roboto Condensed', sans-serif;
@@ -170,7 +145,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.4;
   letter-spacing: 1px;
   &.major {
@@ -195,6 +170,32 @@ h6 {
   font-size: 15px;
   padding-top: 0;
 }
+
+/* Type */
+@media screen and (max-width: 1680px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  html {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html, body {
+    min-width: 320px;
+  }
+}
+
 
 button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: none;
@@ -322,8 +323,8 @@ button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-transition-delay: 0.25s;
   -ms-transition-delay: 0.25s;
   transition-delay: 0.25s;
-  padding: 3rem 2rem;
-  max-height: 40rem;
+  padding: 3rem 10rem;
+  max-height: 60rem;
   overflow: hidden;
 }
 
@@ -393,7 +394,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   display: table-cell;
   vertical-align: middle;
   min-width: 13rem;
-  max-width: 16rem;
+  max-width: 14rem;
   padding: 0 1.2rem 0 1.2rem;
   font-size: 1rem;
   border-bottom: 0;
@@ -527,7 +528,9 @@ body.preload #menu .content .inner {
 #menu .inner h2 {
   font-weight: 400;
   color: #04968D;
-  text-transform: uppercase;
+  &.uppercase {
+    text-transform: uppercase;
+  }
 }
 
 #main {

@@ -24,7 +24,7 @@ QuestionCategory.create!(name: "Gravidanza e nascita", info: "Gravidanza e nasci
 
 Question.create!(name: "Gravidanza a rischio", question_text: "Gravidanza a rischio, procreazione medicalmente  assistita o con problemi di vario genere", valuation_factor: 1, sort_order: 1, question_category: QuestionCategory.first)
 Question.create!(name: "Gravidanza non desiderata", question_text: "Gravidanza non desiderata/non programmata", valuation_factor: 1, sort_order: 2, question_category: QuestionCategory.first)
-Question.create!(name: "Parto distoccio", question_text: "Parto distoccio o complicato (prematuro, prolungato, TC di urgenza, ventosa, forcipe, ...)", valuation_factor: 1, sort_order: 3, question_category: QuestionCategory.first)
+Question.create!(name: "Parto distocico", question_text: "Parto distoccio o complicato (prematuro, prolungato, TC di urgenza, ventosa, forcipe, ...)", valuation_factor: 1, sort_order: 3, question_category: QuestionCategory.first)
 Question.create!(name: "Parto traumatico madre", question_text: "Parto traumatico per la madre", valuation_factor: 1, sort_order: 4, question_category: QuestionCategory.first)
 Question.create!(name: "Separazione", question_text: "Separazione del neonato dalla mamma dopo la nascita", valuation_factor: 1, sort_order: 5, question_category: QuestionCategory.first)
 
@@ -44,7 +44,7 @@ QuestionCategory.create!(name: "Fattori di stress familiari", info: "Fattori di 
 
 Question.create!(name: "Famiglia monoparentale", question_text: "Famiglia monoparentale", valuation_factor: 1, sort_order: 1, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
 Question.create!(name: "Forti conflitti nella coppia, separazionez", question_text: "Forti conflitti nella coppia, separazione", valuation_factor: 1, sort_order: 2, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
-Question.create!(name: "lavoro", question_text: "Assenza del padre, per lavoro, permesso o altro", valuation_factor: 1, sort_order: 3, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
+Question.create!(name: "lavoro", question_text: "Assenza del padre per lavoro, permesso o altro", valuation_factor: 1, sort_order: 3, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
 Question.create!(name: "Presenza", question_text: "Poca presenza come coppia (solo presenti come genitori)", valuation_factor: 1, sort_order: 4, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
 Question.create!(name: "Differenza tra fratelli", question_text: "Ridotta differenza d’età tra i fratelli: meno di 18 mesi oppure gemelli", valuation_factor: 1, sort_order: 5, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
 Question.create!(name: "Fratelli più grandi", question_text: "Presenza di fratelli più grandi che impegnano tanto (carattere molto esigente e difficile da gestire, malattia, autismo, handicap, ...)", valuation_factor: 1, sort_order: 6, question_category: QuestionCategory.where(name: "Fattori di stress familiari").first)
@@ -53,7 +53,7 @@ Question.create!(name: "Non presenti", question_text: "Famiglia, nonni, zii lont
 
 QuestionCategory.create!(name: "Fattori di stress sociale", info: "Fattori di stress sociale", sort_order: 4, language: Language.where(name: "it").first)
 
-Question.create!(name: "Poca integrazione sociale", question_text: "Poca integrazione sociale, pochi contatti al di fuorì della famiglia, pochi contatti con famiglie con bambini della stessa età", valuation_factor: 1, sort_order: 1, question_category: QuestionCategory.where(name: "Fattori di stress sociale").first)
+Question.create!(name: "Poca integrazione sociale", question_text: "Poca integrazione sociale, pochi contatti al di fuori della famiglia, pochi contatti con famiglie con bambini della stessa età", valuation_factor: 1, sort_order: 1, question_category: QuestionCategory.where(name: "Fattori di stress sociale").first)
 Question.create!(name: "extrafamigliare", question_text: "Poco sostegno extrafamigliare: scarso aiuto dei parenti o vicini", valuation_factor: 1, sort_order: 2, question_category: QuestionCategory.where(name: "Fattori di stress sociale").first)
 Question.create!(name: "Poco in italiano", question_text: "Si esprime poco in italiano o non si esprime proprio", valuation_factor: 1, sort_order: 3, question_category: QuestionCategory.where(name: "Fattori di stress sociale").first)
 Question.create!(name: "Criminalità", question_text: "Contesto sociale difficoltoso: violenza, droga, prostituzione, criminalità", valuation_factor: 6, sort_order: 4, question_category: QuestionCategory.where(name: "Fattori di stress sociale").first)
@@ -72,7 +72,7 @@ QuestionCategory.create!(name: "Fattori protettivi", info: "Fattori protettivi",
 Question.create!(name: "Aiuti nel contesto sociale", question_text: "Importanti aiuti nel contesto sociale", valuation_factor: -1, sort_order: 1, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
 Question.create!(name: "Persone al di fuorì", question_text: "Persone al di fuori della famiglia molto interessati al bambino", valuation_factor: -1, sort_order: 2, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
 Question.create!(name: "Clima familiare positivo", question_text: "Clima familiare molto positivo", valuation_factor: -1, sort_order: 3, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
-Question.create!(name: "Assistente", question_text: "Accetta e/o ricerca aiuti (psicologo, assistente sociale, ...), esiste una rete itorno alla famiglia", valuation_factor: -1, sort_order: 4, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
+Question.create!(name: "Assistente", question_text: "Accetta e/o ricerca aiuti (psicologo, assistente sociale, ...), esiste una rete intorno alla famiglia", valuation_factor: -1, sort_order: 4, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
 
 
 AddressCategory.create!(name: "Medici", description: "Medici. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ullam voluptatibus, corrupti neque nihil? Aspernatur ad cumque culpa deserunt velit provident, facere corporis iste odio delectus molestias, porro cupiditate minus!", sort_order: 1, language: Language.where(name: "it").first)

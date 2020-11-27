@@ -70,7 +70,7 @@ Question.create!(name: "Situazione finanziaria", question_text: "Situazione fina
 QuestionCategory.create!(name: "Fattori protettivi", info: "Fattori protettivi", sort_order: 6, language: Language.where(name: "it").first)
 
 Question.create!(name: "Aiuti nel contesto sociale", question_text: "Importanti aiuti nel contesto sociale", valuation_factor: -1, sort_order: 1, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
-Question.create!(name: "Persone al di fuorì", question_text: "Persone al di fuori della famiglia molto interessati al bambino", valuation_factor: -1, sort_order: 2, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
+Question.create!(name: "Persone al di fuori", question_text: "Persone al di fuori della famiglia molto interessati al bambino", valuation_factor: -1, sort_order: 2, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
 Question.create!(name: "Clima familiare positivo", question_text: "Clima familiare molto positivo", valuation_factor: -1, sort_order: 3, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
 Question.create!(name: "Assistente", question_text: "Accetta e/o ricerca aiuti (psicologo, assistente sociale, ...), esiste una rete intorno alla famiglia", valuation_factor: -1, sort_order: 4, question_category: QuestionCategory.where(name: "Fattori protettivi").first)
 

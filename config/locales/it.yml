@@ -44,6 +44,10 @@ it:
     head_title: Chi siamo
     title: PARENT AS TEACHERS - PAT IMPARO CON I GENITORI
     more_information: Maggiori informazioni
+  admin:
+    title: Admin
+    subtitle: "Total Website Visits:"
+    back: Back
   quicklinks:
    all_contacts: Tutti contatti
    about_us: Chi siamo

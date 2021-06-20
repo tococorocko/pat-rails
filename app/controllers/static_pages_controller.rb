@@ -23,6 +23,6 @@ class StaticPagesController < ApplicationController
   end
 
   def admin
-    @visits = Ahoy::Visit.all
+    @visits = Ahoy::Visit.order(started_at: :desc)
   end
 end

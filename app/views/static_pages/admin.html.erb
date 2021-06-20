@@ -1,0 +1,37 @@
+<%= render "layouts/quicklinks" %>
+<div id="menu">
+  <%= render 'partials/logo' %>
+  <div class="content">
+    <div class="inner">
+      <h1 class="major"><%= t("admin.title") %></h1>
+      <h2 class="uppercase"><%= t("admin.subtitle") %> <%= @visits.count %></h2>
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Time</th>
+            <th scope="col">Device</th>
+            <th scope="col">Browser</th>
+            <th scope="col">User Agent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @visits.each_with_index do |visit, i| %>
+          <tr>
+            <th scope="col"><%= i + 1 %></th>
+              <td><%= visit.started_at.in_time_zone('Europe/Berlin').strftime('%a %F %T') %></td>
+              <td><%= visit.device_type %></td>
+              <td><%= visit.browser %></td>
+              <td><%= visit.user_agent %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="controls" class="nav">
+    <div class="control-link">
+      <%= link_to t("admin.back"), root_path %>
+    </div>
+  </div>
+</div>

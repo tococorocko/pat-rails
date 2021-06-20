@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get '/question-2', to: 'static_pages#question_2'
     get '/about', to: 'static_pages#about'
     get '/contact', to: 'static_pages#contact'
+    get '/admin', to: 'static_pages#admin'
     get '/screening', to: 'questions#index'
     get '/address-categories', to: 'address_categories#index'
     post '/address-categories', to: 'address_categories#index'

@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  http_basic_authenticate_with :name => "pat_admin", :password => "Admin_Area_PAT_Password", only: :admin
+
   def about
   end
 
@@ -18,5 +20,9 @@ class StaticPagesController < ApplicationController
   def screening
     @val_1 = params[:val_1].to_i
     @val_2 = params[:val_2].to_i
+  end
+
+  def admin
+    @visits = Ahoy::Visit.all
   end
 end

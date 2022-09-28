@@ -4,9 +4,9 @@ Ruby on Rails Application for Parent as Teachers
 
 ## Versions
 
-Ruby: `ruby '2.7.1'`
+Ruby: `ruby '3.1.2'`
 
-Rails: `rails '~> 6.0.3.1'`
+Rails: `rails '~> 7.0'`
 
 Postgresql: `psql 12.3`
 
@@ -22,12 +22,15 @@ bundle exec rails db:seed
 #### Local development
 
 ```bash
-bundle exec rails s
-bin/webpack-dev-server
+bin/dev
 ```
 
-<!-- How to run the test suite -->
-<!-- bundle exec rspec -->
+Build assets:
+
+```bash
+yarn build --progress --color
+```
+
 
 #### Deployment instructions
 

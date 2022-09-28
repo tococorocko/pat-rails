@@ -8,6 +8,9 @@ const mode = process.env.NODE_ENV === 'development' ? 'development' : 'productio
 module.exports = {
   mode,
   devtool: "source-map",
+  optimization: {
+    moduleIds: 'deterministic',
+  },
   entry: {
     application: "./app/javascript/application.js",
     site: "./app/assets/stylesheets/application.scss",

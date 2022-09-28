@@ -1,27 +1,42 @@
 # README
-Ruby version: ruby '2.7.1'
-Rails version: rails '~> 6.0.3.1'
-Postgresql: psql 12.3
 
-** Configuration
+Ruby on Rails Application for Parent as Teachers
 
-Database creation
+## Versions
+
+Ruby: `ruby '3.1.2'`
+
+Rails: `rails '~> 7.0'`
+
+Postgresql: `psql 12.3`
+
+## Setup
+#### Database creation
+
+```bash
 bundle exec rails db:create
 bundle exec rails db:migrate
 bundle exec rails db:seed
+```
 
-bundle exec rails s
-bin/webpack-dev-server
+#### Local development
 
-How to run the test suite
-<!-- bundle exec rspec -->
+```bash
+bin/dev
+```
 
-Deployment instructions
+Build assets:
+
+```bash
+yarn build --progress --color
+```
+
+
+#### Deployment instructions
+
+```bash
 git push master
 git push heroku master
 heroku run rake db:migrate heroku run rake db:seed
 heroku open
-
-System dependencies
-...
-
+```

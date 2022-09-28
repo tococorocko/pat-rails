@@ -2,17 +2,32 @@
   "name": "pat_rails",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "^5.4",
+    "@rails/activestorage": "^7.0.0",
+    "@rails/ujs": "^7.0.0",
+    "babel-loader": "^8.2.5",
     "bootstrap": "^4.5.2",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
     "jquery": "^3.5.1",
+    "mini-css-extract-plugin": "^2.6.1",
     "popper.js": "^1.16.1",
-    "turbolinks": "^5.2.0"
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "turbolinks": "^5.2.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-remove-empty-scripts": "^1.0.1"
   },
   "version": "0.1.0",
-  "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
+  "scripts": {
+    "build": "webpack --config ./config/webpack/webpack.config.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

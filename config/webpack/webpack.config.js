@@ -11,6 +11,11 @@ module.exports = {
   optimization: {
     moduleIds: 'deterministic',
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   entry: {
     application: "./app/javascript/application.js",
     site: "./app/assets/stylesheets/application.scss",

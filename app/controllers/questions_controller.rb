@@ -1,11 +1,13 @@
 class QuestionsController < ApplicationController
+  include LanguageSwitchable
+
   def index
-    italian = Language.find_by_name("it")
-    @negative_factors = QuestionCategory.where(language: italian)
-                                        .where.not(name: "Fattori protettivi")
+    lang = Language.find_by_name(params[:locale]) || "it"
+    @negative_factors = QuestionCategory.where(language: lang)
+                                        .where.not(name: "protection")
                                         .sort_by { |category| category.sort_order }
-    @positive_factors = QuestionCategory.where(language: italian)
-                                        .where(name: "Fattori protettivi")
+    @positive_factors = QuestionCategory.where(language: lang)
+                                        .where(name: "protection")
                                         .sort_by { |category| category.sort_order }
   end
 end

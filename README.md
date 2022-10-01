@@ -1,6 +1,6 @@
 # README
 
-Ruby on Rails Application for Parent as Teachers
+Ruby on Rails Application for Parents as Teachers
 
 ## Versions
 
@@ -37,6 +37,7 @@ yarn build --progress --color
 ```bash
 git push master
 git push heroku master
-heroku run rake db:migrate heroku run rake db:seed
+heroku run rake db:migrate
+heroku run rake db:seed
 heroku open
 ```

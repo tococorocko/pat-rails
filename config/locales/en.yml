@@ -1,0 +1,74 @@
+en:
+  meta:
+    description: PAT - Parents as Teachers Screening
+    author: PAT - Parents as Teachers
+  continue: Continue
+  home:
+    title: PAT - Parents as Teachers
+    subtitle_html: |
+      This screening creates the opportunity to identify families with  stress factors, and to indicate possible supports accordingly to their specific needs.
+    questionnaire: Screening
+    about_us: About us
+  about_us:
+    head_title: About us
+    title: PARENTS AS TEACHERS
+    more_information: Further information
+    paragraph_1_html: |
+      <p>Parents as Teachers promotes the early development, learning, and health of children in early childhood by supporting and involving parents and caregivers.</p>
+      <p>Parents have an important influence on their child's development and learning. With the help of the PAT Project - Parent as Teachers, families are offered the opportunity to receive the information and support they need to play their parental role to the fullest.</p>
+    subtitle_1: Who is the project targeted at
+    paragraph_2_html: |
+      <p>Targets pregnant women and families with children between 0 and 8 months at the time of referral, with possible/eventual personal, family, social or material difficulties.</p>
+      <p>The goal is to provide early support to families in potentially difficult starting conditions.</p>
+    subtitle_3: How PAT works
+    paragraph_3_html: |
+      <p>The PAT Parent Counselor generally visits families at their homes every 2 weeks for the duration of an hour until the child is 2 or 3 years old. Opportunities are also given to participate in parent/child group meetings.</p>
+      <p class="bold">More information at: <a target="_blank" href="https://www.pat-ti.ch">https://www.pat-ti.ch</a></p>
+    subtitle_4: How one can participate in the project
+    paragraph_4_html: |
+      <p>Both professionals and families themselves can apply by calling the number <a target="_blank" href="tel:0041793753791">+41 79 375 37 91</a> or by writing to <a target="_blank" href="mailto:info@pat-ti.ch">info@pat-ti.ch</a>.</p>
+      <p>If the family is interested, the PAT coordinator contacts the parents for an initial informational meeting, during which the project is presented. If the family is interested, the PAT Parent Counselor makes contact with the family and arranges at least two admission meetings (without commitment). Only after these 3 meetings can the family enter the project and commit to be part of it for at least 2 years.</p>
+      <p class="bold">The project is voluntary and free for families.</p>
+    subtitle_5: What families say about us
+    paragraph_5_html: |
+      <p class="citation">"Thanks to my counselor, I understood so much about my son, but most importantly, I got to know myself much better..."</p>
+      <p class="citation">"Without its help and support I would have punished my son when he did not obey, I did not know how to handle him..."</p>
+      <p class="citation">"It gave me a lot of play ideas, with household items that I would have thrown away..."</p>
+      <p class="citation">"I don't know if my son would still be with me..."</p>
+      <p class="citation">"It helped me to believe in myself..."</p>
+  admin:
+    title: Admin
+    subtitle: "Total Website Visits:"
+    back: Back
+  quicklinks:
+   all_contacts: All contacts
+   about_us: About us
+  question_1:
+    head_title: Necessity
+    question: How do you assess the family's need for support?
+    very_low: Very low
+    low: Low
+    rather_high: Medium
+    high: High
+    very_high: Very High
+  question_2:
+    head_title: Conviction
+    question: How confident do you feel in your assessment?
+    very_unsure: Extremely uncertain
+    unsure: Uncertain
+    little_sure: Rather uncertain
+    sure: Certain
+    very_sure: Extremely certain
+  addresses:
+    OVK: OVK
+    ticino: Ticino
+    head_title: Primary Prevention
+    all_contacts: Primary Prevention
+    medium_risk: Secondary Prevention
+    medium_risk_title: Secondary Prevention
+    high_risk: Tertiary Prevention
+    high_risk_title: Tertiary Prevention
+  screening:
+    title: Screening
+    subtitle_stress: "Child and family stress factors"
+    subtitle_protectiv: Protective factors

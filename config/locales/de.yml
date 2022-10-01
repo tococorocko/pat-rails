@@ -1,2 +1,74 @@
 de:
-  hello: "Hallo"
+  meta:
+    description: PAT - Mit Eltern Lernen
+    author: PAT - Parents as Teachers - Mit Eltern Lernen
+  continue: Weiter
+  home:
+    title: PAT - Mit Eltern Lernen
+    subtitle_html: |
+      Dieser Fragebogen / Screening ermöglicht es Familien mit unterschiedlichen Belastungsfaktoren zu identifizieren und eine bedarfsorientierte Begleitung zu ermitteln.
+    questionnaire: Fragebogen
+    about_us: Über uns
+  about_us:
+    head_title: Über uns
+    title: PARENTS AS TEACHERS - Mit Eltern Lernen
+    more_information: Weitere Informationen
+    paragraph_1_html: |
+      <p>"Parents as Teachers" (Mit Eltern Lernen) fördert die frühe Entwicklung, das Lernen und die Gesundheit von Kindern in der frühen Kindheit durch die Unterstützung und Einbeziehung von Eltern und Betreuungspersonen.</p>
+      <p>Die Eltern haben einen wichtigen Einfluss auf die Entwicklung und das Lernen ihres Kindes. Mit Hilfe des PAT-Projekts - Mit Eltern Lernen - wird den Familien die Möglichkeit geboten, die Informationen und die Unterstützung zu erhalten, die sie benötigen, um ihre Elternrolle bestmöglich auszufüllen.</p>
+    subtitle_1: An wen richtet sich das Projekt?
+    paragraph_2_html: |
+      <p>Es richtet sich an schwangere Frauen und Familien mit Kindern, die zum Zeitpunkt der Überweisung zwischen 0 und 8 Monaten alt sind und möglicherweise persönliche, familiäre, soziale oder materielle Schwierigkeiten haben.</p>
+      <p>Ziel ist die frühzeitige Unterstützung von Familien in potenziell schwierigen Ausgangssituationen.</p>
+    subtitle_3: Wie funktioniert PAT?
+    paragraph_3_html: |
+      <p>Der PAT-Elternberater besucht die Familien in der Regel alle zwei Wochen für eine Stunde zu Hause, bis das Kind zwei oder drei Jahre alt ist. Das Kind erhält auch die Möglichkeit, an Eltern-Kind-Gruppen teilzunehmen.</p>
+      <p class="bold">Weitere Informationen finden Sie unter: <a target="_blank" href="https://www.pat-ti.ch">https://www.pat-ti.ch</a></p>
+    subtitle_4: Wie können Sie am Projekt teilnehmen?
+    paragraph_4_html: |
+      <p>Sowohl Fachleute als auch die Familien selbst können sich telefonisch anmelden unter <a target="_blank" href="tel:0041793753791">+41 79 375 37 91</a> oder schriftlich per <a target="_blank" href="mailto:info@pat-ti.ch">info@pat-ti.ch</a>.</p>
+      <p>Ist die Familie interessiert, nimmt der PAT-Koordinator Kontakt zu den Eltern auf und führt ein erstes Informationsgespräch, bei dem das Projekt vorgestellt wird. Wenn die Familie interessiert ist, nimmt der PAT-Elternberater Kontakt mit der Familie auf und organisiert mindestens zwei unverbindliche Aufnahmegespräche. Erst nach diesen drei Treffen kann die Familie dem Projekt beitreten und sich verpflichten, mindestens zwei Jahre lang daran teilzunehmen.</p>
+      <p class="bold">Das Projekt ist freiwillig und für Familien kostenlos.</p>
+    subtitle_5: Was Familien über uns sagen
+    paragraph_5_html: |
+      <p class="citation">"Dank meines Beraters habe ich so viel über meinen Sohn verstanden, aber vor allem habe ich mich selbst viel besser kennengelernt..."</p>
+      <p class="citation">"Ohne seine Hilfe und Unterstützung hätte ich meinen Sohn bestraft, wenn er nicht gehorcht hätte. Ich wusste nicht, wie ich mit ihm umgehen sollte..."</p>
+      <p class="citation">"Es hat mir viele Spielideen gegeben, mit Haushaltsgegenständen, die ich sonst weggeworfen hätte..."</p>
+      <p class="citation">"Ich weiß nicht, ob mein Sohn noch bei mir sein würde..."</p>
+      <p class="citation">"Es hat mir geholfen, an mich selbst zu glauben..."</p>
+  admin:
+    title: Admin
+    subtitle: "Total Website Visits:"
+    back: Back
+  quicklinks:
+   all_contacts: Alle Kontakte
+   about_us: Über uns
+  question_1:
+    head_title: Bedarf
+    question: Wie schätzen Sie den Bedarf der Familie an Unterstützung ein?
+    very_low: Sehr gering
+    low: Gering
+    rather_high: Mittel
+    high: Hoch
+    very_high: Sehr hoch
+  question_2:
+    head_title: Überzeugung
+    question: Wie sicher fühlen Sie sich bei Ihrer Einschätzung?
+    very_unsure: Sehr unsicher
+    unsure: Unsicher
+    little_sure: Eher sicher
+    sure: Sicher
+    very_sure: Sehr sicher
+  addresses:
+    ovk: OVK
+    ticino: Tessin
+    head_title: Primärprävention
+    all_contacts: Primärprävention
+    medium_risk: Sekundärprävention
+    medium_risk_title: Sekundärprävention
+    high_risk: Tertiärprävention
+    high_risk_title: Tertiärprävention
+  screening:
+    title: Fragebogen / Screening
+    subtitle_stress: "Kindliche und familiäre Belastungen"
+    subtitle_protectiv: Schutzfaktoren

@@ -27,7 +27,7 @@ Question.create!(
 )
 Question.create!(
     name: "komplizierte ",
-    question_text: "Erschwerte oder komplizierte Geburt (Frühgbeburt, lange Geburt, Notfallkaiserschnitt, Vakum-, Zangengeburt,…)",
+    question_text: "Erschwerte oder komplizierte Geburt (Frühgeburt, lange Geburt, Notfallkaiserschnitt, Vakum-, Zangengeburt,…)",
     valuation_factor: 1,
     sort_order: 3,
     question_category: category_1
@@ -90,7 +90,7 @@ Question.create!(name: "Flucht-/Kriegserfahrung",
     question_category: category_2
 )
 Question.create!(name: "Physische und psychische Gesundheitsprobleme",
-    question_text: "Physische und psychische Gesundheitsprobleme: chronische Erkrankungen, Behinderungen, Depression, Essstörung, Blindheit, Gehörlosigkeit,...)",
+    question_text: "Physische und psychische Gesundheitsprobleme: chronische Erkrankungen, Behinderungen, Depression, Essstörung, Blindheit, Gehörlosigkeit, ...)",
     valuation_factor: 6,
     sort_order: 6,
     question_category: category_2
@@ -114,7 +114,7 @@ Question.create!(name: "Alter der Eltern",
     question_category: category_2
 )
 Question.create!(name: "Schwierigkeiten bei der Planung",
-    question_text: "Schwierigkeiten bei der Planung und/oder Organisation des Alltages (wiederholtes Vergessen von Terminen, Schwierigkeiten bei der Einhaltung von Rhythmus und Ordnung,…)",
+    question_text: "Schwierigkeiten bei der Planung und/oder Organisation des Alltages (wiederholtes Vergessen von Terminen, Schwierigkeiten bei der Einhaltung von Rhythmus und Ordnung, ...)",
     valuation_factor: 1,
     sort_order: 10,
     question_category: category_2
@@ -172,7 +172,7 @@ Question.create!(name: "Geringer Altersunterschied zwischen Geschwistern",
     question_category: category_3
 )
 Question.create!(name: "Ältere Geschwister mit Besonderheiten",
-    question_text: "Ältere Geschwister, die in der Familie leben mit Besonderheiten (erzieherisch anspruchsvoll--> SPF involviert, physisch oder psychische Krankheit, wie Autismus oder andere körperliche Einschränkungen,...)",
+    question_text: "Ältere Geschwister, die in der Familie leben mit Besonderheiten (erzieherisch anspruchsvoll--> SPF involviert, physisch oder psychische Krankheit, wie Autismus oder andere körperliche Einschränkungen, ...)",
     valuation_factor: 1,
     sort_order: 8,
     question_category: category_3
@@ -223,7 +223,7 @@ Question.create!(name: "Beide Elternteile Ausländer",
     question_category: category_4
 )
 Question.create!(name: "Dissoziales Umfeld",
-    question_text: "Dissoziales Umfeld: Gewalt, Drogen, Prostitution, Kriminalität,…",
+    question_text: "Dissoziales Umfeld: Gewalt, Drogen, Prostitution, Kriminalität, ...",
     valuation_factor: 6,
     sort_order: 6,
     question_category: category_4
@@ -287,7 +287,7 @@ Question.create!(
 )
 Question.create!(
     name: "Aufmerksame, interessierte Drittpersonen",
-    question_text: "Aufmerksame, interessierte Drittpersonen für das Kind (Gotti, Götti, Nachbarn,…)",
+    question_text: "Aufmerksame, interessierte Drittpersonen für das Kind (Gotti, Götti, Nachbarn, ...)",
     valuation_factor: -1,
     sort_order: 2,
     question_category: category_6
@@ -301,7 +301,7 @@ Question.create!(
 )
 Question.create!(
     name: "sucht Hilfe",
-    question_text: "Akzeptiert und / oder sucht Hilfe (Therapien, Beratungsstellen, Kita, ...) es gibt ein vorhandenes Netzwerk für die Familie",
+    question_text: "Akzeptiert und/oder sucht Hilfe (Therapien, Beratungsstellen, Kita, ...) es gibt ein vorhandenes Netzwerk für die Familie",
     valuation_factor: -1,
     sort_order: 4,
     question_category: category_6

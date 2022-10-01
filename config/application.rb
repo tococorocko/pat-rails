@@ -34,7 +34,7 @@ module PatRails
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    config.i18n.available_locales = [:it, :de, :en]
+    config.i18n.available_locales = [:de, :en, :it]
     config.i18n.default_locale = :it
     config.i18n.fallbacks = true
   end

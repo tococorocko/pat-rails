@@ -5,14 +5,16 @@
 
 <div id="menu">
   <%= render 'partials/logo' %>
-  <div id="controls" class="nav">
-    <div class="control-link <%= @selected_ovk %>">
-      <%= link_to t("addresses.ovk"), address_categories_path(organization: "ovk") %>
+  <% if @new_feature %>
+    <div id="controls" class="nav">
+      <div class="control-link <%= @selected_ovk %>">
+        <%= link_to t("addresses.ovk"), address_categories_path(organization: "ovk") %>
+      </div>
+      <div class="control-link <%= @selected_ti %>">
+        <%= link_to t("addresses.ticino"), address_categories_path(organization: "ti") %>
+      </div>
     </div>
-    <div class="control-link <%= @selected_ti %>">
-      <%= link_to t("addresses.ticino"), address_categories_path(organization: "ti") %>
-    </div>
-  </div>
+  <% end %>
   <div class="content">
     <div class="inner">
       <% if @selected_organization == "ovk" %>

@@ -27,7 +27,7 @@ Question.create!(
 )
 Question.create!(
     name: "Difficult or complicated birth",
-    question_text: "Difficult or complicated birth (premature birth, prolonged delivery, emergency caesarean section, vacuum birth, forceps birth,...)",
+    question_text: "Difficult or complicated birth (premature birth, prolonged delivery, emergency caesarean section, vacuum birth, forceps birth, ...)",
     valuation_factor: 1,
     sort_order: 3,
     question_category: category_1
@@ -89,7 +89,7 @@ Question.create!(name: "Experiences of war and/or fleeing a country",
     question_category: category_2
 )
 Question.create!(name: "Physical or psychological issues",
-    question_text: "Physical or psychological issues: chronic diseases, disabilities, depression, eating disorders, blindness, deafness,...)",
+    question_text: "Physical or psychological issues: chronic diseases, disabilities, depression, eating disorders, blindness, deafness, ...)",
     valuation_factor: 6,
     sort_order: 6,
     question_category: category_2
@@ -113,7 +113,7 @@ Question.create!(name: "Age of parents",
     question_category: category_2
 )
 Question.create!(name: "Difficulties in planning",
-    question_text: "Difficulties in daily life planning (repeatedly forgetting  appointments, difficulties in keeping daily routines, lack of tidiness,...).",
+    question_text: "Difficulties in daily life planning (repeatedly forgetting  appointments, difficulties in keeping daily routines, lack of tidiness, ...)",
     valuation_factor: 1,
     sort_order: 10,
     question_category: category_2
@@ -171,7 +171,7 @@ Question.create!(name: "Little age difference between siblings",
     question_category: category_3
 )
 Question.create!(name: "Older siblings with challenging issues",
-    question_text: "Older siblings with challenging issues (behavioural issues, physical or mental illness such as autism or disabilities).",
+    question_text: "Older siblings with challenging issues (behavioural issues, physical or mental illness such as autism or disabilities)",
     valuation_factor: 1,
     sort_order: 8,
     question_category: category_3
@@ -209,8 +209,8 @@ Question.create!(name: "Little support outside the family",
     sort_order: 3,
     question_category: category_4
 )
-Question.create!(name: "Poor ol little knowledge of local language",
-    question_text: "Poor ol little knowledge of local language ",
+Question.create!(name: "Poor or little knowledge of local language",
+    question_text: "Poor or little knowledge of local language ",
     valuation_factor: 1,
     sort_order: 4,
     question_category: category_4
@@ -222,7 +222,7 @@ Question.create!(name: "Both parents are foreign",
     question_category: category_4
 )
 Question.create!(name: "Challenging social environment",
-    question_text: "Challenging social environment: violence, drugs, prostitution, crime,…",
+    question_text: "Challenging social environment: violence, drugs, prostitution, crime, ...",
     valuation_factor: 6,
     sort_order: 6,
     question_category: category_4
@@ -290,8 +290,8 @@ Question.create!(
     question_category: category_6
 )
 Question.create!(
-    name: "Third party interested in the child (godmother, father, neighbours,..)",
-    question_text: "Third party interested in the child (godmother, father, neighbours,..)",
+    name: "Third party interested in the child (godmother, father, neighbours, ...)",
+    question_text: "Third party interested in the child (godmother, father, neighbours, ...)",
     valuation_factor: -1,
     sort_order: 2,
     question_category: category_6

@@ -41,3 +41,26 @@ heroku run rake db:migrate
 heroku run rake db:seed
 heroku open
 ```
+
+#### Docker
+
+To run docker locally:
+
+Set Database crenentials for `config/database.yml`:
+```bash
+cp env.sample .env
+```
+
+Build/run Container with rails and postgres image:
+```bash
+docker-compose up
+```
+
+Starts the app on port 3000. init.sql only runs on the first run. DOCKERFILE sets up ruby on rails app, docker-compose.yml sets up container with ruby on rails app and postgresql database.
+
+
+Run migrations:
+
+```bash
+docker-compose exec app bundle exec rake db:setup db:migrate
+```

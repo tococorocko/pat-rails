@@ -1,0 +1,1 @@
+-- run once when setting up docker db

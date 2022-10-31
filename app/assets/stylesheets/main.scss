@@ -222,24 +222,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
   z-index: 3;
 }
 
-@media screen and (max-width: 1680px) {
-  #wrapper, #quicklinks {
-    padding: 3rem 2rem 5rem;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #wrapper, #quicklinks {
-    padding: 2rem 1rem;
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-  #wrapper, #quicklinks {
-    padding: 1rem 1rem;
-  }
-}
 
 /* Header */
 #menu {
@@ -318,18 +300,17 @@ button, [type="button"], [type="reset"], [type="submit"] {
   padding: 3rem 10rem;
   max-height: 60rem;
   overflow: hidden;
+  a {
+    text-decoration: underline dotted;
+    i {
+      font-size: 1rem;
+    }
+  }
 }
 
 #menu .content .inner > :last-child {
   margin-bottom: 0;
 }
-
-// #menu .content p {
-//   // text-transform: uppercase;
-//   letter-spacing: 0.2rem;
-//   font-size: 1rem;
-//   line-height: 2;
-// }
 
 #menu .content .address-card {
     margin: 3rem auto 1rem;
@@ -388,7 +369,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   min-width: 13rem;
   max-width: 14rem;
   padding: 0 1.2rem 0 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-bottom: 0;
   transition: all 0.5s ease 0s;
   color: #5a6268;
@@ -420,7 +401,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   }
 }
 
-#menu  #controls .control-link a:hover {
+#menu #controls .control-link a:hover, #menu #controls .control-link.selected a {
   background-color: #b7c221;
   cursor: pointer;
   text-decoration: none;
@@ -540,6 +521,9 @@ body.preload #menu .content .inner {
   a {
     text-decoration: underline dotted;
     color: #b7c221;
+    i {
+      font-size: 0.8rem;
+    }
   }
   .bold {
     padding: 15px;
@@ -589,7 +573,8 @@ body.preload #menu .content .inner {
       margin-left: 5px;
     }
   }
-  .btn {
+
+  .btn-default {
     font-weight: 400;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -704,23 +689,47 @@ a.button {
   }
 }
 
+#quicklinks-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  #language-switcher {
+    .btn {
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 #quicklinks {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  padding: 4rem 4rem;
-  width: 4rem;
-  height: 4rem;
-  .dropdown-item {
-    color: #5a6268;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    &.active, &:active, &:hover {
-      background-color: #b7c221;
-      cursor: pointer;
-      text-decoration: none;
-      color: #04968D;
+  right: 1rem;
+  top: 4rem;
+  #menu-toggle i {
+    font-size: 22px;
+  }
+  #language-switcher .btn {
+    font-size: 18px
+  }
+}
+
+#quicklinks, #quicklinks-overlay {
+  #menu-toggle, #language-switcher {
+    .btn {
+      color: #0066a4;
+    }
+    .dropdown-item {
+      color: #5a6268;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      &.active, &:active, &:hover {
+        background-color: #b7c221;
+        cursor: pointer;
+        text-decoration: none;
+        color: #04968D;
+      }
     }
   }
 }

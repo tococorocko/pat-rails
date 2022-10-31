@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  include LanguageSwitchable
+
   http_basic_authenticate_with :name => "pat_admin", :password => "Admin_Area_PAT_Password", only: :admin
 
   def about

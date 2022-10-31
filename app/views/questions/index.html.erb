@@ -1,12 +1,15 @@
 <% page_heading("Screening") %>
 
 <div id="main">
+  <div id="quicklinks-overlay">
+    <%= render 'layouts/language_switcher' %>
+  </div>
   <div class="close-btn">
     <%= link_to "", question_2_path(val_1: @val_1), class:"close" %>
   </div>
    <div id="screening">
-    <h2 class="major">Screening</h2>
-    <h3>Fattori di stress per il bambino/a e la sua famiglia</h3>
+    <h2 class="major"><%= t("screening.title") %></h2>
+    <h3><%= t("screening.subtitle_stress") %></h3>
     <%= form_with url: address_categories_path, local: true do %>
       <% @negative_factors.each do |category| %>
         <div class="card">
@@ -23,7 +26,7 @@
           </div>
         </div>
       <% end %>
-      <h3 class="subtitle">Fattori protettivi</h3>
+      <h3 class="subtitle"><%= t("screening.subtitle_protectiv") %></h3>
       <% @positive_factors.each do |category| %>
         <div class="card">
           <div class="card-body">
@@ -36,7 +39,7 @@
           </div>
         </div>
       <% end %>
-      <%= submit_tag(t("continue"), class:"btn") %>
+      <%= submit_tag(t("continue"), class:"btn btn-default") %>
     <% end %>
    </div>
 </div>

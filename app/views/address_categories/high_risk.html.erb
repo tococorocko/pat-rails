@@ -2,53 +2,22 @@
 
 <div id="main">
   <div class="close-btn">
-    <%= link_to "", :back, class:"close" %>
+    <%= link_to "", address_categories_path(organization: @selected_organization), class:"close" %>
   </div>
   <div id="addresses">
     <h2 class="major"><%= t("addresses.high_risk") %></h2>
-    <p>Secondo il punteggio dello screening fatto per questa famiglia si consiglia la prevenzione terziaria oltre a quella primaria   <%= link_to "(vedi tutti contatti)", address_categories_path %>.</p>
-    <p>I fattori di stress sono numerosi, uno sviluppo sano del loro bambino potrebbe essere compromesso.</p>
-    <p>Il progetto PAT può intervenire in questi casi, assieme a una rete presente o creata intorno alla famiglia.</p>
-    <p>Voi come professionisti, che conoscete la famiglia, potete consigliarlo e chiedere ai genitori il permesso di essere contattati dal coordinatore del progetto per una presentazione a domicilio.
-    </p>
-    <p>Se la famiglia è interessata, si svolgeranno almeno un paio di visite di ammissione cosicché la famiglia possa capire di cosa si tratta. Insieme si deciderà se proseguire con il progetto PAT oppure coinvolgere altri servizi.
-    </p>
+    <% if @selected_organization == "ovk" %>
+      <p>Entsprechend dem Screening-Score dieser Familie wird eine Tertiärprävention empfohlen. Bitte wenden Sie sich je nach Wohnort an die Mütter- und Väterberatung des Ostschweizer Vereins für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) oder an die Mütter- und Väterberatung Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
+    <% else %>
+      <p>Secondo il punteggio dello screening fatto per questa famiglia si consiglia la prevenzione terziaria oltre a quella primaria (<%= link_to "vedi tutti i contatti", address_categories_path(organization: @selected_organization) %>).</p>
+      <p>I fattori di stress sono numerosi, uno sviluppo sano del loro bambino potrebbe essere compromesso.</p>
+      <p>Il progetto PAT può intervenire in questi casi, in collaborazione a una rete presente o da creare intorno alla famiglia.</p>
+      <p>Voi come professionisti, che conoscete la famiglia, potete consigliarlo e chiedere ai genitori il permesso di essere contattati dal coordinatore del progetto per una presentazione a domicilio.</p>
+      <p>Se la famiglia è interessata, si svolgeranno almeno un paio di visite di ammissione cosicché la famiglia possa capire di cosa si tratta. Insieme si deciderà se integrare il progetto PAT e/o coinvolgere altri servizi.</p>
 
-    <%= render 'address_categories/medium_risk_addresses' %>
-
-    <div class="card">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">UAP - Settore famiglie e minorenni</h6>
-        <div>
-          <p class="card-text">6500 Bellinzona</p>
-          <a href="tel:+41 91 814 75 11"><i class="fas fa-phone-alt"></i>+41 91 814 75 11</a>
-          <a href="mailto:dss-minorenni.bellinzona@ti.ch"><i class="fas fa-envelope"></i>dss-minorenni.bellinzona@ti.ch</a>
-        </div>
-        <hr class="sm">
-        <div>
-          <p class="card-text">6600 Locarno</p>
-          <a href="tel:+41 91 816 05 61"><i class="fas fa-phone-alt"></i>+41 91 816 05 61</a>
-          <a href="mailto:dss-minorenni.locarno@ti.ch"><i class="fas fa-envelope"></i>dss-minorenni.locarno@ti.ch</a>
-        </div>
-        <hr class="sm">
-        <div>
-          <p class="card-text">6900 Paradiso</p>
-          <a href="tel:+41 91 815 75 31"><i class="fas fa-phone-alt"></i>+41 91 815 75 31</a>
-          <a href="mailto:dss-minorenni.lugano@ti.ch"><i class="fas fa-envelope"></i>dss-minorenni.lugano@ti.ch</a>
-        </div>
-        <hr class="sm">
-        <div>
-          <p class="card-text">6950 Mendrisio</p>
-          <a href="tel:+41 91 815 94 01"><i class="fas fa-phone-alt"></i>+41 91 815 94 01</a>
-          <a href="mailto:dss-minorenni.mendrisio@ti.ch"><i class="fas fa-envelope"></i>dss-minorenni.mendrisio@ti.ch</a>
-        </div>
-        <hr class="sm">
-        <div>
-          <a href="https://www4.ti.ch/dss/dasf/uap/chi-siamo/contatti"  target="_blank" ><i class="fas fa-link"></i>https://www4.ti.ch/dss/dasf/uap/chi-siamo/contatti</a>
-        </div>
-      </div>
-    </div>
-
+      <%= render 'address_categories/ticino_medium_risk_addresses' %>
+      <%= render 'address_categories/ticino_high_risk_addresses' %>
+    <% end %>
   </div>
-  <%= link_to t("addresses.all_contacts"), address_categories_path, class:"btn" %>
+  <%= link_to t("addresses.all_contacts"), address_categories_path(organization: @selected_organization), class:"btn btn-default" %>
 </div>

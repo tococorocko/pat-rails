@@ -221,12 +221,6 @@ Question.create!(name: "Both parents are foreign",
     sort_order: 5,
     question_category: category_4
 )
-Question.create!(name: "Challenging social environment",
-    question_text: "Challenging social environment: violence, drugs, prostitution, crime, ...",
-    valuation_factor: 6,
-    sort_order: 6,
-    question_category: category_4
-)
 
 # Category 5
 

@@ -141,8 +141,8 @@ Question.create!(name: "Alleinerziehend / getrennterziehend",
     sort_order: 2,
     question_category: category_3
 )
-Question.create!(name: "belastende Paarkonflikte, drohende Trennung, Trennung",
-    question_text: "belastende Paarkonflikte, drohende Trennung, Trennung",
+Question.create!(name: "Belastende Paarkonflikte, drohende Trennung, Trennung (oder bei getrenntlebenden Eltern Konflikte auf Elternebene)",
+    question_text: "Belastende Paarkonflikte, drohende Trennung, Trennung (oder bei getrenntlebenden Eltern Konflikte auf Elternebene)",
     valuation_factor: 1,
     sort_order: 3,
     question_category: category_3
@@ -216,16 +216,10 @@ Question.create!(name: "Verständigung auf deutsch nicht/kaum möglich",
     sort_order: 4,
     question_category: category_4
 )
-Question.create!(name: "Beide Elternteile Ausländer",
-    question_text: "Beide Elternteile Ausländer",
+Question.create!(name: "Beide Elternteile ausländischer Herkunft",
+    question_text: "Beide Elternteile ausländischer Herkunft",
     valuation_factor: 1,
     sort_order: 5,
-    question_category: category_4
-)
-Question.create!(name: "Dissoziales Umfeld",
-    question_text: "Dissoziales Umfeld: Gewalt, Drogen, Prostitution, Kriminalität, ...",
-    valuation_factor: 6,
-    sort_order: 6,
     question_category: category_4
 )
 

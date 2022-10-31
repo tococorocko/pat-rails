@@ -7,10 +7,10 @@
   <div id="addresses">
     <h2 class="major"><%= t("addresses.medium_risk") %></h2>
     <% if @selected_organization == "ovk" %>
-      <p>Gemäß dem für diese Familie durchgeführten Screening-Score wird neben der Primärprävention (Mütter- und Väterberatung) auch eine Sekundärprävention empfohlen.</p>
-      <p>Wir empfehlen die Anmeldung zum PAT-Programm unter <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"> <i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> oder <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
-      <p>Eine PAT-Elterntrainerin wird dann mit der Familie Kontakt aufnehmen.</p>
-      <p>Nach dem unverbindlichen Informationsgespräch mit der PAT-Elterntrainerin wird gemeinsam entschieden, ob das PAT-Programm geeignet ist. Ansonsten werden geeignete Empfehlungen ausgesprochen.</p>
+      <p>Gemäß dem für diese Familie durchgeführten Screening-Score wird nebst der Primärprävention (Mütter- und Väterberatung) auch eine Sekundärprävention empfohlen.</p>
+      <p>Wir empfehlen die Anmeldung zur Familienbegleitung PAT unter <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"> <i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> oder <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+      <p>Eine PAT-Elterntrainerin wird mit der Familie Kontakt aufnehmen.</p>
+      <p>Nach zwei bis drei Gesprächen mit der PAT-Elterntrainerin wird gemeinsam entschieden, ob die Familienbegleitung PAT geeignet ist.</p>
 
       <%= render 'address_categories/ovk_medium_risk_addresses' %>
     <% else %>
@@ -23,5 +23,12 @@
     <% end %>
 
   </div>
-  <%= link_to t("addresses.all_contacts"), address_categories_path(organization: @selected_organization), class:"btn btn-default" %>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <%= link_to t("addresses.all_contacts"), address_categories_path(organization: @selected_organization), class:"btn btn-default" %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= link_to t("addresses.high_risk"), high_risk_path(organization: @selected_organization), class:"btn btn-default" %>
+    </div>
+  </div>
 </div>

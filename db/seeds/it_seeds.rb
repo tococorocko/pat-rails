@@ -224,12 +224,6 @@ Question.create!(name: "Entrambi i genitori sono stranieri",
     sort_order: 5,
     question_category: category_4
 )
-Question.create!(name: "Criminalità",
-    question_text: "Contesto sociale difficile: violenza, droga, prostituzione, criminalità",
-    valuation_factor: 6,
-    sort_order: 6,
-    question_category: category_4
-)
 
 # Category 5
 

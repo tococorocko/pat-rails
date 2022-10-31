@@ -9,7 +9,7 @@ class AddressCategoriesController < ApplicationController
 
   def index
     valuation_factor = calculate_valuation_factor
-    if valuation_factor > 5
+    if valuation_factor > 6
       redirect_to :high_risk
     elsif valuation_factor > 2
       redirect_to :medium_risk

@@ -44,7 +44,7 @@ input::-moz-focus-inner {
 }
 
 html {
-  font-size: 20px;
+  // font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1rem 0;
-  letter-spacing: 0.2rem;
+  // letter-spacing: 0.2rem;
   &.subtitle {
     padding-top: 1rem;
   }
@@ -132,14 +132,14 @@ h1 {
   line-height: 1.4;
   letter-spacing: 1px;
   &.major {
-    font-size: 28px;
+    font-size: 40px;
   }
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   &.major {
     font-family: 'Kameron', serif;
     color: #b7c221;
@@ -365,6 +365,13 @@ button, [type="button"], [type="reset"], [type="submit"] {
     height: 60px;
     margin: 5px 0;
   }
+  .logo-link {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  .logo-link-text {
+    display: block;
+  }
 }
 
 #menu #controls .control-link:first-child {
@@ -509,6 +516,8 @@ body.preload #menu .content .inner {
 #menu .inner h2 {
   font-weight: 400;
   color: #04968D;
+  line-height: 1.5;
+  font-size: 20px;
   &.uppercase {
     text-transform: uppercase;
   }
@@ -545,6 +554,9 @@ body.preload #menu .content .inner {
   }
   .card {
     margin-bottom: 10px;
+    .card-header h4 {
+      text-align: center;
+    }
     p {
       margin-bottom: 0;
     }

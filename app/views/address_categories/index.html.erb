@@ -13,7 +13,10 @@
       <% end %>
     </div>
     <div class="control-link <%= @selected_ti %>">
-      <%= link_to t("addresses.ticino"), address_categories_path(organization: "ti") %>
+        <%= link_to address_categories_path(organization: "ti") do %>
+          <%= image_tag("logo-pat.png", alt:"Logo PAT - Ticion", class: "logo-link") %>
+          <span class="logo-link-text">PAT Ticino</span>
+        <% end %>
     </div>
   </div>
 
@@ -22,6 +25,7 @@
       <% if @selected_organization == "ovk" %>
         <h1>Primärprävention</h1>
         <h2>Entsprechend dem Screening-Score dieser Familie wird eine Primärprävention empfohlen. Bitte wenden Sie sich je nach Wohnort an die Mütter- und Väterberatung des Ostschweizer Vereins für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) oder an die Mütter- und Väterberatung Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</h2>
+        </br>
         <h2>Sollte sich die Situation ändern, kann das PAT auch zu einem späteren Zeitpunkt, in den ersten 9 Lebensmonaten des Kindes, aktiviert werden <%= link_to "(siehe Sekundärprävention)", medium_risk_path(organization: @selected_organization) %>.</h2>
       <% else %>
         <h1>Prevenzione primaria</h1>

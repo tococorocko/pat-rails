@@ -101,12 +101,8 @@ it:
       primary:
         title: Scala di prevenzione
         paragraph_1_html:
-          <p>Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito ticinoperbambini.ch.</p>
+          <p>Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito Ticinoperbambini.ch.</p>
           <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (%{link}).</p>
-        subtitle_1_html: |
-          Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito ticinoperbambini.ch.
-        subtitle_2_html: |
-          <h2>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (%{link}).
         description_1_html: |
           <p>È una guida dellle offerte ed attività in Ticino per famiglie e bambini, compreso lo sportello-famiglie</p>
       secondary:

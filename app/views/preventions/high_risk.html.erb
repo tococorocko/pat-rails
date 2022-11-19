@@ -22,7 +22,7 @@
        <%= t("prevention.ovk.tertiary.paragraph_1_html") %>
         <%= render 'preventions/ovk_medium_risk_addresses' %>
     <% else %>
-       <%= t("prevention.pat_ti.tertiary.paragraph_1_html", link: (link_to t("prevention.go_to_primary_prevention"), preventions_path(organization: @selected_organization))) %>
+       <%= t("prevention.pat_ti.tertiary.paragraph_1_html", link: (link_to t("prevention.go_to_primary_prevention"), low_risk_path(organization: @selected_organization))) %>
       <%= render 'preventions/ticino_medium_risk_addresses' %>
       <%= render 'preventions/ticino_high_risk_addresses' %>
     <% end %>

@@ -64,7 +64,8 @@ it:
     ovk: OVK
     ticino: Ticino
     head_title: Prevenzione primaria
-    all_contacts: Prevenzione primaria
+    more_organizations: Altre organizzazioni
+    low_risk: Prevenzione primaria
     medium_risk: Prevenzione secondaria
     medium_risk_title: Prevenzione secondaria
     high_risk: Prevenzione terziaria
@@ -79,11 +80,10 @@ it:
     ovk:
       address_title:  Supporto alle famiglie PAT
       primary:
-        title: Prevenzione primaria
-        subtitle_1_html: |
-          In base al punteggio dello screening per questa famiglia, si consiglia la prevenzione primaria. A seconda del luogo di residenza, contattate il consultorio genitori e bambino dell'Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) o il consultorio genitori e bambino Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).
-        subtitle_2_html: |
-          Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 9 mesi di vita del bambino. (%{link}).
+        title: Scala di prevenzione
+        paragraph_1_html: |
+          <p>In base al punteggio dello screening per questa famiglia, si consiglia la prevenzione primaria. A seconda del luogo di residenza, contattate il consultorio genitori e bambino dell'Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) o il consultorio genitori e bambino Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
+          <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 9 mesi di vita del bambino (%{link}).</p>
       secondary:
         paragraph_1_html: |
           <p>In base al punteggio dello screening effettuato per questa famiglia, si consiglia la prevenzione secondaria oltre alla prevenzione primaria (consultorio genitori e bambino).</p>
@@ -99,13 +99,16 @@ it:
           <p>Una consulente genitoriale PAT contatterà la famiglia. Dopo due o tre incontri con la consulente genitoriale PAT, si valuta insieme i bisogni specifici della famiglia.</p>
     pat_ti:
       primary:
-        title: Prevenzione primaria
+        title: Scala di prevenzione
+        paragraph_1_html:
+          <p>Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito ticinoperbambini.ch.</p>
+          <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (%{link}).</p>
         subtitle_1_html: |
           Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito ticinoperbambini.ch.
         subtitle_2_html: |
           <h2>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (%{link}).
         description_1_html: |
-          <p>È una guida dellle offerte ed attività in Ticino per famiglie e bambini, compreso lo sportello-famiglie.</p>
+          <p>È una guida dellle offerte ed attività in Ticino per famiglie e bambini, compreso lo sportello-famiglie</p>
       secondary:
         paragraph_1_html: |
           <p>Secondo il punteggio dello screening fatto per questa famiglia si consiglia la prevenzione secondaria oltre a quella primaria (%{link}).</p>

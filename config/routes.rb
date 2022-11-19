@@ -10,10 +10,10 @@ Rails.application.routes.draw do
     get '/contact', to: 'static_pages#contact'
     get '/admin', to: 'static_pages#admin'
     get '/screening', to: 'questions#index'
-    get '/primary-prevention', to: 'address_categories#index', as: 'address_categories'
-    post '/primary-prevention', to: 'address_categories#index'
-    get '/primary-prevention/:category_id', to: 'address_categories#show', as: 'address_category'
-    get '/secondary-prevention', to: 'address_categories#medium_risk', as: 'medium_risk'
-    get '/tertiary-prevention', to: 'address_categories#high_risk', as: 'high_risk'
+    get '/preventions', to: 'preventions#index', as: 'preventions'
+    post '/preventions', to: 'preventions#evaluation', as: 'evaluations'
+    get '/primary-prevention', to: 'preventions#low_risk', as: 'low_risk'
+    get '/secondary-prevention', to: 'preventions#medium_risk', as: 'medium_risk'
+    get '/tertiary-prevention', to: 'preventions#high_risk', as: 'high_risk'
   end
 end

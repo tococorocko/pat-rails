@@ -14,25 +14,28 @@
     <%= render 'layouts/language_switcher' %>
   </div>
   <div class="close-btn">
-    <%= link_to "", address_categories_path(organization: @selected_organization), class:"close" %>
+    <%= link_to "", preventions_path(organization: @selected_organization), class:"close" %>
   </div>
   <div id="addresses">
     <h2 class="major"><%= t("addresses.medium_risk") %></h2>
     <% if @selected_organization == "ovk" %>
       <%= t("prevention.ovk.secondary.paragraph_1_html") %>
-      <%= render 'address_categories/ovk_medium_risk_addresses' %>
+      <%= render 'preventions/ovk_medium_risk_addresses' %>
     <% else %>
-      <%= t("prevention.pat_ti.secondary.paragraph_1_html", link: (link_to t("prevention.go_to_primary_prevention"), address_categories_path(organization: @selected_organization))) %>
-      <%= render 'address_categories/ticino_medium_risk_addresses' %>
+      <%= t("prevention.pat_ti.secondary.paragraph_1_html", link: (link_to t("prevention.go_to_primary_prevention"), preventions_path(organization: @selected_organization))) %>
+      <%= render 'preventions/ticino_medium_risk_addresses' %>
     <% end %>
 
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <%= link_to t("addresses.all_contacts"), address_categories_path(organization: @selected_organization), class:"btn btn-default" %>
+      <%= link_to t("addresses.low_risk"), low_risk_path(organization: @selected_organization), class:"btn btn-default" %>
     </div>
     <div class="col-xs-12 col-md-6">
       <%= link_to t("addresses.high_risk"), high_risk_path(organization: @selected_organization), class:"btn btn-default" %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <%= link_to t("addresses.more_organizations"), preventions_path(organization: @selected_organization), class:"btn btn-small" %>
     </div>
   </div>
 </div>

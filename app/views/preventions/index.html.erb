@@ -1,0 +1,44 @@
+
+<% page_heading(t("addresses.head_title")) %>
+
+<%= render 'layouts/quicklinks' %>
+
+<div id="menu">
+  <%= render 'partials/logo' %>
+
+  <div id="controls" class="nav">
+    <div class="control-link <%= @selected_ovk %>">
+      <%= link_to preventions_path(organization: "ovk") do %>
+        <div class="svg-logo"></div>
+      <% end %>
+    </div>
+    <div class="control-link <%= @selected_ti %>">
+        <%= link_to preventions_path(organization: "ti") do %>
+          <%= image_tag("logo-pat.png", alt:"Logo PAT - Ticion", class: "logo-link") %>
+          <span class="logo-link-text">PAT Ticino</span>
+        <% end %>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="inner">
+      <% if @selected_organization == "ovk" %>
+        <h1><%= t("prevention.ovk.primary.title") %></h1>
+      <% else %>
+        <h1><%= t("prevention.pat_ti.primary.title") %></h1>
+      <% end %>
+    </div>
+  </div>
+
+  <div id="controls" class="nav">
+      <div class="control-link">
+        <%= link_to t("addresses.low_risk"), low_risk_path(organization: @selected_organization) %>
+      </div>
+      <div class="control-link">
+        <%= link_to t("addresses.medium_risk"), medium_risk_path(organization: @selected_organization) %>
+      </div>
+      <div class="control-link">
+        <%= link_to t("addresses.high_risk"), high_risk_path(organization: @selected_organization) %>
+      </div>
+  </div>
+</div>

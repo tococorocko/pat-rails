@@ -63,7 +63,8 @@ en:
     OVK: OVK
     ticino: Ticino
     head_title: Primary Prevention
-    all_contacts: Primary Prevention
+    more_organizations: More organizations
+    low_risk: Primary Prevention
     medium_risk: Secondary Prevention
     medium_risk_title: Secondary Prevention
     high_risk: Tertiary Prevention
@@ -78,11 +79,10 @@ en:
     ovk:
       address_title:  PAT Familiy Support
       primary:
-        title: Primary prevention
-        subtitle_1_html: |
-          According to the screening score of this family, primary prevention is recommended. Depending on where you live, please contact the maternal and paternal counseling of the Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) or the maternal and paternal counseling Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).
-        subtitle_2_html: |
-          If the situation changes, the PAT can also be activated at a later stage, in the first 9 months of the child's life (%{link}).
+        title: Levels of prevention
+        paragraph_1_html: |
+          <p>According to the screening score of this family, primary prevention is recommended. Depending on where you live, please contact the maternal and paternal counseling of the Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) or the maternal and paternal counseling Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
+          <p>If the situation changes, the PAT can also be activated at a later stage, in the first 9 months of the child's life (%{link}).</p>
       secondary:
         paragraph_1_html: |
           <p>According to the screening score carried out for this family, secondary prevention is recommended in addition to primary prevention (maternal and paternal counselling).</p>
@@ -98,13 +98,12 @@ en:
           <p>A PAT parent trainer will then contact the family and carry out a needs assessment in two to three meetings together with the parents.</p>
     pat_ti:
       primary:
-        title: Primary prevention
-        subtitle_1_html: |
-          According to the screening score of this family, primary prevention is recommended. Parents can contact a midwife or other services through ticinoperbambini.ch.
-        subtitle_2_html: |
-          If the situation changes, the PAT can also be activated at a later stage, in the first 8 months of the child's life (%{link}).
+        title: Levels of prevention
+        paragraph_1_html: |
+          <p>According to the screening score of this family, primary prevention is recommended. Parents can contact a midwife or other services through ticinoperbambini.ch.</p>
+          <p>If the situation changes, the PAT can also be activated at a later stage, in the first 8 months of the child's life (%{link}).</p>
         description_1_html: |
-          <p>It is a guide of offers and activities in Ticino for families and children.</p>
+          <p>A guide with offers and activities in Ticino for families and children</p>
       secondary:
         paragraph_1_html: |
           <p>According to the screening score carried out for this family, secondary prevention is recommended in addition to primary prevention (%{link}).</p>

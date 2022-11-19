@@ -41,7 +41,7 @@ en:
     subtitle: "Total Website Visits:"
     back: Back
   quicklinks:
-   all_contacts: All contacts
+   all_contacts: Levels of prevention
    about_us: About us
   question_1:
     head_title: Necessity
@@ -72,3 +72,49 @@ en:
     title: Screening
     subtitle_stress: "Child and family stress factors"
     subtitle_protectiv: Protective factors
+  prevention:
+    go_to_primary_prevention: see primary prevention
+    go_to_secondary_prevention: see secondary prevention
+    ovk:
+      address_title:  PAT Familiy Support
+      primary:
+        title: Primary prevention
+        subtitle_1_html: |
+          According to the screening score of this family, primary prevention is recommended. Depending on where you live, please contact the maternal and paternal counseling of the Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) or the maternal and paternal counseling Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).
+        subtitle_2_html: |
+          If the situation changes, the PAT can also be activated at a later stage, in the first 9 months of the child's life (%{link}).
+      secondary:
+        paragraph_1_html: |
+          <p>According to the screening score carried out for this family, secondary prevention is recommended in addition to primary prevention (maternal and paternal counselling).</p>
+          <p>We recommend registering for PAT family support at <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"> <i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> or <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+          <p>A PAT parent trainer will contact the family.</p>
+          <p>After two to three meetings with the PAT parent trainer, a joint decision is made as to whether family support PAT is suitable.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>According to the screening score carried out for this family, tertiary prevention is recommended in addition to primary prevention (maternal and paternal counselling).</p>
+          <p>The stress factors are numerous and a healthy development of the/your child may be at risk.</p>
+          <p>In these cases, family support PAT can be applied together with primary prevention and an existing network or one created in the family environment.</p>
+          <p>We recommend registering for Family Support PAT at <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> or <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+          <p>A PAT parent trainer will then contact the family and carry out a needs assessment in two to three meetings together with the parents.</p>
+    pat_ti:
+      primary:
+        title: Primary prevention
+        subtitle_1_html: |
+          According to the screening score of this family, primary prevention is recommended. Parents can contact a midwife or other services through ticinoperbambini.ch.
+        subtitle_2_html: |
+          If the situation changes, the PAT can also be activated at a later stage, in the first 8 months of the child's life (%{link}).
+        description_1_html: |
+          <p>It is a guide of offers and activities in Ticino for families and children.</p>
+      secondary:
+        paragraph_1_html: |
+          <p>According to the screening score carried out for this family, secondary prevention is recommended in addition to primary prevention (%{link}).</p>
+          <p>The PAT Project can intervene in these cases.</p>
+          <p>You, as professionals who know the family, can recommend the project and ask the parents for permission to be contacted by a PAT parent trainer for a home presentation.</p>
+          <p>If the family is interested, some intake visits will take place so that the family can understand the project. Together, a decision will be made whether to integrate the PAT project and/or involve other services.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>According to the screening score carried out for this family, tertiary prevention is recommended in addition to primary prevention (%{link}).</p>
+          <p>The stress factors are numerous and a healthy development of the/your child may be at risk.</p>
+          <p>In these cases, family support PAT can be applied together with primary prevention and an existing network or one created in the family environment.</p>
+          <p>You, as professionals who know the family, can recommend the project and ask the parents for permission to be contacted by a PAT parent trainer for a home presentation.</p>
+          <p>If the family is interested, some intake visits will take place so that the family can understand the project. Together, a decision will be made whether to integrate the PAT project and/or involve other services.</p>

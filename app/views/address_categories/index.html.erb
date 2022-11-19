@@ -23,20 +23,21 @@
   <div class="content">
     <div class="inner">
       <% if @selected_organization == "ovk" %>
-        <h1>Primärprävention</h1>
-        <h2>Entsprechend dem Screening-Score dieser Familie wird eine Primärprävention empfohlen. Bitte wenden Sie sich je nach Wohnort an die Mütter- und Väterberatung des Ostschweizer Vereins für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) oder an die Mütter- und Väterberatung Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</h2>
+        <h1><%= t("prevention.ovk.primary.title") %></h1>
+        <h2><%= t("prevention.ovk.primary.subtitle_1_html") %></h2>
         </br>
-        <h2>Sollte sich die Situation ändern, kann das PAT auch zu einem späteren Zeitpunkt, in den ersten 9 Lebensmonaten des Kindes, aktiviert werden <%= link_to "(siehe Sekundärprävention)", medium_risk_path(organization: @selected_organization) %>.</h2>
+        <h2><%= t("prevention.ovk.primary.subtitle_2_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(organization: @selected_organization)))%></h2>
       <% else %>
-        <h1>Prevenzione primaria</h1>
-        <h2>Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito del forum genitorialità.</h2>
-        <h2>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (<%= link_to "vedi prevenzione secondaria", medium_risk_path(organization: @selected_organization) %>).</h2>
+        <h1><%= t("prevention.pat_ti.primary.title") %></h1>
+        <h2><%= t("prevention.pat_ti.primary.subtitle_1_html") %></h2>
+        </br>
+        <h2><%= t("prevention.pat_ti.primary.subtitle_2_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(organization: @selected_organization)))%></h2>
         <div class="address-card">
           <h2 class="uppercase">
             <%= link_to "Ticinoperbambini.ch", "https://ticinoperbambini.ch/Sportello-famiglie", target: "_blank" %>
           </h2>
           <div>
-            <p>È una guida dellle offerte ed attività in Ticino per famiglie e bambini, compreso lo sportello-famiglie.</p>
+            <%= t("prevention.pat_ti.primary.description_1_html") %>
           </div>
           <div>
             <%= link_to "https://ticinoperbambini.ch/Sportello-famiglie", target: "_blank" do %>

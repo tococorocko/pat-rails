@@ -331,8 +331,8 @@ button, [type="button"], [type="reset"], [type="submit"] {
   list-style: none;
   padding-left: 0;
   border: solid 1px #b7c221;
+  border-radius: .25rem;
   &.rating {
-    border: 0;
     background: linear-gradient(to right, #E9EEBD 10%, #04968D 100%);
     .control-link {
       border: 0;
@@ -611,7 +611,7 @@ body.preload #menu .content .inner {
     color: #5a6268;
     text-decoration: none;
     border: 1px solid #b7c221;
-    border-radius: 0;
+    border-radius: .25rem;
     width: 100%;
     &:hover {
       background-color: #b7c221;
@@ -725,6 +725,39 @@ a.button {
     a {
       text-decoration: none;
     }
+  }
+}
+
+#main .header-logo {
+  .logo-ovk, .logo-ti {
+    display: none;
+  }
+  .logo-ovk.selected {
+    display: inline-block;
+  }
+  .logo-ti.selected {
+    display: inline-block;
+    text-align: center;
+    margin-top: 4px;
+  }
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  .svg-logo {
+    background-image: url( '../images/ovk-logo-inverted.svg' );
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .logo-link {
+    display: inline;
+    height: 1.5rem;
+  }
+  .logo-link-text {
+    font-size: 8px;
+    display: block;
+    margin-top: 3px;
   }
 }
 

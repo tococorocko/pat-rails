@@ -1,13 +1,8 @@
-<div id="quicklinks">
+<div id="quicklinks" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-3">
+    <%= render 'layouts/language_switcher' %>
+  </div>
   <div class="btn-group">
-    <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="dropdown-menu dropdown-menu-right">
-      <%= link_to t("quicklinks.all_contacts"), address_categories_path, class:"dropdown-item", type:"button" %>
-      <%= link_to t("quicklinks.about_us"), about_path, class:"dropdown-item", type:"button" %>
-      <div class="dropdown-divider"></div>
-      <%= link_to "Home", root_path, class:"dropdown-item", type:"button" %>
-    </div>
+    <%= render 'layouts/menu' %>
   </div>
 </div>

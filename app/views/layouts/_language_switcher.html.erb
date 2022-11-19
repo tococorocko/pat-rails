@@ -1,0 +1,14 @@
+<% if @show_language_switch %>
+  <div id="language-switcher">
+    <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+      <%= "#{I18n.locale.upcase}" %>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <% I18n.available_locales.each do |locale| %>
+            <% if I18n.locale != locale %>
+              <%= link_to "#{locale}", url_for(locale: locale, organization: @selected_organization), class: "dropdown-item" %>
+            <% end %>
+        <% end %>
+    </div>
+  </div>
+<% end %>

@@ -44,7 +44,7 @@ input::-moz-focus-inner {
 }
 
 html {
-  font-size: 20px;
+  // font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1rem 0;
-  letter-spacing: 0.2rem;
+  // letter-spacing: 0.2rem;
   &.subtitle {
     padding-top: 1rem;
   }
@@ -132,14 +132,14 @@ h1 {
   line-height: 1.4;
   letter-spacing: 1px;
   &.major {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   &.major {
     font-family: 'Kameron', serif;
     color: #b7c221;
@@ -222,24 +222,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
   z-index: 3;
 }
 
-@media screen and (max-width: 1680px) {
-  #wrapper, #quicklinks {
-    padding: 3rem 2rem 5rem;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #wrapper, #quicklinks {
-    padding: 2rem 1rem;
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-  #wrapper, #quicklinks {
-    padding: 1rem 1rem;
-  }
-}
 
 /* Header */
 #menu {
@@ -318,18 +300,17 @@ button, [type="button"], [type="reset"], [type="submit"] {
   padding: 3rem 10rem;
   max-height: 60rem;
   overflow: hidden;
+  a {
+    text-decoration: underline dotted;
+    i {
+      font-size: 1rem;
+    }
+  }
 }
 
 #menu .content .inner > :last-child {
   margin-bottom: 0;
 }
-
-// #menu .content p {
-//   // text-transform: uppercase;
-//   letter-spacing: 0.2rem;
-//   font-size: 1rem;
-//   line-height: 2;
-// }
 
 #menu .content .address-card {
     margin: 3rem auto 1rem;
@@ -350,15 +331,15 @@ button, [type="button"], [type="reset"], [type="submit"] {
   list-style: none;
   padding-left: 0;
   border: solid 1px #b7c221;
-}
-#menu #controls.rating {
-  border: 0;
-  background: linear-gradient(to right, #E9EEBD 10%, #04968D 100%);
-  .control-link {
+  &.rating {
     border: 0;
-    border-left: solid 1px #E9EEBD;
-    a {
-      color: #5a6268;
+    background: linear-gradient(to right, #E9EEBD 10%, #04968D 100%);
+    .control-link {
+      border: 0;
+      border-left: solid 1px #E9EEBD;
+      a {
+        color: #5a6268;
+      }
     }
   }
 }
@@ -376,6 +357,22 @@ button, [type="button"], [type="reset"], [type="submit"] {
   padding-left: 0;
   min-height: 3.5rem;
   display: table;
+  .svg-logo {
+    background-image: url( '../images/ovk-logo-inverted.svg' );
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 60px;
+    margin: 5px 0;
+  }
+  .logo-link {
+    height: 40px;
+    margin-bottom: 5px;
+
+  }
+  .logo-link-text {
+    display: block;
+  }
 }
 
 #menu #controls .control-link:first-child {
@@ -388,7 +385,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   min-width: 13rem;
   max-width: 14rem;
   padding: 0 1.2rem 0 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-bottom: 0;
   transition: all 0.5s ease 0s;
   color: #5a6268;
@@ -420,7 +417,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   }
 }
 
-#menu  #controls .control-link a:hover {
+#menu #controls .control-link a:hover, #menu #controls .control-link.selected a {
   background-color: #b7c221;
   cursor: pointer;
   text-decoration: none;
@@ -514,12 +511,17 @@ body.preload #menu .content .inner {
     width: 100%;
     min-width: 17rem;
     max-width: 17rem;
+    .logo-link {
+      padding-top: 5px;
+    }
   }
 }
 
 #menu .inner h2 {
   font-weight: 400;
   color: #04968D;
+  line-height: 1.5;
+  font-size: 20px;
   &.uppercase {
     text-transform: uppercase;
   }
@@ -540,6 +542,10 @@ body.preload #menu .content .inner {
   a {
     text-decoration: underline dotted;
     color: #b7c221;
+    display: inline-block;
+    i {
+      font-size: 0.8rem;
+    }
   }
   .bold {
     padding: 15px;
@@ -552,6 +558,9 @@ body.preload #menu .content .inner {
   }
   .card {
     margin-bottom: 10px;
+    .card-header h4 {
+      text-align: center;
+    }
     p {
       margin-bottom: 0;
     }
@@ -589,20 +598,21 @@ body.preload #menu .content .inner {
       margin-left: 5px;
     }
   }
-  .btn {
+
+  .btn-default {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 15px;
     margin-top: 30px;
-    margin-bottom: 15px;
     transition: all 0.5s ease 0s;
     color: #5a6268;
     text-decoration: none;
     border: 1px solid #b7c221;
     border-radius: 0;
+    width: 100%;
     &:hover {
       background-color: #b7c221;
       cursor: pointer;
@@ -704,23 +714,47 @@ a.button {
   }
 }
 
+#quicklinks-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  #language-switcher {
+    .btn {
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 #quicklinks {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  padding: 4rem 4rem;
-  width: 4rem;
-  height: 4rem;
-  .dropdown-item {
-    color: #5a6268;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    &.active, &:active, &:hover {
-      background-color: #b7c221;
-      cursor: pointer;
-      text-decoration: none;
-      color: #04968D;
+  right: 1rem;
+  top: 4rem;
+  #menu-toggle i {
+    font-size: 22px;
+  }
+  #language-switcher .btn {
+    font-size: 18px
+  }
+}
+
+#quicklinks, #quicklinks-overlay {
+  #menu-toggle, #language-switcher {
+    .btn {
+      color: #0066a4;
+    }
+    .dropdown-item {
+      color: #5a6268;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      &.active, &:active, &:hover {
+        background-color: #b7c221;
+        cursor: pointer;
+        text-decoration: none;
+        color: #04968D;
+      }
     }
   }
 }

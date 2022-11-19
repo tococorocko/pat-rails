@@ -1,45 +1,42 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 it:
-  continue: continua
+  meta:
+    description: PAT - Promuovere lo sviluppo dei bambini e sostenerli nelle loro scoperte.
+    author: PAT - Parents as Teachers - Imparo Con I Genitori Ticino
+  continue: Continua
   home:
     title: Pat Imparo Con I Genitori
-    subtitle: Fare lo screening in “Questionario” permette di identificare le famiglie con diversi fattori di stress ed indicare i sostegni adatti alle loro esigenze.
+    subtitle_html: |
+      Lo screening permette di identificare le famiglie con diversi fattori di stress e indicare i sostegni adatti alle loro esigenze.<br><br>
+      Cliccare su "questionario" per procedere con lo screening.
     questionnaire: Questionario
     about_us: Chi siamo
   about_us:
     head_title: Chi siamo
-    title: PARENT AS TEACHERS - PAT IMPARO CON I GENITORI
+    title: PARENTS AS TEACHERS - PAT IMPARO CON I GENITORI
     more_information: Maggiori informazioni
+    paragraph_1_html: |
+      <p>Parents as Teachers promuove lo sviluppo precoce, l'apprendimento e la salute dei bambini nella prima infanzia sostenendo e coinvolgendo i genitori e le persone di riferimento.</p>
+      <p>I genitori influenzano in maniera importante lo sviluppo e l'apprendimento del proprio bambino. Con l'aiuto del Progetto PAT – Imparo con i genitori viene offerta alle famiglie l'opportunità di ricevere informazioni e sostegno necessari per svolgere al meglio il proprio ruolo genitoriale.</p>
+    subtitle_1: A chi si rivolge il progetto
+    paragraph_2_html: |
+      <p>Si rivolge a donne in gravidanza e famiglie con bambini tra 0 e 8 mesi al momento della segnalazione, con possibili/eventuali difficoltà personali, familiari, sociali o materiali.</p>
+      <p>L'obiettivo è di fornire un sostegno precoce a famiglie in potenziali condizioni di partenza difficili.</p>
+    subtitle_3: Come funziona il PAT
+    paragraph_3_html: |
+      <p>La Consulente Genitoriale PAT in genere rende visita alle famiglie presso il loro domicilio ogni 2 settimane per la durata di un'ora, sino a quando il bambino avrà 2 o 3 anni. Viene inoltre data la possibilità di partecipare a incontri di gruppo genitori/bambino.</p>
+      <p class="bold">Ulteriori informazioni sul sito: <a target="_blank" href="https://www.pat-ti.ch">https://www.pat-ti.ch</a></p>
+    subtitle_4: Come si può partecipare al progetto
+    paragraph_4_html: |
+      <p>Sia i professionisti sia le famiglie stesse possono annunciarsi, telefonando al numero <a target="_blank" href="tel:0041793753791">+41 79 375 37 91</a> o scrivendo a <a target="_blank" href="mailto:info@pat-ti.ch">info@pat-ti.ch</a>.</p>
+      <p>Se la famiglia è interessata, il coordinatore PAT contatta i genitori per un primo incontro informativo, durante il quale viene presentato il progetto. In caso di interesse da parte della famiglia, il Consulente Genitoriale PAT prende contatto con la famiglia e organizza almeno due incontri di ammissione (senza impegno). Solo dopo questi 3 incontri la famiglia può accedere al progetto e si impegna a farne parte per almeno 2 anni.</p>
+      <p class="bold">Il progetto è volontario e gratuito per le famiglie.</p>
+    subtitle_5: Cosa dicono le famiglie di noi
+    paragraph_5_html: |
+      <p class="citation">"Grazie alla mia consulente ho capito tanto di mio figlio, ma soprattutto ho conosciuto molto meglio me stessa..."</p>
+      <p class="citation">"Senza il suo aiuto e supporto avrei punito mio figlio quando non obbediva, non sapevo come gestirlo..."</p>
+      <p class="citation">"Mi ha dato tante idee di gioco, con oggetti di casa che avrei buttato..."</p>
+      <p class="citation">"Non so se mio figlio sarebbe ancora con me..."</p>
+      <p class="citation">"Mi ha aiutato a credere in me stesso..."</p>
   admin:
     title: Admin
     subtitle: "Total Website Visits:"
@@ -49,7 +46,7 @@ it:
    about_us: Chi siamo
   question_1:
     head_title: Necessità
-    question: Quanto valuta la necessità della famiglia di ricevere sostegno?
+    question: Quanto valuta il bisogno della famiglia di ricevere sostegno?
     very_low: Molto basso
     low: Basso
     rather_high: Piuttosto alto
@@ -58,18 +55,21 @@ it:
   question_2:
     head_title: Convincimento
     question: Quanto si sente sicuro/a della sua valutazione?
-    very_sure: Molto insicura
-    sure: Insicura
-    litte_sure: Poco sicuro
+    very_unsure: Molto insicuro
+    unsure: Insicuro
+    little_sure: Poco sicuro
     sure: Sicuro
     very_sure: Molto sicuro
   addresses:
-    contatti: Prevenzione primaria
-    subtitle_1: Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito del forum genitorialità.
-    subtitle_2: Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 6 mesi di vita del bambino (vedi prevenzione secondaria).
+    ovk: OVK
+    ticino: Ticino
     head_title: Prevenzione primaria
     all_contacts: Tutti contatti
     medium_risk: Prevenzione secondaria
     medium_risk_title: Prevenzione secondaria
     high_risk: Prevenzione terziaria
     high_risk_title: Prevenzione terziaria
+  screening:
+    title: Screening
+    subtitle_stress: "Fattori di stress per il bambino/a e la sua famiglia"
+    subtitle_protectiv: Fattori protettivi

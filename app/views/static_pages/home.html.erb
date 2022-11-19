@@ -4,15 +4,17 @@
   <div class="content">
     <div class="inner">
       <h1 class="major"><%= t("home.title") %></h1>
-      <h2 class="uppercase"><%= t("home.subtitle") %></h2>
+      <h2 class=""><%= t("home.subtitle_html") %></h2>
     </div>
   </div>
   <div id="controls" class="nav">
     <div class="control-link">
       <%= link_to t("home.questionnaire"), question_1_path %>
     </div>
-    <div class="control-link">
-      <%= link_to t("home.about_us"), about_path %>
-    </div>
+    <% if I18n.locale == :it && !@ovk_iframe %>
+      <div class="control-link">
+        <%= link_to t("home.about_us"), about_path %>
+      </div>
+    <% end %>
   </div>
 </div>

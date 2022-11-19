@@ -8,11 +8,11 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options
-    { locale: I18n.locale }
+    { locale: I18n.locale, ovk: @ovk_iframe }
   end
 
   def set_ovk_iframe_cookie
-    @ovk_iframe ||= cookies[:ovk_iframe]
+    @ovk_iframe ||= cookies[:ovk_iframe] || params[:ovk]
     return if params[:ovk_iframe].blank? || @ovk_iframe.present?
 
     cookies[:ovk_iframe] = { value: "true", expires: 1.day.from_now }

@@ -24,8 +24,8 @@ class StaticPagesController < ApplicationController
 
   def admin
     WebsiteVisitHandler.write_to_visit_per_day
-    @all_visits = Ahoy::Visit.order(started_at: :desc)
-    @visits = @all_visits.limit(25)
     @visits_per_day = VisitPerDay.all.order(date: :desc)
+    @total_visits = VisitPerDay.sum(:number_of_visits)
+    @visits = Ahoy::Visit.order(started_at: :desc).limit(25)
   end
 end

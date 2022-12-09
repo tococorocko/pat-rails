@@ -42,7 +42,7 @@ it:
     subtitle: "Total Website Visits:"
     back: Back
   quicklinks:
-   all_contacts: Scala di prevenzione
+   all_contacts: Livelli di prevenzione
    about_us: Chi siamo
   question_1:
     head_title: Necessità
@@ -80,7 +80,7 @@ it:
     ovk:
       address_title:  Supporto alle famiglie PAT
       primary:
-        title: Scala di prevenzione
+        title: Livelli di prevenzione
         paragraph_1_html: |
           <p>In base al punteggio dello screening per questa famiglia, si consiglia la prevenzione primaria. A seconda del luogo di residenza, contattate il consultorio genitori e bambino dell'Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) o il consultorio genitori e bambino Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
           <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 9 mesi di vita del bambino (%{link}).</p>
@@ -99,7 +99,7 @@ it:
           <p>Una consulente genitoriale PAT contatterà la famiglia. Dopo due o tre incontri con la consulente genitoriale PAT, si valuta insieme i bisogni specifici della famiglia.</p>
     pat_ti:
       primary:
-        title: Scala di prevenzione
+        title: Livelli di prevenzione
         paragraph_1_html:
           <p>Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito Ticinoperbambini.ch.</p>
           <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (%{link}).</p>

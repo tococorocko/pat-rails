@@ -8,7 +8,7 @@ module WebsiteVisitHandler
     puts(VisitPerDay.all.map{ |visit| "#{visit.date} - #{visit.number_of_visits}" })
   end
 
-  def self.cleanup_old_visits(num_of_months = 6)
+  def self.cleanup_old_visits(num_of_months = 2)
     time = num_of_months.months.ago
     Ahoy::Visit.where("started_at < ?", time).delete_all
   end

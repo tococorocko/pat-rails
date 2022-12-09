@@ -19,9 +19,9 @@ Collect visits and write to talbe visit_per_day
 rake admin:collect_visits
 ```
 
-Database full?
+Database full? Delete old ahoy visits
 ```bash
-rake admin:cleanup_visits
+rake admin:cleanup_visits MONTHS=3
 ```
 
 ## Setup

@@ -18,7 +18,7 @@ namespace :admin do
     puts "But first let's save the visits to VisitPerDay..."
     num_of_months = ENV["MONTHS"] || 3
     WebsiteVisitHandler.write_to_visit_per_day
-    puts "Now we can delete visits from Ahoy::Visit, keeping last 6 months..."
+    puts "Now we can delete visits from Ahoy::Visit, keeping last #{num_of_months} months..."
     WebsiteVisitHandler.cleanup_old_visits(num_of_months.to_i)
     puts "--- Done! ---"
   end

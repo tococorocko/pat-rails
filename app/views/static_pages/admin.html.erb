@@ -1,10 +1,12 @@
-<%= render "layouts/quicklinks" %>
-<div id="menu">
-  <%= render 'partials/logo' %>
-  <div class="content">
-    <div class="inner">
-      <h1 class="major"><%= t("admin.title") %></h1>
-      <h2 class="uppercase"><%= t("admin.subtitle") %> <%= @visits.count %></h2>
+<div id="main">
+  <div class="close-btn">
+    <%= link_to "", root_path, class:"close" %>
+  </div>
+    <div id="admin">
+      <h2 class="major"><%= t("admin.title") %></h2>
+      <h2 class="uppercase"><%= t("admin.subtitle") %> <%= @all_visits.count %></h2>
+
+      <h3 class="subtitle">Last 25</h3>
       <table class="table table-striped">
         <thead class="table-dark">
           <tr>
@@ -17,8 +19,8 @@
         </thead>
         <tbody>
           <% @visits.each_with_index do |visit, i| %>
-          <tr>
-            <th scope="col"><%= i + 1 %></th>
+            <tr>
+              <td scope="col"><%= i + 1 %></td>
               <td><%= visit.started_at.in_time_zone('Europe/Berlin').strftime('%a %F %T') %></td>
               <td><%= visit.device_type %></td>
               <td><%= visit.browser %></td>
@@ -27,11 +29,23 @@
           <% end %>
         </tbody>
       </table>
+
+      <h3 class="subtitle">Per Day</h3>
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Number of visits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @visits_per_day.each do |visit| %>
+          <tr>
+              <td><%= visit.date.in_time_zone('Europe/Berlin').strftime('%a %F') %></td>
+              <td><%= visit.number_of_visits %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
     </div>
-  </div>
-  <div id="controls" class="nav">
-    <div class="control-link">
-      <%= link_to t("admin.back"), root_path %>
-    </div>
-  </div>
 </div>

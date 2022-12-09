@@ -1,0 +1,2 @@
+class VisitPerDay < ApplicationRecord
+end

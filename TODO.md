@@ -11,7 +11,8 @@
 
 
 - [ ] Remove unnecessary models/tables: Address, AddressCategory, Severity
-- [ ] Remove Ahoy gem?!
+- [X] Remove Ahoy gem?! --> NO, added GDPR Compliant options to initializer
+- [X] Add Rake task to cleanup ahoy tables
 
 - [X] Übersetzung EN/IT für OVK
 - [X] Übersetzung DE/IT für PAT TICINO

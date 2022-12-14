@@ -5,8 +5,13 @@ en:
   continue: Continue
   home:
     title: PAT - Parents as Teachers
-    subtitle_html: |
-      This screening creates the opportunity to identify families with  stress factors, and to indicate possible supports accordingly to their specific needs.
+    ovk:
+      subtitle_html: |
+        This screening allows families and referrers to find suitable services from the <a target="_blank" href="https://www.ovk.ch/"><i class="fas fa-link"></i>Ostschweizer Verein für das Kind</a>.
+        Please note that the questionnaire should be completed before the child is 12 months old.
+    pat_ti:
+      subtitle_html: |
+        This screening creates the opportunity to identify families with stress factors, and to indicate possible supports accordingly to their specific needs.
     questionnaire: Screening
     about_us: About us
   about_us:

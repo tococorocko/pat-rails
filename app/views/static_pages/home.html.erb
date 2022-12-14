@@ -4,7 +4,11 @@
   <div class="content">
     <div class="inner">
       <h1 class="major"><%= t("home.title") %></h1>
-      <h2 class=""><%= t("home.subtitle_html") %></h2>
+      <% if @ovk_iframe %>
+        <h2><%= t("home.ovk.subtitle_html") %></h2>
+      <% else %>
+        <h2><%= t("home.pat_ti.subtitle_html") %></h2>
+      <% end %>
     </div>
   </div>
   <div id="controls" class="nav">

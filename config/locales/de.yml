@@ -5,8 +5,13 @@ de:
   continue: Weiter
   home:
     title: PAT - Mit Eltern Lernen
-    subtitle_html: |
-      Dieser Fragebogen / Screening ermöglicht es Familien mit unterschiedlichen Belastungsfaktoren zu identifizieren und eine bedarfsorientierte Begleitung zu ermitteln.
+    ovk:
+      subtitle_html: |
+        Dieses Screening ermöglicht es Familien und Zuweiser das passende Angebot im <a target="_blank" href="https://www.ovk.ch/"><i class="fas fa-link"></i>Ostschweizer Verein für das Kind</a> zu finden.
+        Bitte beachten Sie, dass der Fragebogen vor dem 12. Lebensmonat des Kindes ausgefüllt werden sollte.
+    pat_ti:
+      subtitle_html: |
+        Dieses Screening ermöglicht es Familien mit unterschiedlichen Belastungsfaktoren zu identifizieren und eine bedarfsorientierte Begleitung zu ermitteln.
     questionnaire: Fragebogen
     about_us: Über uns
   about_us:

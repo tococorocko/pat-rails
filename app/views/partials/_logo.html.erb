@@ -1,5 +1,13 @@
 <div id="logo">
-  <%= link_to root_path do %>
-    <%= image_tag("logo.png", alt:"Logo PAT - Parents as Teachers", class: "logo") %>
+  <% if @ovk_iframe %>
+    <%= link_to root_path do %>
+      <div class="logo-ovk">
+          <div class="svg-logo"></div>
+      </div>
+    <% end %>
+  <% else %>
+    <%= link_to root_path do %>
+      <%= image_tag("logo.png", alt:"Logo PAT - Parents as Teachers", class: "logo") %>
+    <% end %>
   <% end %>
 </div>

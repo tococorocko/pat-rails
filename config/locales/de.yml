@@ -5,8 +5,13 @@ de:
   continue: Weiter
   home:
     title: PAT - Mit Eltern Lernen
-    subtitle_html: |
-      Dieser Fragebogen / Screening ermöglicht es Familien mit unterschiedlichen Belastungsfaktoren zu identifizieren und eine bedarfsorientierte Begleitung zu ermitteln.
+    ovk:
+      subtitle_html: |
+        Dieses Screening ermöglicht es Familien und Zuweiser das passende Angebot im <a target="_blank" href="https://www.ovk.ch/"><i class="fas fa-link"></i>Ostschweizer Verein für das Kind</a> zu finden.
+        Bitte beachten Sie, dass der Fragebogen vor dem 12. Lebensmonat des Kindes ausgefüllt werden sollte.
+    pat_ti:
+      subtitle_html: |
+        Dieses Screening ermöglicht es Familien mit unterschiedlichen Belastungsfaktoren zu identifizieren und eine bedarfsorientierte Begleitung zu ermitteln.
     questionnaire: Fragebogen
     about_us: Über uns
   about_us:
@@ -41,7 +46,7 @@ de:
     subtitle: "Total Website Visits:"
     back: Back
   quicklinks:
-   all_contacts: Alle Kontakte
+   all_contacts: Präventsionsstufen
    about_us: Über uns
   question_1:
     head_title: Bedarf
@@ -63,12 +68,57 @@ de:
     ovk: OVK
     ticino: Tessin
     head_title: Primärprävention
-    all_contacts: Primärprävention
+    more_organizations: Weitere Organisationen
+    low_risk: Primärprävention
     medium_risk: Sekundärprävention
     medium_risk_title: Sekundärprävention
     high_risk: Tertiärprävention
     high_risk_title: Tertiärprävention
   screening:
     title: Fragebogen / Screening
-    subtitle_stress: "Kindliche und familiäre Belastungen"
+    subtitle_stress: Kindliche und familiäre Belastungen
     subtitle_protectiv: Schutzfaktoren
+  prevention:
+    go_to_primary_prevention: siehe Primärprävention
+    go_to_secondary_prevention: siehe Sekundärprävention
+    ovk:
+      address_title: Familienbegleitung PAT
+      primary:
+        title: Präventionsstufen
+        paragraph_1_html: |
+          <p>Entsprechend dem Screening-Score dieser Familie wird eine Primärprävention empfohlen. Bitte wenden Sie sich je nach Wohnort an die Mütter- und Väterberatung des Ostschweizer Vereins für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) oder an die Mütter- und Väterberatung Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
+          <p>Sollte sich die Situation ändern, kann das PAT auch zu einem späteren Zeitpunkt, in den ersten 9 Lebensmonaten des Kindes, aktiviert werden (%{link}).</p>
+      secondary:
+        paragraph_1_html: |
+          <p>Gemäß dem für diese Familie durchgeführten Screening-Score wird nebst der Primärprävention (Mütter- und Väterberatung) auch eine Sekundärprävention empfohlen.</p>
+          <p>Wir empfehlen die Anmeldung zur Familienbegleitung PAT unter <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"> <i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> oder <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+          <p>Eine PAT-Elterntrainerin wird mit der Familie Kontakt aufnehmen.</p>
+          <p>Nach zwei bis drei Gesprächen mit der PAT-Elterntrainerin wird gemeinsam entschieden, ob die Familienbegleitung PAT geeignet ist.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>Gemäß dem für diese Familie durchgeführten Screening-Score wird nebst der Primärprävention (Mütter- und Väterberatung) auch eine Tertiärprävention empfohlen.</p>
+          <p>Die Belastungsfaktoren sind zahlreich und eine gesunde Entwicklung des/Ihres Kindes könnte gefährdet sein.</p>
+          <p>In diesen Fällen kann die Familienbegleitung PAT zusammen mit der Primärprävention und einem vorhandenen oder im familiären Umfeld geschaffenen Netzwerk zur Anwendung kommen.</p>
+          <p>Wir empfehlen die Anmeldung zur Familienbegleitung PAT unter <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> oder <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+          <p>Eine PAT-Elterntrainerin wird dann mit der Familie Kontakt aufnehmen und in zwei bis drei Gesprächen zusammen mit den Eltern eine Bedarfseinschätzung vornehmen.</p>
+    pat_ti:
+      primary:
+        title: Präventionsstufen
+        paragraph_1_html: |
+          <p>Entsprechend dem Screening-Score dieser Familie wird eine Primärprävention empfohlen. Eltern können sich über die Website Ticinoperbambini.ch an eine Hebamme oder einen anderen Dienst wenden.</p>
+          <p>Sollte sich die Situation ändern, kann das PAT auch zu einem späteren Zeitpunkt, in den ersten 8 Lebensmonaten des Kindes, aktiviert werden (%{link}).</p>
+        description_1_html: |
+          <p>Ein Verzeichnis über Angebote und Aktivitäten im Tessin für Familien und Kinder</p>
+      secondary:
+        paragraph_1_html: |
+          <p>Gemäß dem für diese Familie durchgeführten Screening-Score wird nebst der Primärprävention (%{link}) auch eine Sekundärprävention empfohlen.</p>
+          <p>Das PAT-Projekt kann in diesen Fällen eingreifen.</p>
+          <p>Sie als Fachpersonen, die die Familie kennen, können das Projekt empfehlen und die Eltern um Erlaubnis bitten, von einer PAT-Elterntrainerin für eine Präsentation zu Hause kontaktiert zu werden.</p>
+          <p>Wenn die Familie Interesse hat, werden einige Aufnahmebesuche stattfinden, damit die Familie verstehen kann, worum es geht. Gemeinsam wird entschieden, ob das PAT-Projekt integriert und/oder andere Dienste einbezogen werden.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>Gemäß dem für diese Familie durchgeführten Screening-Score wird nebst der Primärprävention (%{link}) auch eine Tertiärprävention empfohlen.</p>
+          <p>Die Belastungsfaktoren sind zahlreich und eine gesunde Entwicklung des/Ihres Kindes könnte gefährdet sein.</p>
+          <p>In diesen Fällen kann die Familienbegleitung PAT zusammen mit der Primärprävention und einem vorhandenen oder im familiären Umfeld geschaffenen Netzwerk zur Anwendung kommen.</p>
+          <p>Sie als Fachpersonen, die die Familie kennen, können das Projekt empfehlen und die Eltern um Erlaubnis bitten, von einer PAT-Elterntrainerin für eine Präsentation zu Hause kontaktiert zu werden.</p>
+          <p>Wenn die Familie Interesse hat, werden einige Aufnahmebesuche stattfinden, damit die Familie verstehen kann, worum es geht. Gemeinsam wird entschieden, ob das PAT-Projekt integriert und/oder andere Dienste einbezogen werden.</p>

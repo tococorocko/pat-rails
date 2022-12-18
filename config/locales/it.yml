@@ -5,9 +5,14 @@ it:
   continue: Continua
   home:
     title: Pat Imparo Con I Genitori
-    subtitle_html: |
-      Lo screening permette di identificare le famiglie con diversi fattori di stress e indicare i sostegni adatti alle loro esigenze.<br><br>
-      Cliccare su "questionario" per procedere con lo screening.
+    ovk:
+      subtitle_html: |
+        Lo screening permette alle famiglie ed ai professionisti di trovare l'offerta giusta nel <a target="_blank" href="https://www.ovk.ch/"><i class="fas fa-link"></i>„Ostschweizer Verein für das Kind“</a>.
+        Il questionario deve essere compilato prima che il bambino compie 12 mesi.
+    pat_ti:
+      subtitle_html: |
+        Lo screening permette di identificare le famiglie con diversi fattori di stress e indicare i sostegni adatti alle loro esigenze.<br><br>
+        Cliccare su "questionario" per procedere con lo screening.
     questionnaire: Questionario
     about_us: Chi siamo
   about_us:
@@ -42,7 +47,7 @@ it:
     subtitle: "Total Website Visits:"
     back: Back
   quicklinks:
-   all_contacts: Tutti contatti
+   all_contacts: Livelli di prevenzione
    about_us: Chi siamo
   question_1:
     head_title: Necessità
@@ -64,7 +69,8 @@ it:
     ovk: OVK
     ticino: Ticino
     head_title: Prevenzione primaria
-    all_contacts: Tutti contatti
+    more_organizations: Altre organizzazioni
+    low_risk: Prevenzione primaria
     medium_risk: Prevenzione secondaria
     medium_risk_title: Prevenzione secondaria
     high_risk: Prevenzione terziaria
@@ -73,3 +79,47 @@ it:
     title: Screening
     subtitle_stress: "Fattori di stress per il bambino/a e la sua famiglia"
     subtitle_protectiv: Fattori protettivi
+  prevention:
+    go_to_primary_prevention: vedi prevenzione primaria
+    go_to_secondary_prevention: vedi prevenzione secondaria
+    ovk:
+      address_title:  Supporto alle famiglie PAT
+      primary:
+        title: Livelli di prevenzione
+        paragraph_1_html: |
+          <p>In base al punteggio dello screening per questa famiglia, si consiglia la prevenzione primaria. A seconda del luogo di residenza, contattate il consultorio genitori e bambino dell'Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) o il consultorio genitori e bambino Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
+          <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 9 mesi di vita del bambino (%{link}).</p>
+      secondary:
+        paragraph_1_html: |
+          <p>In base al punteggio dello screening effettuato per questa famiglia, si consiglia la prevenzione secondaria oltre alla prevenzione primaria (consultorio genitori e bambino).</p>
+          <p>Tramite il link o la mail è possibile iscriversi per avere un supporto con il progetto PAT: <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"> <i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> o <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+          <p>Una consulente genitoriale PAT contatterà la famiglia.</p>
+          <p>Dopo due o tre incontri con la consulente genitoriale PAT, si decide assieme se intraprendere un percorso di accompagnamento con il progetto PAT.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>In base al punteggio dello screening effettuato per questa famiglia, si consiglia la prevenzione terziaria oltre alla prevenzione primaria (consultorio genitori e bambino).</p>
+          <p>I fattori di stress sono numerosi e lo sviluppo sano del bambino potrebbe essere compromesso.</p>
+          <p>In questi casi, il progetto PAT può essere un supporto assieme alla prevenzione primaria e a una rete esistente o da creare intorno alla famiglia.</p>
+          <p>Si consiglia di iscriversi al programma di accompagnamento PAT su <a href="https://www.ovk.ch/familienbegleitung-pat/anmelden" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/familienbegleitung-pat/anmelden</a> o <a href="mailto:pat.ovk@hin.ch"><i class="fas fa-envelope"></i>pat.ovk@hin.ch</a>.</p>
+          <p>Una consulente genitoriale PAT contatterà la famiglia. Dopo due o tre incontri con la consulente genitoriale PAT, si valuta insieme i bisogni specifici della famiglia.</p>
+    pat_ti:
+      primary:
+        title: Livelli di prevenzione
+        paragraph_1_html:
+          <p>Secondo il punteggio dello screening di questa famiglia si consiglia la prevenzione primaria. I genitori possono prendere contatto con una levatrice oppure un altro servizio che si trova sul sito Ticinoperbambini.ch.</p>
+          <p>Se la situazione dovesse cambiare, il progetto PAT può essere attivato anche in un secondo momento, nei primi 8 mesi di vita del bambino (%{link}).</p>
+        description_1_html: |
+          <p>È una guida dellle offerte ed attività in Ticino per famiglie e bambini, compreso lo sportello-famiglie</p>
+      secondary:
+        paragraph_1_html: |
+          <p>Secondo il punteggio dello screening fatto per questa famiglia si consiglia la prevenzione secondaria oltre a quella primaria (%{link}).</p>
+          <p>Il progetto PAT può intervenire in questi casi.</p>
+          <p>Voi come professionisti, che conoscete la famiglia, potete consigliarlo e chiedere ai genitori il permesso di essere contattati dal coordinatore del progetto per una presentazione a domicilio.</p>
+          <p>Se la famiglia è interessata, si svolgeranno almeno un paio di visite di ammissione cosicché la famiglia possa capire di cosa si tratta. Insieme si deciderà se integrare il progetto PAT e/o coinvolgere altri servizi.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>Secondo il punteggio dello screening fatto per questa famiglia si consiglia la prevenzione terziaria oltre a quella primaria (%{link}).</p>
+          <p>I fattori di stress sono numerosi, uno sviluppo sano del loro bambino potrebbe essere compromesso.</p>
+          <p>Il progetto PAT può intervenire in questi casi, in collaborazione a una rete presente o da creare intorno alla famiglia.</p>
+          <p>Voi come professionisti, che conoscete la famiglia, potete consigliarlo e chiedere ai genitori il permesso di essere contattati dal coordinatore del progetto per una presentazione a domicilio.</p>
+          <p>Se la famiglia è interessata, si svolgeranno almeno un paio di visite di ammissione cosicché la famiglia possa capire di cosa si tratta. Insieme si deciderà se integrare il progetto PAT e/o coinvolgere altri servizi.</p>

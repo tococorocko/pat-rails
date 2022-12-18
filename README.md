@@ -10,6 +10,20 @@ Rails: `rails '~> 7.0'`
 
 Postgresql: `psql 12.3`
 
+## Rake Tasks
+
+### Admin
+
+Collect visits and write to talbe visit_per_day
+```bash
+rake admin:collect_visits
+```
+
+Database full? Delete old ahoy visits
+```bash
+rake admin:cleanup_visits MONTHS=3
+```
+
 ## Setup
 #### Database creation
 

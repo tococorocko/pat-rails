@@ -1,0 +1,7 @@
+# convention:Style/StringLiterals
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Missing top-level documentation comment for `class ``
+Style/Documentation:
+  Enabled: false

@@ -1,34 +1,28 @@
-class AddressCategoriesController < ApplicationController
+class PreventionsController < ApplicationController
   before_action :set_selected_organization
-  before_action :overwrite_locale_based_on_selected_organization
 
-  ORGANIZATION_LANGUAGE_MAPPING = {
-    "ovk" => "de",
-    "ti" => "it"
-  }
+  include LanguageSwitchable
 
-  def index
+  def index; end
+
+  def evaluation
     valuation_factor = calculate_valuation_factor
     if valuation_factor > 6
       redirect_to :high_risk
     elsif valuation_factor > 2
       redirect_to :medium_risk
     else
-      render "index"
+      redirect_to :low_risk
     end
   end
 
-  def medium_risk
-  end
+  def low_risk; end
 
-  def high_risk
-  end
+  def medium_risk; end
+
+  def high_risk; end
 
   protected
-
-  def overwrite_locale_based_on_selected_organization
-    I18n.locale = ORGANIZATION_LANGUAGE_MAPPING[@selected_organization] || I18n.default_locale
-  end
 
   def calculate_valuation_factor
     valuation_factor = 0

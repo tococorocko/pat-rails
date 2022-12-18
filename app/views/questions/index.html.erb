@@ -10,7 +10,7 @@
    <div id="screening">
     <h2 class="major"><%= t("screening.title") %></h2>
     <h3><%= t("screening.subtitle_stress") %></h3>
-    <%= form_with url: address_categories_path, local: true do %>
+    <%= form_with url: evaluations_path, local: true do %>
       <% @negative_factors.each do |category| %>
         <div class="card">
           <div class="card-header">

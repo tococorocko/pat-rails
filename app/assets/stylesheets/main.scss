@@ -596,6 +596,12 @@ body.preload #menu .content .inner {
     .card-header h4 {
       text-align: center;
     }
+    .logo-link-de {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 25%;
+    }
     p {
       margin-bottom: 0;
     }
@@ -787,12 +793,6 @@ a.button {
     background-size: 100% 100%;
     width: 3rem;
     height: 3rem;
-  }
-  .logo-link-de {
-    vertical-align: top;
-    height: 2.5rem;
-    margin-left: 15px;
-    margin-top: 5px;
   }
   .logo-link {
     display: inline;

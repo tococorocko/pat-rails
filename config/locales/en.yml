@@ -7,8 +7,7 @@ en:
     title: PAT - Parents as Teachers
     ovk:
       subtitle_html: |
-        This screening allows families and referrers to find suitable services from the <a target="_blank" href="https://www.ovk.ch/"><i class="fas fa-link"></i>„Ostschweizer Verein für das Kind“</a>.
-        Please note that the questionnaire should be completed before the child is 12 months old.
+        Assessment of potential stress and protective factors from pregnancy to 12 months after birth.
     pat_ti:
       subtitle_html: |
         This screening creates the opportunity to identify families with stress factors, and to indicate possible supports accordingly to their specific needs.
@@ -75,7 +74,7 @@ en:
     high_risk: Tertiary Prevention
     high_risk_title: Tertiary Prevention
   screening:
-    title: Screening
+    title: Online Screening
     subtitle_stress: "Child and family stress factors"
     subtitle_protectiv: Protective factors
   prevention:
@@ -87,7 +86,7 @@ en:
         title: Levels of prevention
         paragraph_1_html: |
           <p>According to the screening score of this family, primary prevention is recommended. Depending on where you live, please contact the maternal and paternal counseling of the Ostschweizer Verein für das Kind OVK (<a href="https://www.ovk.ch/beratung/beratungsstellen" target="_blank"><i class="fas fa-link"></i>https://www.ovk.ch/beratung/beratungsstellen</a>) or the maternal and paternal counseling Untertoggenburg, Wil, Gossau (<a href="https://www.mutter-vater-beratung.ch/beratungsorte" target="_blank"><i class="fas fa-link"></i>https://www.mutter-vater-beratung.ch/beratungsorte</a>).</p>
-          <p>If the situation changes, the PAT can also be activated at a later stage, in the first 9 months of the child's life (%{link}).</p>
+          <p>If the situation changes, the PAT can also be activated at a later stage, in the first 12 months of the child's life (%{link}).</p>
       secondary:
         paragraph_1_html: |
           <p>According to the screening score carried out for this family, secondary prevention is recommended in addition to primary prevention (maternal and paternal counselling).</p>

@@ -1,4 +1,7 @@
 class PreventionsController < ApplicationController
+  HIGH_RISK = 6
+  MEDIUM_RISK = 2
+
   before_action :set_selected_organization
 
   include LanguageSwitchable
@@ -7,9 +10,9 @@ class PreventionsController < ApplicationController
 
   def evaluation
     valuation_factor = calculate_valuation_factor
-    if valuation_factor > 6
+    if valuation_factor > HIGH_RISK
       redirect_to :high_risk
-    elsif valuation_factor > 2
+    elsif valuation_factor > MEDIUM_RISK
       redirect_to :medium_risk
     else
       redirect_to :low_risk
@@ -26,7 +29,7 @@ class PreventionsController < ApplicationController
 
   def calculate_valuation_factor
     valuation_factor = 0
-    params[:question]&.each { |_id, val| valuation_factor += val.to_i }
+    params[:question]&.each { |_id, val| valuation_factor += val.to_f }
     valuation_factor
   end
 

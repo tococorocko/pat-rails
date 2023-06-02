@@ -14,21 +14,21 @@ category_1 = QuestionCategory.create!(
 Question.create!(
     name: "Risikoschwangerschaft",
     question_text: "Risikoschwangerschaft, medizinisch unterstützte Fortpflanzung",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 1,
     question_category: category_1
 )
 Question.create!(
     name: "Schwangerschaft",
     question_text: "Ungewollte/ungeplante Schwangerschaft",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 2,
     question_category: category_1
 )
 Question.create!(
     name: "komplizierte ",
     question_text: "Erschwerte oder komplizierte Geburt (Frühgeburt, lange Geburt, Notfallkaiserschnitt, Vakum-, Zangengeburt,…)",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 3,
     question_category: category_1
 )
@@ -36,14 +36,14 @@ Question.create!(
     name: "Traumatische Geburt für Mutter oder Vater ",
 
     question_text: "Traumatische Geburt für Mutter oder Vater ",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 4,
     question_category: category_1
 )
 Question.create!(
     name: "Trennung des Säuglings",
     question_text: "Trennung des Säuglings von der Mutter nach der Geburt",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 5,
     question_category: category_1
 )
@@ -214,12 +214,6 @@ Question.create!(name: "Verständigung auf deutsch nicht/kaum möglich",
     question_text: "Verständigung auf deutsch nicht/kaum möglich",
     valuation_factor: 1,
     sort_order: 4,
-    question_category: category_4
-)
-Question.create!(name: "Beide Elternteile ausländischer Herkunft",
-    question_text: "Beide Elternteile ausländischer Herkunft",
-    valuation_factor: 1,
-    sort_order: 5,
     question_category: category_4
 )
 

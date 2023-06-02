@@ -14,14 +14,14 @@ category_1 = QuestionCategory.create!(
 Question.create!(
     name: "Gravidanza a rischio",
     question_text: "Gravidanza a rischio, procreazione medicalmente  assistita o con problemi di vario genere",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 1,
     question_category: category_1
 )
 Question.create!(
     name: "Gravidanza non desiderata",
     question_text: "Gravidanza non desiderata/non programmata",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 2,
     question_category: category_1
 )
@@ -29,7 +29,7 @@ Question.create!(
     name: "Parto distocico",
 
     question_text: "Parto distocico o complicato (prematuro, prolungato, TC di urgenza, ventosa, forcipe, ...)",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 3,
     question_category: category_1
 )
@@ -37,7 +37,7 @@ Question.create!(
     name: "Parto traumatico madre",
 
     question_text: "Parto traumatico per la madre e/o per il padre",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 4,
     question_category: category_1
 )
@@ -45,7 +45,7 @@ Question.create!(
     name: "Separazione",
 
     question_text: "Separazione del neonato dalla mamma dopo la nascita",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 5,
     question_category: category_1
 )
@@ -216,12 +216,6 @@ Question.create!(name: "Poco in italiano",
     question_text: "Non si esprime o si esprime poco in italiano",
     valuation_factor: 1,
     sort_order: 4,
-    question_category: category_4
-)
-Question.create!(name: "Entrambi i genitori sono stranieri",
-    question_text: "Entrambi i genitori sono stranieri",
-    valuation_factor: 1,
-    sort_order: 5,
     question_category: category_4
 )
 

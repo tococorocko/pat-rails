@@ -14,35 +14,35 @@ category_1 = QuestionCategory.create!(
 Question.create!(
     name: "risk pregnancy",
     question_text: "At risk pregnancy, medically assisted procreation or any other problem",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 1,
     question_category: category_1
 )
 Question.create!(
     name: "Unplanned pregnancy",
     question_text: "Unplanned pregnancy",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 2,
     question_category: category_1
 )
 Question.create!(
     name: "Difficult or complicated birth",
     question_text: "Difficult or complicated birth (premature birth, prolonged delivery, emergency caesarean section, vacuum birth, forceps birth, ...)",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 3,
     question_category: category_1
 )
 Question.create!(
     name: "Traumatic birth",
     question_text: "Traumatic birth for the mother and/or the father",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 4,
     question_category: category_1
 )
 Question.create!(
     name: "Separation of the infant",
     question_text: "Separation of the infant from the mother after birth",
-    valuation_factor: 1,
+    valuation_factor: 0.5,
     sort_order: 5,
     question_category: category_1
 )
@@ -213,12 +213,6 @@ Question.create!(name: "Poor or little knowledge of local language",
     question_text: "Poor or little knowledge of local language ",
     valuation_factor: 1,
     sort_order: 4,
-    question_category: category_4
-)
-Question.create!(name: "Both parents are foreign",
-    question_text: "Both parents are foreign",
-    valuation_factor: 1,
-    sort_order: 5,
     question_category: category_4
 )
 

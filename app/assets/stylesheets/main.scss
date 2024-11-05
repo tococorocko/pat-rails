@@ -593,6 +593,17 @@ body.preload #menu .content .inner {
   }
   .card {
     margin-bottom: 10px;
+    .svg-pat-logo-ovk {
+      background-image: url( '../images/logo-pat-mit-eltern-lernen-ovk.svg' );
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 175px;
+      height: 5px;
+      margin: 1.25rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
     .card-header h4 {
       text-align: center;
     }
@@ -738,6 +749,10 @@ a.button {
   #main {
     padding: 4rem 1.5rem 1.5rem 1.5rem ;
     margin-bottom: 2rem;
+    .card .svg-pat-logo-ovk {
+      width: 70px;
+      height: 30px;
+    }
   }
 }
 #footer, #main {

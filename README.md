@@ -1,3 +1,5 @@
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1n3ho.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 # README
 
 Ruby on Rails Application for Parents as Teachers
@@ -14,7 +16,7 @@ Postgresql: `psql 12.3`
 
 ### Admin
 
-Collect visits and write to talbe visit_per_day
+Collect visits and write to table visit_per_day
 ```bash
 rake admin:collect_visits
 ```

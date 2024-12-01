@@ -1,3 +1,14 @@
+// $primary-color: #56b1dd;
+// $secondary-color : #6d619f;
+// $alert-color: #e42f33;
+
+$primary-color: #0066a4;
+$secondary-color: #E9EEBD;
+$tertiary-color: #b7c221;
+$accent-color: #04968D;
+$alert-color: #e42f33;
+$gray-color: #5a6268;
+
 /*Default*/
 * {
   margin: 0;
@@ -16,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 hr {
   border: 0;
-  border-bottom: solid 1px #E9EEBD;
+  border-bottom: solid 1px $secondary-color;
   margin: 2.75rem 0;
   &.sm {
     width: 10%;
@@ -53,7 +64,7 @@ html {
 }
 
 body {
-  background: #E9EEBD;
+  background: $secondary-color;
   line-height: 1;
 }
 
@@ -69,7 +80,7 @@ body.preload *, body.preload *:before, body.preload *:after {
 }
 
 body, input, select, textarea {
-  color: #0066a4;
+  color: $primary-color;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -110,11 +121,10 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #0066a4;
+  color: $primary-color;
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1rem 0;
-  // letter-spacing: 0.2rem;
   &.subtitle {
     padding-top: 1rem;
   }
@@ -139,11 +149,10 @@ h1 {
 h2 {
   font-size: 22px;
   line-height: 1.4;
-  // letter-spacing: 1px;
   &.major {
     font-family: 'Kameron', serif;
-    color: #b7c221;
-    border-bottom: solid 1px #b7c221;
+    color: $tertiary-color;
+    border-bottom: solid 1px $tertiary-color;
     padding-bottom: 0.5rem;
     margin: 0 0 2rem 0;
   }
@@ -263,7 +272,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     left: calc(50% - 0.5px);
     width: 1px;
     height: calc(3.5rem + 1px);
-    background: #b7c221;
+    background: $tertiary-color;
   }
 }
 
@@ -275,8 +284,17 @@ button, [type="button"], [type="reset"], [type="submit"] {
   display: none;
 }
 
-#menu .logo {
-  height: 120px;
+#menu {
+  .logo {
+    height: 120px;
+    margin: auto;
+    display: block;
+  }
+  .logo-link-text {
+    color: $gray-color;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;  
+  }
 }
 
 #menu .logo-ovk {
@@ -294,7 +312,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 #menu .content {
   border-style: solid;
-  border-color: #b7c221;
+  border-color: $tertiary-color;
   border-top-width: 1px;
   border-bottom-width: 1px;
   max-width: 100%;
@@ -326,7 +344,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 #menu .content .address-card {
-    margin: 3rem auto 1rem;
+  margin: 3rem auto 1rem;
 }
 
 @media screen and (min-width: 980px) {
@@ -343,15 +361,15 @@ button, [type="button"], [type="reset"], [type="submit"] {
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
-  border: solid 1px #b7c221;
+  border: solid 1px $tertiary-color;
   border-radius: .25rem;
   &.rating {
-    background: linear-gradient(to right, #E9EEBD 10%, #04968D 100%);
+    background: linear-gradient(to right, $secondary-color 10%, $accent-color 100%);
     .control-link {
       border: 0;
-      border-left: solid 1px #E9EEBD;
+      border-left: solid 1px $secondary-color;
       a {
-        color: #5a6268;
+        color: $gray-color;
       }
     }
   }
@@ -359,9 +377,9 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 @media screen and (max-width: 980px) {
   #menu #controls.rating {
-    background: linear-gradient(to bottom, #E9EEBD 10%, #04968D 100%);
+    background: linear-gradient(to bottom, $secondary-color 10%, $accent-color 100%);
     .control-link {
-      border-top: solid 1px #E9EEBD;
+      border-top: solid 1px $secondary-color;
     }
   }
 }
@@ -379,12 +397,16 @@ button, [type="button"], [type="reset"], [type="submit"] {
     margin: 5px 0;
   }
   .logo-link {
-    height: 40px;
+    height: 50px;
     margin-bottom: 5px;
-
   }
   .logo-link-text {
-    display: block;
+    color: $gray-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 9px;
   }
 }
 
@@ -401,7 +423,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   font-size: 0.9rem;
   border-bottom: 0;
   transition: all 0.5s ease 0s;
-  color: #5a6268;
+  color: $gray-color;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   position: relative;
@@ -416,7 +438,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
     left: -0.5px;
     width: 1px;
     height: 40%;
-    background: #b7c221;
+    background: $tertiary-color;
   }
 }
 
@@ -431,14 +453,14 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 #menu #controls .control-link a:hover, #menu #controls .control-link.selected a {
-  background-color: #b7c221;
+  background-color: $tertiary-color;
   cursor: pointer;
   text-decoration: none;
-  color: #04968D;
+  color: $accent-color;
 }
 
 #menu  #controls .control-link a:active {
-  background-color: #b7c221;
+  background-color: $tertiary-color;
 }
 
 body.is-article-visible #menu {
@@ -512,7 +534,7 @@ body.preload #menu .content .inner {
   }
   #menu #controls .control-link {
     border-left: 0;
-    border-top: solid 1px #b7c221;
+    border-top: solid 1px $tertiary-color;
   }
   #menu #controls .control-link:first-child {
     border-top: 0;
@@ -532,7 +554,7 @@ body.preload #menu .content .inner {
 
 #menu .inner h2 {
   font-weight: 400;
-  color: #04968D;
+  color: $accent-color;
   line-height: 1.5;
   font-size: 20px;
   &.uppercase {
@@ -551,6 +573,7 @@ body.preload #menu .content .inner {
   max-width: 100%;
   background-color: white;
   border-radius: 4px;
+  border: $secondary-color 1px solid;
   margin-bottom: 2rem;
   .btn-small {
     font-weight: 400;
@@ -562,21 +585,21 @@ body.preload #menu .content .inner {
     padding: 12px;
     margin-top: 20px;
     transition: all 0.5s ease 0s;
-    color: #5a6268;
+    color: $gray-color;
     text-decoration: none !important;
-    border: 1px solid #b7c221;
+    border: 1px solid $tertiary-color;
     border-radius: .25rem;
     width: 100%;
     &:hover {
-      background-color: #b7c221;
+      background-color: $tertiary-color;
       cursor: pointer;
       text-decoration: none;
-      color: #04968D !important;
+      color: $accent-color !important;
     }
   }
   a {
     text-decoration: underline dotted;
-    color: #b7c221;
+    color: $tertiary-color;
     display: inline;
     i {
       font-size: 0.8rem;
@@ -593,8 +616,8 @@ body.preload #menu .content .inner {
   }
   .card {
     margin-bottom: 10px;
-    .svg-pat-logo-ovk {
-      background-image: url( '../images/logo-pat-mit-eltern-lernen-ovk.svg' );
+    .svg-pat-logo {
+      background-image: url( '../images/logo-pat-mit-eltern-lernen.svg' );
       background-repeat: no-repeat;
       background-size: 100% 100%;
       width: 175px;
@@ -661,16 +684,16 @@ body.preload #menu .content .inner {
     padding: 15px;
     margin-top: 30px;
     transition: all 0.5s ease 0s;
-    color: #5a6268;
+    color: $gray-color;
     text-decoration: none;
-    border: 1px solid #b7c221;
+    border: 1px solid $tertiary-color;
     border-radius: .25rem;
     width: 100%;
     &:hover {
-      background-color: #b7c221;
+      background-color: $tertiary-color;
       cursor: pointer;
       text-decoration: none;
-      color: #04968D;
+      color: $accent-color;
     }
   }
 }
@@ -721,14 +744,14 @@ a.button {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-color: #b7c221;
+    background-color: $tertiary-color;
   }
 }
 
 
 #main {
    .close:hover:before, .close:active:before {
-    background-color: #E9EEBD;
+    background-color: $secondary-color;
   }
 }
 
@@ -749,7 +772,7 @@ a.button {
   #main {
     padding: 4rem 1.5rem 1.5rem 1.5rem ;
     margin-bottom: 2rem;
-    .card .svg-pat-logo-ovk {
+    .card .svg-pat-logo {
       width: 70px;
       height: 30px;
     }
@@ -764,7 +787,7 @@ a.button {
 
 #main #about {
   .citation {
-    color: #5a6268;
+    color: $gray-color;
     letter-spacing: 0;
     font-style: italic;
     margin-bottom: 1.4rem;
@@ -817,6 +840,7 @@ a.button {
     font-size: 8px;
     display: block;
     margin-top: 3px;
+    color: $gray-color;
   }
 }
 
@@ -835,17 +859,17 @@ a.button {
 #quicklinks, #quicklinks-overlay {
   #menu-toggle, #language-switcher {
     .btn {
-      color: #0066a4;
+      color: $gray-color;
     }
     .dropdown-item {
-      color: #5a6268;
+      color: $gray-color;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       &.active, &:active, &:hover {
-        background-color: #b7c221;
+        background-color: $tertiary-color;
         cursor: pointer;
         text-decoration: none;
-        color: #04968D;
+        color: $accent-color;
       }
     }
   }
@@ -861,7 +885,7 @@ a.button {
   padding-bottom: 0.5rem;
   text-align: center;
   height: 4rem;
-  color: #5a6268;
+  color: $gray-color;
 }
 
 #footer .copyright {

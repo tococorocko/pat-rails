@@ -3,6 +3,9 @@ en:
     description: PAT - Parents as Teachers Screening
     author: PAT - Parents as Teachers
   continue: Continue
+  pat_address: PAT Imparo con i genitori Ticino
+  pat_address_additional_1: PAT licensed Program
+  pat_address_additional_2: Promoted by Associazione Progetto Genitori
   home:
     title: PAT - Parents as Teachers
     ovk:

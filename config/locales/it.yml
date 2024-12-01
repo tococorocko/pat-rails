@@ -3,6 +3,9 @@ it:
     description: PAT - Promuovere lo sviluppo dei bambini e sostenerli nelle loro scoperte.
     author: PAT - Parents as Teachers - Imparo Con I Genitori Ticino
   continue: Continua
+  pat_address: PAT Imparo con i genitori Ticino
+  pat_address_additional_1: Programma riconosciuto PAT
+  pat_address_additional_2: Promosso da Associazione Progetto Genitori
   home:
     title: Pat Imparo Con I Genitori
     ovk:

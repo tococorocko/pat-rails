@@ -3,8 +3,8 @@
 <div id="main">
   <div class="header-logo">
     <div class="logo-ti selected">
-      <%= image_tag("logo-pat.png", alt:"Logo PAT - Ticino", class: "logo-link") %>
-      <span class="logo-link-text">PAT Ticino</span>
+      <%= image_tag("logo-apg.png", alt:"Logo PAT Imparo con i genitori Ticino", class: "logo-link") %>
+      <span class="logo-link-text">PAT Imparo con i genitori Ticino</span>
     </div>
   </div>
   <div class="close-btn">
@@ -25,7 +25,9 @@
     <hr>
     <div class="card">
       <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Associazione Progetto Genitori</h6>
+        <div class="svg-pat-logo"></div>
+        <h6 class="card-subtitle mb-2 text-muted"><%= t("pat_address") %></h6>
+        <p class="card-subtitle mb-2 text-muted"><%= t("pat_address_additional_1") %><br><%= t("pat_address_additional_2") %></p>
         <div>
           <p class="card-text">via Soldini 25</p>
           <p class="card-text">6830 Chiasso</p>

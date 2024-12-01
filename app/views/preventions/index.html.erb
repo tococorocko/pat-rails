@@ -8,15 +8,20 @@
 
   <div id="controls" class="nav">
     <div class="control-link <%= @selected_ovk %>">
-      <%= link_to preventions_path(organization: "ovk") do %>
-        <div class="svg-logo"></div>
+      <%= link_to preventions_path(org: "ovk") do %>
+        <div class="svg-logo-ovk"></div>
       <% end %>
     </div>
     <div class="control-link <%= @selected_ti %>">
-        <%= link_to preventions_path(organization: "ti") do %>
-          <%= image_tag("logo-pat.png", alt:"Logo PAT - Ticino", class: "logo-link") %>
-          <span class="logo-link-text">PAT Ticino</span>
-        <% end %>
+      <%= link_to preventions_path(org: "ti") do %>
+        <%= image_tag("logo-apg.png", alt:"Logo PAT Imparo con i genitori Ticino", class: "logo-link") %>
+        <span class="logo-link-text">PAT Imparo con i genitori Ticino</span>
+      <% end %>
+    </div>
+    <div class="control-link <%= @selected_zenso %>">
+      <%= link_to preventions_path(org: "zenso") do %>
+        <div class="svg-logo-zenso"></div>
+      <% end %>
     </div>
   </div>
 
@@ -31,14 +36,14 @@
   </div>
 
   <div id="controls" class="nav">
-      <div class="control-link">
-        <%= link_to t("addresses.low_risk"), low_risk_path(organization: @selected_organization) %>
-      </div>
-      <div class="control-link">
-        <%= link_to t("addresses.medium_risk"), medium_risk_path(organization: @selected_organization) %>
-      </div>
-      <div class="control-link">
-        <%= link_to t("addresses.high_risk"), high_risk_path(organization: @selected_organization) %>
-      </div>
+    <div class="control-link">
+      <%= link_to t("addresses.low_risk"), low_risk_path(org: @selected_organization) %>
+    </div>
+    <div class="control-link">
+      <%= link_to t("addresses.medium_risk"), medium_risk_path(org: @selected_organization) %>
+    </div>
+    <div class="control-link">
+      <%= link_to t("addresses.high_risk"), high_risk_path(org: @selected_organization) %>
+    </div>
   </div>
 </div>

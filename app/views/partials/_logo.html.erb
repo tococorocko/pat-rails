@@ -1,13 +1,20 @@
 <div id="logo">
-  <% if @ovk_iframe %>
+  <% if @org == 'ovk' %>
     <%= link_to root_path do %>
       <div class="logo-ovk">
-          <div class="svg-logo"></div>
+        <div class="svg-logo-ovk"></div>
+      </div>
+    <% end %>
+  <% elsif @org == 'zenso' %>
+    <%= link_to root_path do %>
+      <div class="logo-zenso">
+        <div class="svg-logo-zenso"></div>
       </div>
     <% end %>
   <% else %>
     <%= link_to root_path do %>
-      <%= image_tag("logo.png", alt:"Logo PAT - Parents as Teachers", class: "logo") %>
+      <%= image_tag("logo-apg.png", alt:"Associazone Progetto Genitori", class: "logo") %>
+      <span class="logo-link-text">PAT Imparo con i genitori Ticino</span>
     <% end %>
   <% end %>
 </div>

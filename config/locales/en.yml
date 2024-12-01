@@ -3,6 +3,9 @@ en:
     description: PAT - Parents as Teachers Screening
     author: PAT - Parents as Teachers
   continue: Continue
+  pat_address: PAT Imparo con i genitori Ticino
+  pat_address_additional_1: PAT licensed Program
+  pat_address_additional_2: Promoted by Associazione Progetto Genitori
   home:
     title: PAT - Parents as Teachers
     ovk:
@@ -11,6 +14,9 @@ en:
     pat_ti:
       subtitle_html: |
         This screening creates the opportunity to identify families with stress factors, and to indicate possible supports accordingly to their specific needs.
+    zenso:
+      subtitle_html: |
+        Assessment of potential stress and protective factors from pregnancy to 12 months after birth.
     questionnaire: Screening
     about_us: About us
   about_us:
@@ -121,3 +127,25 @@ en:
           <p>In these cases, family support PAT can be applied together with primary prevention and an existing network or one created in the family environment.</p>
           <p>You, as professionals who know the family, can recommend the project and ask the parents for permission to be contacted by a PAT parent trainer for a home presentation.</p>
           <p>If the family is interested, some intake visits will take place so that the family can understand the project. Together, a decision will be made whether to integrate the PAT project and/or involve other services.</p>
+    zenso:
+      primary:
+        title: Präventionsstufen
+        paragraph_1_html: |
+          <p>According to the screening score of this family, primary prevention (maternal and paternal counseling) is recommended. Please contact the responsible maternity and paternity counselor in the municipality where the family lives.</p>
+          <p>If the situation changes, we recommend a new screening.</p>
+      secondary:
+        paragraph_1_html: |
+          <p>According to the screening score carried out for this family, secondary prevention is recommended in addition to primary prevention (maternal and paternal counseling).</p>
+          <p>We recommend registering for PAT family support. The prerequisite for registration is the consent of the parents.</p>
+          <p>Registration: <a href="mailto:mvb-zenso@hin.ch"><i class="fas fa-envelope"></i>mvb-zenso@hin.ch</a> or <a href="tel:+41 925 18 20"><i class="fas fa-phone-alt"></i>+41 925 18 20</a></p>
+          <p>A PAT parent trainer will contact the family. After two to three meetings with the PAT parent trainer, a decision is made together with the family as to whether the family support is suitable.</p>
+          <p>The referring institution will always receive feedback.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>According to the screening score carried out for this family, tertiary prevention is recommended in addition to primary prevention (maternal and paternal counseling).</p>
+          <p>The stress factors are numerous and a healthy development of the/your child may be at risk.</p>
+          <p>In these cases, family support PAT can be applied together with primary prevention and an existing network or one created in the family environment.</p>
+          <p>We recommend registering for PAT family support. The prerequisite for registration is the consent of the parents.</p>
+          <p>Registration: <a href="mailto:mvb-zenso@hin.ch"><i class="fas fa-envelope"></i>mvb-zenso@hin.ch</a> or <a href="tel:+41 925 18 20"><i class="fas fa-phone-alt"></i>+41 925 18 20</a></p>
+          <p>A PAT parent trainer will contact the family. After two to three meetings with the PAT parent trainer, a decision is made together with the family as to whether the family support is suitable.</p>
+          <p>The referring institution will always receive feedback.</p>

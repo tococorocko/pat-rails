@@ -3,10 +3,11 @@
   <%= render 'partials/logo' %>
   <div class="content">
     <div class="inner">
-      <% if @ovk_iframe %>
+      <% if @org == 'ovk' %>
         <h2><%= t("home.ovk.subtitle_html") %></h2>
+      <% elsif @org == 'zenso' %>
+        <h2><%= t("home.zenso.subtitle_html") %></h2>
       <% else %>
-        <h1 class="major"><%= t("home.title") %></h1>
         <h2><%= t("home.pat_ti.subtitle_html") %></h2>
       <% end %>
     </div>
@@ -15,7 +16,7 @@
     <div class="control-link">
       <%= link_to t("home.questionnaire"), question_1_path %>
     </div>
-    <% if I18n.locale == :it && !@ovk_iframe %>
+    <% if I18n.locale == :it && @org == 'ti' %>
       <div class="control-link">
         <%= link_to t("home.about_us"), about_path %>
       </div>

@@ -3,39 +3,44 @@
 <div id="main">
   <div class="header-logo">
     <div class="logo-ovk <%= @selected_ovk %>">
-        <div class="svg-logo"></div>
+      <div class="svg-logo-ovk"></div>
     </div>
     <div class="logo-ti <%= @selected_ti %>">
-      <%= image_tag("logo-pat.png", alt:"Logo PAT - Ticino", class: "logo-link") %>
-      <span class="logo-link-text">PAT Ticino</span>
+      <%= image_tag("logo-apg.png", alt:"Logo PAT Imparo con i genitori Ticino", class: "logo-link") %>
+      <span class="logo-link-text">PAT Imparo con i genitori Ticino</span>
+    </div>
+    <div class="logo-zenso <%= @selected_zenso %>">
+      <div class="svg-logo-zenso"></div>
     </div>
   </div>
   <div id="quicklinks-overlay">
     <%= render 'layouts/language_switcher' %>
   </div>
   <div class="close-btn">
-    <%= link_to "", preventions_path(organization: @selected_organization), class:"close" %>
+    <%= link_to "", preventions_path(org: @selected_organization), class:"close" %>
   </div>
   <div id="addresses">
     <h2 class="major"><%= t("addresses.low_risk") %></h2>
     <% if @selected_organization == "ovk" %>
-      <%= t("prevention.ovk.primary.paragraph_1_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(organization: @selected_organization))) %>
+      <%= t("prevention.ovk.primary.paragraph_1_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(org: @selected_organization))) %>
       <%= render 'preventions/ovk_medium_risk_addresses' %>
+    <% elsif @selected_organization == "zenso" %>
+      <%= t("prevention.zenso.primary.paragraph_1_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(org: @selected_organization))) %>
+      <%= render 'preventions/zenso_low_risk_addresses' %>
     <% else %>
-      <%= t("prevention.pat_ti.primary.paragraph_1_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(organization: @selected_organization))) %>
+      <%= t("prevention.pat_ti.primary.paragraph_1_html", link: (link_to t("prevention.go_to_secondary_prevention"), medium_risk_path(org: @selected_organization))) %>
       <%= render 'preventions/ticino_low_risk_addresses' %>
     <% end %>
-
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <%= link_to t("addresses.medium_risk"), medium_risk_path(organization: @selected_organization), class:"btn btn-default" %>
+      <%= link_to t("addresses.medium_risk"), medium_risk_path(org: @selected_organization), class:"btn btn-default" %>
     </div>
     <div class="col-xs-12 col-md-6">
-      <%= link_to t("addresses.high_risk"), high_risk_path(organization: @selected_organization), class:"btn btn-default" %>
+      <%= link_to t("addresses.high_risk"), high_risk_path(org: @selected_organization), class:"btn btn-default" %>
     </div>
     <div class="col-xs-12 col-md-6">
-      <%= link_to t("addresses.more_organizations"), preventions_path(organization: @selected_organization), class:"btn btn-small" %>
+      <%= link_to t("addresses.more_organizations"), preventions_path(org: @selected_organization), class:"btn btn-small" %>
     </div>
   </div>
 </div>

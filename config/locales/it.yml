@@ -3,6 +3,9 @@ it:
     description: PAT - Promuovere lo sviluppo dei bambini e sostenerli nelle loro scoperte.
     author: PAT - Parents as Teachers - Imparo Con I Genitori Ticino
   continue: Continua
+  pat_address: PAT Imparo con i genitori Ticino
+  pat_address_additional_1: Programma riconosciuto PAT
+  pat_address_additional_2: Promosso da Associazione Progetto Genitori
   home:
     title: Pat Imparo Con I Genitori
     ovk:
@@ -12,6 +15,9 @@ it:
       subtitle_html: |
         Lo screening permette di identificare le famiglie con diversi fattori di stress e indicare i sostegni adatti alle loro esigenze.<br><br>
         Cliccare su "questionario" per procedere con lo screening.
+    zenso:
+      subtitle_html: |
+        Valutazione dei possibili fattori di stress e di protezione durante la gravidanza fino a 12 mesi dopo la nascita.
     questionnaire: Questionario
     about_us: Chi siamo
   about_us:
@@ -122,3 +128,25 @@ it:
           <p>Il progetto PAT può intervenire in questi casi, in collaborazione a una rete presente o da creare intorno alla famiglia.</p>
           <p>Voi come professionisti, che conoscete la famiglia, potete consigliarlo e chiedere ai genitori il permesso di essere contattati dal coordinatore del progetto per una presentazione a domicilio.</p>
           <p>Se la famiglia è interessata, si svolgeranno almeno un paio di visite di ammissione cosicché la famiglia possa capire di cosa si tratta. Insieme si deciderà se integrare il progetto PAT e/o coinvolgere altri servizi.</p>
+    zenso:
+      primary:
+        title: Livelli di prevenzione
+        paragraph_1_html:
+          <p>Secondo il punteggio dello screening di questa famiglia, si consiglia la prevenzione primaria (consulenza per la maternità e la paternità). Si prega di contattare il consulente per la maternità e la paternità competente nel comune di residenza della famiglia.</p>
+          <p>Se la situazione dovesse cambiare, si consiglia di effettuare un nuovo screening.</p>
+      secondary:
+        paragraph_1_html: |
+          <p>Secondo il punteggio dello screening fatto per questa famiglia, si consiglia la prevenzione secondaria in aggiunta alla prevenzione primaria (consulenza materna e paterna).</p>
+          <p>Si consiglia di iscriversi all'assistenza familiare PAT. Il prerequisito per l'iscrizione è il consenso dei genitori.</p>
+          <p>Registrazione: <a href="mailto:mvb-zenso@hin.ch"><i class="fas fa-envelope"></i>mvb-zenso@hin.ch</a> o <a href="tel:+41 925 18 20"><i class="fas fa-phone-alt"></i>+41 925 18 20</a></p>
+          <p>Un consulente genitoriale PAT si metterà in contatto con la famiglia. Dopo due o tre incontri con il consulente genitoriale PAT, si decide insieme alla famiglia se il sostegno familiare è adeguato.</p>
+          <p>Il centro di riferimento riceverà sempre un feedback.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>Secondo il punteggio dello screening fatto per questa famiglia, si consiglia la prevenzione terziaria in aggiunta alla prevenzione primaria (consulenza materna e paterna).</p>
+          <p>I fattori di stress sono numerosi, uno sviluppo sano del loro bambino potrebbe essere compromesso.</p>
+          <p>Il progetto PAT può intervenire in questi casi, in collaborazione a una rete presente o da creare intorno alla famiglia.</p>
+          <p>Si consiglia di iscriversi all'assistenza familiare PAT. Il prerequisito per l'iscrizione è il consenso dei genitori.</p>
+          <p>Registrazione: <a href="mailto:mvb-zenso@hin.ch"><i class="fas fa-envelope"></i>mvb-zenso@hin.ch</a> o <a href="tel:+41 925 18 20"><i class="fas fa-phone-alt"></i>+41 925 18 20</a></p>
+          <p>Un consulente genitoriale PAT si metterà in contatto con la famiglia. Dopo due o tre incontri con il consulente genitoriale PAT, si decide insieme alla famiglia se il sostegno familiare è adeguato.</p>
+          <p>Il centro di riferimento riceverà sempre un feedback.</p>

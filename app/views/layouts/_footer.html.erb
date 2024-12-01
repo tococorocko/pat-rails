@@ -1,7 +1,9 @@
 <footer id="footer">
   <p class="copyright">&copy;
-    <% if @ovk_iframe %>
+    <% if @org == 'ovk' %>
       <%= link_to "by OVK", "https://www.ovk.ch/familienbegleitung-pat/familien/", target: "_blank" %> | <%= link_to "Imprint", "https://www.ovk.ch/impressum-disclaimer/", target: "_blank" %>
+    <% elsif @org == 'zenso' %>
+      <%= link_to "by Zenso", "https://www.zenso.ch", target: "_blank" %> | <%= link_to "Imprint", "https://www.zenso.ch/impressum", target: "_blank" %>
     <% else %>
       <%= link_to "by PAT Ticino", "https://www.pat-ti.ch", target: "_blank" %> | <%= link_to "Imprint", "https://www.pat-ti.ch/disclaimer", target: "_blank" %>
     <% end %>

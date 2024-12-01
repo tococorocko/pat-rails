@@ -3,6 +3,9 @@ de:
     description: PAT - Mit Eltern Lernen
     author: PAT - Parents as Teachers - Mit Eltern Lernen
   continue: Weiter
+  pat_address: PAT Imparo con i genitori Ticino
+  pat_address_additional_1: PAT-Trägerschaft
+  pat_address_additional_2: Gefördert durch Associazione Progetto Genitori
   home:
     title: PAT - Mit Eltern Lernen
     ovk:
@@ -11,6 +14,9 @@ de:
     pat_ti:
       subtitle_html: |
         Dieses Screening ermöglicht es Familien mit unterschiedlichen Belastungsfaktoren zu identifizieren und eine bedarfsorientierte Begleitung zu ermitteln.
+    zenso:
+      subtitle_html: |
+        Einschätzung der potenziellen Belastungs- und Schutzfaktoren ab Schwangerschaft bis 12 Monate nach der Geburt.
     questionnaire: Screening
     about_us: Über uns
   about_us:
@@ -123,3 +129,25 @@ de:
           <p>In diesen Fällen kann die Familienbegleitung PAT zusammen mit der Primärprävention und einem vorhandenen oder im familiären Umfeld geschaffenen Netzwerk zur Anwendung kommen.</p>
           <p>Sie als Fachpersonen, die die Familie kennen, können das Projekt empfehlen und die Eltern um Erlaubnis bitten, von einer PAT-Elterntrainerin für eine Präsentation zu Hause kontaktiert zu werden.</p>
           <p>Wenn die Familie Interesse hat, werden einige Aufnahmebesuche stattfinden, damit die Familie verstehen kann, worum es geht. Gemeinsam wird entschieden, ob das PAT-Projekt integriert und/oder andere Dienste einbezogen werden.</p>
+    zenso:
+      primary:
+        title: Präventionsstufen
+        paragraph_1_html: |
+          <p>Entsprechend dem Screening-Score dieser Familie wird eine Primärprävention (Mütter- und Väterberatung) empfohlen. Bitte wenden Sie sich an die zuständige Mütter- und Väterberaterin der Wohngemeinde der betreffenden Familie.</p>
+          <p>Sollte sich die Situation verändern, empfehlen wir ein erneutes Screening.</p>
+      secondary:
+        paragraph_1_html: |
+          <p>Entsprechend dem Screening-Score dieser Familie wird zusätzlich zur Primärprävention (Mütter- und Väterberatung) eine Sekundärprävention empfohlen.</p>
+          <p>Wir empfehlen die Anmeldung zur PAT-Familienbegleitung. Voraussetzung für die Anmeldung ist das Einverständnis der Eltern.</p>
+          <p>Anmeldung: <a href="mailto:mvb-zenso@hin.ch"><i class="fas fa-envelope"></i>mvb-zenso@hin.ch</a> oder <a href="tel:+41 925 18 20"><i class="fas fa-phone-alt"></i>+41 925 18 20</a></p>
+          <p>Eine PAT-Familienbegleiterin wird mit der Familie Kontakt aufnehmen. Nach zwei bis drei Gesprächen mit der PAT-Familienbegleiterin wird gemeinsam mit der Familie entschieden, ob die Familienbegleitung geeignet ist.</p>
+          <p>Die zuweisende Stelle erhält in jedem Fall eine Rückmeldung.</p>
+      tertiary:
+        paragraph_1_html: |
+          <p>Entsprechend dem Screening-Score dieser Familie wird zusätzlich zur Primärprävention (Mütter- und Väterberatung) eine Tertiärprävention empfohlen.</p>
+          <p>Die Belastungsfaktoren sind zahlreich und eine gesunde Entwicklung des Kindes könnte gefährdet sein.</p>
+          <p>In diesen Fällen kann die PAT-Familienbegleitung zusammen mit der Primärprävention und einem vorhandenen oder im familiären Umfeld geschaffenen Netzwerk zur Anwendung kommen.</p>
+          <p>Wir empfehlen die Anmeldung zur PAT-Familienbegleitung. Voraussetzung für die Anmeldung ist das Einverständnis der Eltern.</p>
+          <p>Anmeldung: <a href="mailto:mvb-zenso@hin.ch"><i class="fas fa-envelope"></i>mvb-zenso@hin.ch</a> oder <a href="tel:+41 925 18 20"><i class="fas fa-phone-alt"></i>+41 925 18 20</a></p>
+          <p>Eine PAT-Familienbegleiterin wird mit der Familie Kontakt aufnehmen und in zwei bis drei Gesprächen zusammen mit den Eltern und allenfalls der zuweisenden Stelle eine Bedarfseinschätzung vornehmen und abklären, ob die Familienbegleitung PAT zur Anwendung kommt.</p>
+          <p>Die zuweisende Stelle erhält in jedem Fall eine Rückmeldung.</p>

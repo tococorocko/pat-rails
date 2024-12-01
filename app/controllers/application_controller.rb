@@ -1,6 +1,13 @@
 class ApplicationController < ActionController::Base
+  ALLOWED_ORGANIZATIONS = [
+    "ti",
+    "ovk",
+    "zenso"
+  ].freeze
+  FALLBACK_ORGANIZATION = "ti".freeze
+
   around_action :switch_locale
-  before_action :set_ovk_iframe_cookie
+  before_action :set_org_cookie
 
   def switch_locale(&action)
     locale = params[:locale] || I18n.default_locale
@@ -8,14 +15,20 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options
-    { locale: I18n.locale, ovk: @ovk_iframe }
+    { locale: I18n.locale, org: @org }
   end
 
-  def set_ovk_iframe_cookie
-    @ovk_iframe ||= cookies[:ovk_iframe] || params[:ovk]
-    return if params[:ovk_iframe].blank? || @ovk_iframe.present?
+  # ovk, ti, zenso
+  # ovk_iframe=1 => org=ovk (backwards compatibility)
+  # org=zenso
+  # org=ti
+  def set_org_cookie
+    @org ||= cookies[:org]
+    return if @org.present?
 
-    cookies[:ovk_iframe] = { value: "true", expires: 1.day.from_now }
-    @ovk_iframe = true
+    @org = ALLOWED_ORGANIZATIONS.include?(params[:org]) ? params[:org] : nil
+    @org = "ovk" if params[:ovk_iframe]
+    @org ||= FALLBACK_ORGANIZATION
+    cookies[:org] = { value: @org, expires: 1.day.from_now }
   end
 end

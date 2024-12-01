@@ -3,10 +3,10 @@
     <i class="fas fa-bars"></i>
   </button>
   <div class="dropdown-menu dropdown-menu-right">
-    <%= link_to t("quicklinks.all_contacts"), preventions_path(organization: @selected_organization), class:"dropdown-item", type:"button" %>
-    <% if !@ovk_iframe && I18n.locale == :it %>
+    <%= link_to t("quicklinks.all_contacts"), preventions_path(org: @selected_organization), class:"dropdown-item", type:"button" %>
+    <% if @org == 'ti' && I18n.locale == :it %>
       <%= link_to t("quicklinks.about_us"), about_path, class:"dropdown-item", type:"button" %>
-    <div class="dropdown-divider"></div>
+      <div class="dropdown-divider"></div>
     <% end %>
     <%= link_to "Home", root_path, class:"dropdown-item", type:"button" %>
   </div>

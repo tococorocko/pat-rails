@@ -34,11 +34,20 @@ class PreventionsController < ApplicationController
   end
 
   def set_selected_organization
-    @selected_organization = params[:organization] || cookie_based_organization
-    @selected_organization == "ovk" ? @selected_ovk = "selected" : @selected_ti = "selected"
+    @selected_organization = params[:org] || cookie_based_organization
+    @selected_organization = if @selected_organization == "ovk"
+                               @selected_ovk = "selected"
+                               "ovk"
+                             elsif @selected_organization == "zenso"
+                               @selected_zenso = "selected"
+                               "zenso"
+                             else
+                               @selected_ti = "selected"
+                               "ti"
+                             end
   end
 
   def cookie_based_organization
-    @ovk_iframe ? "ovk" : "ti"
+    @org.presence || "ti"
   end
 end

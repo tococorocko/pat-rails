@@ -1,13 +1,10 @@
-// $primary-color: #56b1dd;
-// $secondary-color : #6d619f;
-// $alert-color: #e42f33;
-
-$primary-color: #0066a4;
-$secondary-color: #E9EEBD;
-$tertiary-color: #b7c221;
-$accent-color: #04968D;
-$alert-color: #e42f33;
-$gray-color: #5a6268;
+$primary-color: #6d609f;
+$secondary-color-dark: #57b1dd;
+$secondary-color: #57b1dd94;
+$tertiary-color: #6d609f;
+$accent-color: #191919;
+$alert-color: #e32f32;
+$gray-color: #191919;
 
 /*Default*/
 * {
@@ -377,7 +374,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
   border: solid 1px $tertiary-color;
   border-radius: .25rem;
   &.rating {
-    background: linear-gradient(to right, $secondary-color 10%, $accent-color 100%);
+    background: linear-gradient(to right, $secondary-color 10%, $primary-color 100%);
     .control-link {
       border: 0;
       border-left: solid 1px $secondary-color;
@@ -390,7 +387,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 @media screen and (max-width: 980px) {
   #menu #controls.rating {
-    background: linear-gradient(to bottom, $secondary-color 10%, $accent-color 100%);
+    background: linear-gradient(to bottom, $secondary-color 10%, $primary-color 100%);
     .control-link {
       border-top: solid 1px $secondary-color;
     }
@@ -474,7 +471,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 #menu #controls .control-link a:hover, #menu #controls .control-link.selected a {
-  background-color: $tertiary-color;
+  background-color: $secondary-color-dark;
   cursor: pointer;
   text-decoration: none;
   color: $accent-color;
@@ -575,7 +572,7 @@ body.preload #menu .content .inner {
 
 #menu .inner h2 {
   font-weight: 400;
-  color: $accent-color;
+  color: $primary-color;
   line-height: 1.5;
   font-size: 20px;
   &.uppercase {
@@ -612,7 +609,7 @@ body.preload #menu .content .inner {
     border-radius: .25rem;
     width: 100%;
     &:hover {
-      background-color: $tertiary-color;
+      background-color: $secondary-color-dark;
       cursor: pointer;
       text-decoration: none;
       color: $accent-color !important;
@@ -678,14 +675,37 @@ body.preload #menu .content .inner {
       margin-right: 10px;
     }
     input[type=checkbox] {
-      -ms-transform: scale(1.5); /* IE */
-      -moz-transform: scale(1.5); /* FF */
-      -webkit-transform: scale(1.5, 1.5);
-      -webkit-transform: scale(1.5); /* Safari and Chrome */
-      -o-transform: scale(1.5); /* Opera */
-      transform: scale(1.5);
+      appearance: none;
+      color: $primary-color;
+      border: 0.15em solid $primary-color;
+      border-radius: 0.25em;
+      -ms-transform: scale(1.2); /* IE */
+      -moz-transform: scale(1.2); /* FF */
+      -webkit-transform: scale(1.2, 1.2);
+      -webkit-transform: scale(1.2); /* Safari and Chrome */
+      -o-transform: scale(1.2); /* Opera */
+      transform: scale(1.2);
       padding: 10px;
       flex: none;
+      display: grid;
+      place-content: center;    
+      &::before {
+        background-color: $alert-color;
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--form-control-color);      
+        transform-origin: bottom left;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      }
+      &:checked::before {
+        transform: scale(1);
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.2rem $secondary-color-dark;
+      }
     }
     label {
       display: inline-block;
@@ -711,7 +731,7 @@ body.preload #menu .content .inner {
     border-radius: .25rem;
     width: 100%;
     &:hover {
-      background-color: $tertiary-color;
+      background-color: $secondary-color-dark;
       cursor: pointer;
       text-decoration: none;
       color: $accent-color;
@@ -772,7 +792,7 @@ a.button {
 
 #main {
    .close:hover:before, .close:active:before {
-    background-color: $secondary-color;
+    background-color: $secondary-color-dark;
   }
 }
 
@@ -904,7 +924,7 @@ a.button {
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       &.active, &:active, &:hover {
-        background-color: $tertiary-color;
+        background-color: $secondary-color-dark;
         cursor: pointer;
         text-decoration: none;
         color: $accent-color;
